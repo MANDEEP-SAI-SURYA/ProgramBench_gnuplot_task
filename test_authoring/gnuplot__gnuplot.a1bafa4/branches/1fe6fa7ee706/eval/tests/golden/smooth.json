@@ -1,0 +1,602 @@
+[
+ {
+  "id": "smooth.unique",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth unique\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 30 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0 -5  i\n 1 -0.5  i\n 2  4  i\n 3 -2.5  i\n 4  2  i\n 5  6.5  i\n 6  0  i\n 7  4.5  i\n 8  9  i\n 9  2.5  i\n 10  7  i\n 11  0.5  i\n 12  5  i\n 13  9.5  i\n 14  3  i\n 15  7.5  i\n 16  12  i\n 17  5.5  i\n 18  10  i\n 19  14.5  i\n 20  8  i\n 21  12.5  i\n 22  6  i\n 23  10.5  i\n 24  15  i\n 25  8.5  i\n 26  13  i\n 27  17.5  i\n 28  11  i\n 29  15.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.frequency",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth frequency\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 30 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0 -5  i\n 1 -0.5  i\n 2  4  i\n 3 -2.5  i\n 4  2  i\n 5  6.5  i\n 6  0  i\n 7  4.5  i\n 8  9  i\n 9  2.5  i\n 10  7  i\n 11  0.5  i\n 12  5  i\n 13  9.5  i\n 14  3  i\n 15  7.5  i\n 16  12  i\n 17  5.5  i\n 18  10  i\n 19  14.5  i\n 20  8  i\n 21  12.5  i\n 22  6  i\n 23  10.5  i\n 24  15  i\n 25  8.5  i\n 26  13  i\n 27  17.5  i\n 28  11  i\n 29  15.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.fnormal",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth fnormal\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 30 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0 -0.0235294  i\n 1 -0.00235294  i\n 2  0.0188235  i\n 3 -0.0117647  i\n 4  0.00941176  i\n 5  0.0305882  i\n 6  0  i\n 7  0.0211765  i\n 8  0.0423529  i\n 9  0.0117647  i\n 10  0.0329412  i\n 11  0.00235294  i\n 12  0.0235294  i\n 13  0.0447059  i\n 14  0.0141176  i\n 15  0.0352941  i\n 16  0.0564706  i\n 17  0.0258824  i\n 18  0.0470588  i\n 19  0.0682353  i\n 20  0.0376471  i\n 21  0.0588235  i\n 22  0.0282353  i\n 23  0.0494118  i\n 24  0.0705882  i\n 25  0.04  i\n 26  0.0611765  i\n 27  0.0823529  i\n 28  0.0517647  i\n 29  0.0729412  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.cumulative",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth cumulative\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 30 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0 -5  i\n 1 -5.5  i\n 2 -1.5  i\n 3 -4  i\n 4 -2  i\n 5  4.5  i\n 6  4.5  i\n 7  9  i\n 8  18  i\n 9  20.5  i\n 10  27.5  i\n 11  28  i\n 12  33  i\n 13  42.5  i\n 14  45.5  i\n 15  53  i\n 16  65  i\n 17  70.5  i\n 18  80.5  i\n 19  95  i\n 20  103  i\n 21  115.5  i\n 22  121.5  i\n 23  132  i\n 24  147  i\n 25  155.5  i\n 26  168.5  i\n 27  186  i\n 28  197  i\n 29  212.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.cnormal",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth cnormal\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 30 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0 -0.0235294  i\n 1 -0.0258824  i\n 2 -0.00705882  i\n 3 -0.0188235  i\n 4 -0.00941176  i\n 5  0.0211765  i\n 6  0.0211765  i\n 7  0.0423529  i\n 8  0.0847059  i\n 9  0.0964706  i\n 10  0.129412  i\n 11  0.131765  i\n 12  0.155294  i\n 13  0.2  i\n 14  0.214118  i\n 15  0.249412  i\n 16  0.305882  i\n 17  0.331765  i\n 18  0.378824  i\n 19  0.447059  i\n 20  0.484706  i\n 21  0.543529  i\n 22  0.571765  i\n 23  0.621176  i\n 24  0.691765  i\n 25  0.731765  i\n 26  0.792941  i\n 27  0.875294  i\n 28  0.927059  i\n 29  1  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.csplines",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth csplines\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 15 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0 -5  i\n 2.07143  3.77281  i\n 4.14286  3.15902  i\n 6.21429 -0.149723  i\n 8.28571  7.23724  i\n 10.3571  5.31327  i\n 12.4286  8.23945  i\n 14.5  3.87741  i\n 16.5714  8.16507  i\n 18.6429  14.3815  i\n 20.7143  11.6524  i\n 22.7857  8.74153  i\n 24.8571  9.10583  i\n 26.9286  17.6475  i\n 29  15.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.acsplines",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2:(1) smooth acsplines\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 15 points\n# Curve title: \"$n using 1:2:(1)\"\n# x y type\n 0 -3.85007  i\n 2.07143  0.727097  i\n 4.14286  2.32726  i\n 6.21429  3.79092  i\n 8.28571  5.4102  i\n 10.3571  4.24267  i\n 12.4286  5.32961  i\n 14.5  6.87945  i\n 16.5714  8.89377  i\n 18.6429  10.7889  i\n 20.7143  10.1285  i\n 22.7857  10.1016  i\n 24.8571  11.8598  i\n 26.9286  13.9434  i\n 29  14.6284  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.mcsplines",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth mcsplines\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 90 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0 -5  i\n 0 -5  i\n 0.491525 -2.78814  i\n 0.983051 -0.576271  i\n 1 -0.5  i\n 1.47458  2.16811  i\n 1.9661  3.98983  i\n 2  4  i\n 2.45763  1.16215  i\n 2.94915 -2.45129  i\n 3 -2.5  i\n 3.44068 -1.13733  i\n 3.9322  1.67563  i\n 4  2  i\n 4.42373  4.37238  i\n 4.91525  6.4381  i\n 5  6.5  i\n 5.40678  4.14837  i\n 5.89831  0.187994  i\n 6  0  i\n 6.38983  1.10112  i\n 6.88136  3.91027  i\n 7  4.5  i\n 7.37288  6.57034  i\n 7.86441  8.84575  i\n 8  9  i\n 8.35593  7.11579  i\n 8.84746  2.9076  i\n 9  2.5  i\n 9.33898  3.70071  i\n 9.83051  6.656  i\n 10  7  i\n 10.322  5.41189  i\n 10.8136  1.09357  i\n 11  0.5  i\n 11.3051  1.20991  i\n 11.7966  3.93645  i\n 12  5  i\n 12.2881  6.56256  i\n 12.7797  9.11119  i\n 13  9.5  i\n 13.2712  8.3252  i\n 13.7627  3.92427  i\n 14  3  i\n 14.2542  3.50778  i\n 14.7458  6.13902  i\n 15  7.5  i\n 15.2373  8.76105  i\n 15.7288  11.4279  i\n 16  12  i\n 16.2203  11.1924  i\n 16.7119  6.80795  i\n 17  5.5  i\n 17.2034  5.83445  i\n 17.6949  8.33606  i\n 18  10  i\n 18.1864  10.9662  i\n 18.678  13.7169  i\n 19  14.5  i\n 19.1695  14.0031  i\n 19.661  9.73435  i\n 20  8  i\n 20.1525  8.28219  i\n 20.6441  11.1955  i\n 21  12.5  i\n 21.1356  12.1739  i\n 21.6271  8.0373  i\n 22  6  i\n 22.1186  6.11917  i\n 22.6102  8.3285  i\n 23  10.5  i\n 23.1017  10.9994  i\n 23.5932  13.8137  i\n 24  15  i\n 24.0847  14.8679  i\n 24.5763  11.0121  i\n 25  8.5  i\n 25.0678  8.53997  i\n 25.5593  10.5282  i\n 26  13  i\n 26.0508  13.2399  i\n 26.5424  16.0465  i\n 27  17.5  i\n 27.0339  17.4781  i\n 27.5254  14.0023  i\n 28  11  i\n 28.0169  11.0026  i\n 28.5085  12.7353  i\n 28.7542  14.1891  i\n 29  15.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.bezier",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth bezier\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 15 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0 -5  i\n 2.07143  0.377851  i\n 4.14286  2.11052  i\n 6.21429  3.61832  i\n 8.28571  4.50982  i\n 10.3571  4.99033  i\n 12.4286  5.80547  i\n 14.5  7.14125  i\n 16.5714  8.60713  i\n 18.6429  9.70389  i\n 20.7143  10.2404  i\n 22.7857  10.8138  i\n 24.8571  12.0954  i\n 26.9286  13.6202  i\n 29  15.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.sbezier",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth sbezier\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 15 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0 -5  i\n 2.07143  0.377851  i\n 4.14286  2.11052  i\n 6.21429  3.61832  i\n 8.28571  4.50982  i\n 10.3571  4.99033  i\n 12.4286  5.80547  i\n 14.5  7.14125  i\n 16.5714  8.60713  i\n 18.6429  9.70389  i\n 20.7143  10.2404  i\n 22.7857  10.8138  i\n 24.8571  12.0954  i\n 26.9286  13.6202  i\n 29  15.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.kdensity",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth kdensity\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 15 points\n# Curve title: \"$n using 1:2\"\n# x y type\n 0  0.53455  i\n 2.07143  1.23408  i\n 4.14286  2.15182  i\n 6.21429  3.1631  i\n 8.28571  4.17003  i\n 10.3571  5.15916  i\n 12.4286  6.17273  i\n 14.5  7.22815  i\n 16.5714  8.27052  i\n 18.6429  9.19113  i\n 20.7143  9.85912  i\n 22.7857  10.1132  i\n 24.8571  9.75795  i\n 26.9286  8.6552  i\n 29  6.88587  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.path",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset samples 15\nplot $n using 1:2 smooth path\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\nplot $n using 1:2 smooth path\n                             ^\n\"t.gp\" line 35: unrecognized 'smooth' option\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.unique_averages_duplicates",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$u << EOD\n3 1\n1 2\n3 5\n2 2\n1 4\nEOD\nplot $u smooth unique, $u smooth frequency\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 4 points\n# Curve title: \"$u\"\n# x y type\n 1  3  i\n 2  2  i\n 3  3  i\n\n\n\n# Curve 1 of 2, 4 points\n# Curve title: \"$u\"\n# x y type\n 1  6  i\n 2  2  i\n 3  6  i\n\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.kdensity_bandwidth",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$s << EOD\n2.1\n3.5\n3.5\n4.0\n4.2\n5.9\n6.1\n6.1\n6.1\n7.4\n8.8\n9.0\n12.5\n3.3\n4.8\nEOD\nset samples 12\nplot $s using 1:(1) smooth kdensity bandwidth 0.7, $s using 1:(1) smooth kdensity\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 12 points\n# Curve title: \"$s using 1:(1)\"\n# x y type\n 2.1  0.876285  i\n 3.04545  2.08161  i\n 3.99091  2.69557  i\n 4.93636  1.9475  i\n 5.88182  2.47672  i\n 6.82727  1.66608  i\n 7.77273  0.925675  i\n 8.71818  1.19011  i\n 9.66364  0.633069  i\n 10.6091  0.0756429  i\n 11.5545  0.229897  i\n 12.5  0.56992  i\n\n\n# Curve 1 of 2, 12 points\n# Curve title: \"$s using 1:(1)\"\n# x y type\n 2.1  1.1162  i\n 3.04545  1.64226  i\n 3.99091  1.99678  i\n 4.93636  2.08674  i\n 5.88182  1.94159  i\n 6.82727  1.64457  i\n 7.77273  1.29442  i\n 8.71818  0.961787  i\n 9.66364  0.673581  i\n 10.6091  0.462114  i\n 11.5545  0.349601  i\n 12.5  0.290188  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.kdensity_period",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$s << EOD\n2.1\n3.5\n3.5\n4.0\n4.2\n5.9\n6.1\n6.1\n6.1\n7.4\n8.8\n9.0\n12.5\n3.3\n4.8\nEOD\nset samples 10\nplot $s using 1:(1) smooth kdensity bandwidth 1.0 period 6\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 10 points\n# Curve title: \"$s using 1:(1)\"\n# x y type\n 2.1  2.10067  i\n 3.25556  2.90858  i\n 4.41111  2.62146  i\n 5.56667  2.48348  i\n 6.72222  2.3278  i\n 7.87778  2.10932  i\n 9.03333  2.82539  i\n 10.1889  2.73453  i\n 11.3444  2.44548  i\n 12.5  2.3001  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.bins",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$s << EOD\n2.1\n3.5\n3.5\n4.0\n4.2\n5.9\n6.1\n6.1\n6.1\n7.4\n8.8\n9.0\n12.5\n3.3\n4.8\nEOD\nplot $s using 1:(1) bins=5, $s using 1:(1) bins binwidth=2 binrange [0:14]\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 5 points\n# Curve title: \"$s using 1:(1)\"\n# x y  N type\n 2.1  2     2 i\n 4.7  6     6 i\n 7.3  4     4 i\n 9.9  2     2 i\n 12.5  1     1 i\n\n\n# Curve 1 of 2, 6 points\n# Curve title: \"$s using 1:(1)\"\n# x y  N type\n 2.3  2     2 i\n 4.3  5     5 i\n 6.3  4     4 i\n 8.3  3     3 i\n 10.3  0     0 i\n 12.3  1     1 i\n\n"
+   },
+   "stderr": {
+    "text": "\nplot $s using 1:(1) bins=5, $s using 1:(1) bins binwidth=2 binrange [0:14]\n                                                           ^\n\"t.gp\" line 19: unexpected or unrecognized token: binrange\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.acsplines_weights",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset samples 10\nplot $d using 1:2:(1e-3) smooth acsplines, $d using 1:2:(100) smooth acsplines\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 10 points\n# Curve title: \"$d using 1:2:(1e-3)\"\n# x y type\n 1  1.98585  i\n 1.55556  3.11117  i\n 2.11111  4.23649  i\n 2.66667  5.36182  i\n 3.22222  6.48717  i\n 3.77778  7.61256  i\n 4.33333  8.73797  i\n 4.88889  9.86342  i\n 5.44444  10.9889  i\n 6  12.1145  i\n\n\n# Curve 1 of 2, 10 points\n# Curve title: \"$d using 1:2:(100)\"\n# x y type\n 1  2.0057  i\n 1.55556  3.19373  i\n 2.11111  4.28458  i\n 2.66667  5.28518  i\n 3.22222  6.42752  i\n 3.77778  7.6924  i\n 4.33333  8.72594  i\n 4.88889  9.63456  i\n 5.44444  10.8347  i\n 6  12.2853  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.csplines_two_points",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$p << EOD\n0 0\n1 1\nEOD\nset samples 5\nplot $p smooth csplines\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\nplot $p smooth csplines\n      ^\n\"t.gp\" line 7: Can't calculate splines, need at least 3 points\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.cumulative_normalized",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$s << EOD\n2.1\n3.5\n3.5\n4.0\n4.2\n5.9\n6.1\n6.1\n6.1\n7.4\n8.8\n9.0\n12.5\n3.3\n4.8\nEOD\nplot $s using 1:(1) smooth cnormal, $s using 1:(1) smooth cumulative\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 13 points\n# Curve title: \"$s using 1:(1)\"\n# x y type\n 2.1  0.0666667  i\n 3.3  0.133333  i\n 3.5  0.266667  i\n 4  0.333333  i\n 4.2  0.4  i\n 4.8  0.466667  i\n 5.9  0.533333  i\n 6.1  0.733333  i\n 7.4  0.8  i\n 8.8  0.866667  i\n 9  0.933333  i\n 12.5  1  i\n\n\n\n# Curve 1 of 2, 13 points\n# Curve title: \"$s using 1:(1)\"\n# x y type\n 2.1  1  i\n 3.3  2  i\n 3.5  4  i\n 4  5  i\n 4.2  6  i\n 4.8  7  i\n 5.9  8  i\n 6.1  11  i\n 7.4  12  i\n 8.8  13  i\n 9  14  i\n 12.5  15  i\n\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.bezier_samples",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset samples 7\nplot $d smooth bezier, $d smooth sbezier\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 7 points\n# Curve title: \"$d\"\n# x y type\n 1  2  i\n 1.83333  3.6966  i\n 2.66667  5.35926  i\n 3.5  7.025  i\n 4.33333  8.69383  i\n 5.16667  10.4028  i\n 6  12.3  i\n\n\n# Curve 1 of 2, 7 points\n# Curve title: \"$d\"\n# x y type\n 1  2  i\n 1.83333  3.6966  i\n 2.66667  5.35926  i\n 3.5  7.025  i\n 4.33333  8.69383  i\n 5.16667  10.4028  i\n 6  12.3  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.smooth_with_log",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset logscale y\nset samples 6\nplot $d smooth csplines\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"$d\"\n# x y type\n 1  2  i\n 2  4.1  i\n 3  5.9  i\n 4  8.2  i\n 5  9.8  i\n 6  12.3  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.zsort_and_convexhull",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$p << EOD\n0 0\n2 0\n1 1\n2 2\n0 2\n1 3\nEOD\nplot $p smooth convexhull, $p using 1:2:(-$2) smooth zsort\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\nplot $p smooth convexhull, $p using 1:2:(-$2) smooth zsort\n                         ^\n\"t.gp\" line 10: unrecognized 'smooth' option\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.unwrap",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$p << EOD\n0 3.0\n1 -3.0\n2 3.1\n3 -2.9\nEOD\nplot $p smooth unwrap\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 4 points\n# Curve title: \"$p\"\n# x y type\n 0  3  i\n 1  3.28319  i\n 2  3.1  i\n 3  3.38319  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "smooth.mcsplines_monotone",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$p << EOD\n0 0\n1 0\n2 1\n3 1\n4 5\nEOD\nset samples 9\nplot $p smooth mcsplines\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 15 points\n# Curve title: \"$p\"\n# x y type\n 0  0  i\n 0  0  i\n 0.444444  0  i\n 0.888889  0  i\n 1  0  i\n 1.33333  0.259259  i\n 1.77778  0.8738  i\n 2  1  i\n 2.22222  1  i\n 2.66667  1  i\n 3  1  i\n 3.11111  1.09328  i\n 3.55556  2.78326  i\n 3.77778  3.95748  i\n 4  5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ }
+]

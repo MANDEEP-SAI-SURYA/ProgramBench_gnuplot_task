@@ -1,0 +1,152 @@
+[
+ {
+  "id": "stats_matrix.s0",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nstats $n using 2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           30\n  Out of range:       0\n  Invalid:            0\n  Header records:     0\n  Blank:              0\n  Data Blocks:        1\n\n* COLUMN: \n  Mean:               7.0833\n  Std Dev:            5.5092\n  Sample StdDev:      5.6034\n  Skewness:          -0.1620\n  Kurtosis:           2.3852\n  Avg Dev:            4.5167\n  Sum:              212.5000\n  Sum Sq.:         2415.7500\n\n  Mean Err.:          1.0058\n  Std Dev Err.:       0.7112\n  Skewness Err.:      0.4472\n  Kurtosis Err.:      0.8944\n\n  Minimum:           -5.0000 [ 0]\n  Maximum:           17.5000 [27]\n  Quartile:           3.0000 \n  Median:             7.2500 \n  Quartile:          11.0000 \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats_matrix.s1",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nstats $n using 1:2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           30\n  Out of range:       0\n  Invalid:            0\n  Header records:     0\n  Blank:              0\n  Data Blocks:        1\n\n* COLUMNS:\n  Mean:              14.5000             7.0833\n  Std Dev:            8.6554             5.5092\n  Sample StdDev:      8.8034             5.6034\n  Skewness:           0.0000            -0.1620\n  Kurtosis:           1.7973             2.3852\n  Avg Dev:            7.5000             4.5167\n  Sum:              435.0000           212.5000\n  Sum Sq.:         8555.0000          2415.7500\n\n  Mean Err.:          1.5803             1.0058\n  Std Dev Err.:       1.1174             0.7112\n  Skewness Err.:      0.4472             0.4472\n  Kurtosis Err.:      0.8944             0.8944\n\n  Minimum:            0.0000 [ 0]       -5.0000 [ 0]\n  Maximum:           29.0000 [29]       17.5000 [27]\n  Quartile:           7.0000             3.0000\n  Median:            14.5000             7.2500\n  Quartile:          22.0000            11.0000\n\n  Linear Model:       y = 0.5234 x - 0.5054\n  Slope:              0.5234 +- 0.06846\n  Intercept:          -0.5054 +- 1.156\n  Correlation:        r = 0.8222\n  Sum xy:             4258\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats_matrix.s2",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nstats $n using ($1/2):($2*$2)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           30\n  Out of range:       0\n  Invalid:            0\n  Header records:     0\n  Blank:              0\n  Data Blocks:        1\n\n* COLUMNS:\n  Mean:               7.2500            80.5250\n  Std Dev:            4.3277            81.2389\n  Sample StdDev:      4.4017            82.6277\n  Skewness:           0.0000             1.1138\n  Kurtosis:           1.7973             3.3594\n  Avg Dev:            3.7500            65.8133\n  Sum:              217.5000          2415.7500\n  Sum Sq.:         2138.7500        392520.9375\n\n  Mean Err.:          0.7901            14.8321\n  Std Dev Err.:       0.5587            10.4879\n  Skewness Err.:      0.4472             0.4472\n  Kurtosis Err.:      0.8944             0.8944\n\n  Minimum:            0.0000 [ 0]        0.0000 [ 6]\n  Maximum:           14.5000 [29]      306.2500 [27]\n  Quartile:           3.5000            16.0000\n  Median:             7.2500            52.6250\n  Quartile:          11.0000           121.0000\n\n  Linear Model:       y = 14.02 x - 21.14\n  Slope:              14.02 +- 2.358\n  Intercept:          -21.14 +- 19.91\n  Correlation:        r = 0.747\n  Sum xy:             2.539e+04\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats_matrix.s3",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nstats $n using 2 prefix 'P'\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           30\n  Out of range:       0\n  Invalid:            0\n  Header records:     0\n  Blank:              0\n  Data Blocks:        1\n\n* COLUMN: \n  Mean:               7.0833\n  Std Dev:            5.5092\n  Sample StdDev:      5.6034\n  Skewness:          -0.1620\n  Kurtosis:           2.3852\n  Avg Dev:            4.5167\n  Sum:              212.5000\n  Sum Sq.:         2415.7500\n\n  Mean Err.:          1.0058\n  Std Dev Err.:       0.7112\n  Skewness Err.:      0.4472\n  Kurtosis Err.:      0.8944\n\n  Minimum:           -5.0000 [ 0]\n  Maximum:           17.5000 [27]\n  Quartile:           3.0000 \n  Median:             7.2500 \n  Quartile:          11.0000 \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats_matrix.s4",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nstats $n [0:10] using 1:2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\nstats $n [0:10] using 1:2\n         ^\n\"t.gp\" line 33: Unrecognized stats option\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats_matrix.s5",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nstats $n every ::3 using 2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           27\n  Out of range:       0\n  Invalid:            0\n  Header records:     0\n  Blank:              0\n  Data Blocks:        1\n\n* COLUMN: \n  Mean:               7.9259\n  Std Dev:            5.0124\n  Sample StdDev:      5.1079\n  Skewness:          -0.0923\n  Kurtosis:           2.3092\n  Avg Dev:            4.1139\n  Sum:              214.0000\n  Sum Sq.:         2374.5000\n\n  Mean Err.:          0.9646\n  Std Dev Err.:       0.6821\n  Skewness Err.:      0.4714\n  Kurtosis Err.:      0.9428\n\n  Minimum:           -2.5000 [ 0]\n  Maximum:           17.5000 [24]\n  Quartile:           4.5000 \n  Median:             8.0000 \n  Quartile:          12.0000 \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ }
+]

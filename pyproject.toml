@@ -1,0 +1,32 @@
+[project]
+name = "programbench"
+version = "1.0.0+gnuplot"
+description = "ProgramBench task contribution: rebuild gnuplot 5.4.9 from its binary and documentation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []          # the harness is standard-library only
+
+[project.optional-dependencies]
+yaml = ["pyyaml>=6"]
+
+[project.scripts]
+programbench = "programbench.cli.main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+programbench = ["data/**/*"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

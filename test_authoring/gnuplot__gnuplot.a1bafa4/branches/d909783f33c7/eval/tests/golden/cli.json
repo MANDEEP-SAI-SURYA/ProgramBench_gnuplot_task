@@ -1,0 +1,475 @@
+[
+ {
+  "id": "cli.version_long",
+  "argv": [
+   "--version"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "gnuplot 5.4 patchlevel 9\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.version_short",
+  "argv": [
+   "-V"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "gnuplot 5.4 patchlevel 9\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.help",
+  "argv": [
+   "--help"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "Usage: gnuplot [OPTION] ... [FILE]\n  -V, --version\n  -h, --help\n  -p  --persist\n  -s  --slow\n  -d  --default-settings\n  -c  scriptfile ARG1 ARG2 ... \n  -e  \"command1; command2; ...\"\ngnuplot 5.4 patchlevel 9\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.help_short",
+  "argv": [
+   "-h"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "Usage: gnuplot [OPTION] ... [FILE]\n  -V, --version\n  -h, --help\n  -p  --persist\n  -s  --slow\n  -d  --default-settings\n  -c  scriptfile ARG1 ARG2 ... \n  -e  \"command1; command2; ...\"\ngnuplot 5.4 patchlevel 9\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.unknown_option",
+  "argv": [
+   "--bogus"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "unrecognized option --bogus\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.missing_script",
+  "argv": [
+   "nope.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "line 0: Cannot load input from 'nope.gp'\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.e_multiple",
+  "argv": [
+   "-e",
+   "a=2; b=3",
+   "-e",
+   "print a*b"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "6\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.e_then_file",
+  "argv": [
+   "-e",
+   "x=5",
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print x**2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "25\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.file_then_e",
+  "argv": [
+   "t.gp",
+   "-e",
+   "print y"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "y=7\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "7\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.two_files",
+  "argv": [
+   "a.gp",
+   "b.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "a.gp": {
+    "text": "v = 'from a'\n"
+   },
+   "b.gp": {
+    "text": "print v . ' and b'\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "from a and b\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.stdin_script",
+  "argv": [],
+  "stdin": {
+   "text": "print 'stdin', 1+1\nprint undefined_name\nprint 'not reached'\n"
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "stdin 2\n         line 0: undefined variable: undefined_name\n\nnot reached\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.dash_stdin",
+  "argv": [
+   "-"
+  ],
+  "stdin": {
+   "text": "print 'dash'\n"
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "dash\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.exit_status",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 'a'\nexit status 3\nprint 'b'\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "a\n"
+   },
+   "exit_code": 3,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.exit_error_message",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 'a'\nexit error \"custom failure\"\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "a\n\"t.gp\" line 2: custom failure\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.quit_in_middle",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 1\nquit\nprint 2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.error_stops_script",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 1\nprint 1/\nprint 2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1\n\nprint 1/\n        ^\n\"t.gp\" line 2: invalid expression \n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.e_error_exit",
+  "argv": [
+   "-e",
+   "print sin()"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\nprint sin()\n          ^\nline 0: invalid expression \n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.default_settings_flag",
+  "argv": [
+   "-d",
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show samples\nshow angles\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tsampling rate is 100, 100\n\n\n\tAngles are in radians\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.call_with_args",
+  "argv": [
+   "-c",
+   "t.gp",
+   "first",
+   "2nd arg",
+   "3"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print ARGC, ARG0, ARG1, ARG2, ARG3\nprint ARGV\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "3 t.gp first 2nd arg 3\n[\"first\",\"2nd arg\",\"3\"]\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "cli.persist_ignored",
+  "argv": [
+   "-persist",
+   "-e",
+   "print 'ok'"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {},
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "ok\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ }
+]

@@ -1,0 +1,602 @@
+[
+ {
+  "id": "table_matrix.poly__s7",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 7\nplot [-2:2] x**3 - 3*x\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 7 points\n# Curve title: \"x**3 - 3*x\"\n# x y type\n-2 -2  i\n-1.33333  1.62963  i\n-0.666667  1.7037  i\n 0  0  i\n 0.666667 -1.7037  i\n 1.33333 -1.62963  i\n 2  2  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.poly__log",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 6\nset logscale x\nplot [0.1:10] x**3 - 3*x\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"x**3 - 3*x\"\n# x y type\n 0.1 -0.299  i\n 0.251189 -0.737717  i\n 0.630957 -1.64168  i\n 1.58489 -0.773608  i\n 3.98107  51.1525  i\n 10  970  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.poly__y_restricted",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 9\nset yrange [-0.5:0.5]\nplot [-2:2] x**3 - 3*x\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 9 points\n# Curve title: \"x**3 - 3*x\"\n# x y type\n-2 -2  o\n-1.5  1.125  o\n-1  2  o\n-0.5  1.375  o\n 0  0  i\n 0.5 -1.375  o\n 1 -2  o\n 1.5 -1.125  o\n 2  2  o\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.gauss__s7",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 7\nplot [-2:2] exp(-x**2)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 7 points\n# Curve title: \"exp(-x**2)\"\n# x y type\n-2  0.0183156  i\n-1.33333  0.169013  i\n-0.666667  0.64118  i\n 0  1  i\n 0.666667  0.64118  i\n 1.33333  0.169013  i\n 2  0.0183156  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.gauss__log",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 6\nset logscale x\nplot [0.1:10] exp(-x**2)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"exp(-x**2)\"\n# x y type\n 0.1  0.99005  i\n 0.251189  0.938854  i\n 0.630957  0.67159  i\n 1.58489  0.0811151  i\n 3.98107  1.30887e-07  i\n 10  3.72008e-44  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.gauss__y_restricted",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 9\nset yrange [-0.5:0.5]\nplot [-2:2] exp(-x**2)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 9 points\n# Curve title: \"exp(-x**2)\"\n# x y type\n-2  0.0183156  i\n-1.5  0.105399  i\n-1  0.367879  i\n-0.5  0.778801  o\n 0  1  o\n 0.5  0.778801  o\n 1  0.367879  i\n 1.5  0.105399  i\n 2  0.0183156  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.sinc__s7",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 7\nplot [-2:2] x == 0 ? 1 : sin(3*x)/(3*x)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 7 points\n# Curve title: \"x == 0 ? 1 : sin(3*x)/(3*x)\"\n# x y type\n-2 -0.0465692  i\n-1.33333 -0.189201  i\n-0.666667  0.454649  i\n 0  1  i\n 0.666667  0.454649  i\n 1.33333 -0.189201  i\n 2 -0.0465692  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.sinc__log",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 6\nset logscale x\nplot [0.1:10] x == 0 ? 1 : sin(3*x)/(3*x)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"x == 0 ? 1 : sin(3*x)/(3*x)\"\n# x y type\n 0.1  0.985067  i\n 0.251189  0.908008  i\n 0.630957  0.501133  i\n 1.58489 -0.210131  i\n 3.98107 -0.0488646  i\n 10 -0.0329344  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.sinc__y_restricted",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 9\nset yrange [-0.5:0.5]\nplot [-2:2] x == 0 ? 1 : sin(3*x)/(3*x)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 9 points\n# Curve title: \"x == 0 ? 1 : sin(3*x)/(3*x)\"\n# x y type\n-2 -0.0465692  i\n-1.5 -0.217229  i\n-1  0.04704  i\n-0.5  0.664997  o\n 0  1  o\n 0.5  0.664997  o\n 1  0.04704  i\n 1.5 -0.217229  i\n 2 -0.0465692  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.abs_saw__s7",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 7\nplot [-2:2] abs(x - floor(x) - 0.5)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 7 points\n# Curve title: \"abs(x - floor(x) - 0.5)\"\n# x y type\n-2  0.5  i\n-1.33333  0.166667  i\n-0.666667  0.166667  i\n 0  0.5  i\n 0.666667  0.166667  i\n 1.33333  0.166667  i\n 2  0.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.abs_saw__log",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 6\nset logscale x\nplot [0.1:10] abs(x - floor(x) - 0.5)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"abs(x - floor(x) - 0.5)\"\n# x y type\n 0.1  0.4  i\n 0.251189  0.248811  i\n 0.630957  0.130957  i\n 1.58489  0.0848932  i\n 3.98107  0.481072  i\n 10  0.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.abs_saw__y_restricted",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 9\nset yrange [-0.5:0.5]\nplot [-2:2] abs(x - floor(x) - 0.5)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 9 points\n# Curve title: \"abs(x - floor(x) - 0.5)\"\n# x y type\n-2  0.5  i\n-1.5  0  i\n-1  0.5  i\n-0.5  0  i\n 0  0.5  i\n 0.5  0  i\n 1  0.5  i\n 1.5  0  i\n 2  0.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.step__s7",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 7\nplot [-2:2] x < 0 ? -1 : 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 7 points\n# Curve title: \"x < 0 ? -1 : 1\"\n# x y type\n-2 -1  i\n-1.33333 -1  i\n-0.666667 -1  i\n 0  1  i\n 0.666667  1  i\n 1.33333  1  i\n 2  1  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.step__log",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 6\nset logscale x\nplot [0.1:10] x < 0 ? -1 : 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"x < 0 ? -1 : 1\"\n# x y type\n 0.1  1  i\n 0.251189  1  i\n 0.630957  1  i\n 1.58489  1  i\n 3.98107  1  i\n 10  1  i\n\n"
+   },
+   "stderr": {
+    "text": "Warning: empty y range [1:1], adjusting to [0.99:1.01]\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.step__y_restricted",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 9\nset yrange [-0.5:0.5]\nplot [-2:2] x < 0 ? -1 : 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 9 points\n# Curve title: \"x < 0 ? -1 : 1\"\n# x y type\n-2 -1  o\n-1.5 -1  o\n-1 -1  o\n-0.5 -1  o\n 0  1  o\n 0.5  1  o\n 1  1  o\n 1.5  1  o\n 2  1  o\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.lin__s7",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 7\nplot [-2:2] 0.5*x + 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 7 points\n# Curve title: \"0.5*x + 1\"\n# x y type\n-2  0  i\n-1.33333  0.333333  i\n-0.666667  0.666667  i\n 0  1  i\n 0.666667  1.33333  i\n 1.33333  1.66667  i\n 2  2  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.lin__log",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 6\nset logscale x\nplot [0.1:10] 0.5*x + 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"0.5*x + 1\"\n# x y type\n 0.1  1.05  i\n 0.251189  1.12559  i\n 0.630957  1.31548  i\n 1.58489  1.79245  i\n 3.98107  2.99054  i\n 10  6  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.lin__y_restricted",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 9\nset yrange [-0.5:0.5]\nplot [-2:2] 0.5*x + 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 9 points\n# Curve title: \"0.5*x + 1\"\n# x y type\n-2  0  i\n-1.5  0.25  i\n-1  0.5  i\n-0.5  0.75  o\n 0  1  o\n 0.5  1.25  o\n 1  1.5  o\n 1.5  1.75  o\n 2  2  o\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.atan__s7",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 7\nplot [-2:2] atan(2*x)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 7 points\n# Curve title: \"atan(2*x)\"\n# x y type\n-2 -1.32582  i\n-1.33333 -1.21203  i\n-0.666667 -0.927295  i\n 0  0  i\n 0.666667  0.927295  i\n 1.33333  1.21203  i\n 2  1.32582  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.atan__log",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 6\nset logscale x\nplot [0.1:10] atan(2*x)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"atan(2*x)\"\n# x y type\n 0.1  0.197396  i\n 0.251189  0.465548  i\n 0.630957  0.900678  i\n 1.58489  1.2652  i\n 3.98107  1.44586  i\n 10  1.52084  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.atan__y_restricted",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 9\nset yrange [-0.5:0.5]\nplot [-2:2] atan(2*x)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 9 points\n# Curve title: \"atan(2*x)\"\n# x y type\n-2 -1.32582  o\n-1.5 -1.24905  o\n-1 -1.10715  o\n-0.5 -0.785398  o\n 0  0  i\n 0.5  0.785398  o\n 1  1.10715  o\n 1.5  1.24905  o\n 2  1.32582  o\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.cosh__s7",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 7\nplot [-2:2] cosh(x)/10\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 7 points\n# Curve title: \"cosh(x)/10\"\n# x y type\n-2  0.37622  i\n-1.33333  0.202863  i\n-0.666667  0.123058  i\n 0  0.1  i\n 0.666667  0.123058  i\n 1.33333  0.202863  i\n 2  0.37622  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.cosh__log",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 6\nset logscale x\nplot [0.1:10] cosh(x)/10\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"cosh(x)/10\"\n# x y type\n 0.1  0.1005  i\n 0.251189  0.103171  i\n 0.630957  0.120575  i\n 1.58489  0.254187  i\n 3.98107  2.67965  i\n 10  1101.32  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table_matrix.cosh__y_restricted",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 9\nset yrange [-0.5:0.5]\nplot [-2:2] cosh(x)/10\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 9 points\n# Curve title: \"cosh(x)/10\"\n# x y type\n-2  0.37622  i\n-1.5  0.235241  i\n-1  0.154308  i\n-0.5  0.112763  i\n 0  0.1  i\n 0.5  0.112763  i\n 1  0.154308  i\n 1.5  0.235241  i\n 2  0.37622  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ }
+]

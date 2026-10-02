@@ -1,0 +1,877 @@
+[
+ {
+  "id": "table.function_default_samples",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nplot sin(x)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 100 points\n# Curve title: \"sin(x)\"\n# x y type\n-10  0.544021  i\n-9.79798  0.364599  i\n-9.59596  0.170347  i\n-9.39394 -0.0308337  i\n-9.19192 -0.23076  i\n-8.9899 -0.421301  i\n-8.78788 -0.594705  i\n-8.58586 -0.743921  i\n-8.38384 -0.862879  i\n-8.18182 -0.946741  i\n-7.9798 -0.992096  i\n-7.77778 -0.997098  i\n-7.57576 -0.961545  i\n-7.37374 -0.886882  i\n-7.17172 -0.776147  i\n-6.9697 -0.633843  i\n-6.76768 -0.465758  i\n-6.56566 -0.27873  i\n-6.36364 -0.0803643  i\n-6.16162  0.12127  i\n-5.9596  0.317972  i\n-5.75758  0.50174  i\n-5.55556  0.665102  i\n-5.35354  0.801411  i\n-5.15152  0.905124  i\n-4.94949  0.972022  i\n-4.74747  0.999385  i\n-4.54545  0.986099  i\n-4.34343  0.932705  i\n-4.14141  0.841375  i\n-3.93939  0.715822  i\n-3.73737  0.561155  i\n-3.53535  0.383664  i\n-3.33333  0.190568  i\n-3.13131 -0.0102793  i\n-2.92929 -0.210709  i\n-2.72727 -0.402567  i\n-2.52525 -0.578053  i\n-2.32323 -0.730026  i\n-2.12121 -0.852307  i\n-1.91919 -0.939922  i\n-1.71717 -0.989306  i\n-1.51515 -0.998452  i\n-1.31313 -0.966988  i\n-1.11111 -0.896192  i\n-0.909091 -0.788945  i\n-0.707071 -0.64961  i\n-0.505051 -0.483852  i\n-0.30303 -0.298414  i\n-0.10101 -0.100838  i\n 0.10101  0.100838  i\n 0.30303  0.298414  i\n 0.505051  0.483852  i\n 0.707071  0.64961  i\n 0.909091  0.788945  i\n 1.11111  0.896192  i\n 1.31313  0.966988  i\n 1.51515  0.998452  i\n 1.71717  0.989306  i\n 1.91919  0.939922  i\n 2.12121  0.852307  i\n 2.32323  0.730026  i\n 2.52525  0.578053  i\n 2.72727  0.402567  i\n 2.92929  0.210709  i\n 3.13131  0.0102793  i\n 3.33333 -0.190568  i\n 3.53535 -0.383664  i\n 3.73737 -0.561155  i\n 3.93939 -0.715822  i\n 4.14141 -0.841375  i\n 4.34343 -0.932705  i\n 4.54545 -0.986099  i\n 4.74747 -0.999385  i\n 4.94949 -0.972022  i\n 5.15152 -0.905124  i\n 5.35354 -0.801411  i\n 5.55556 -0.665102  i\n 5.75758 -0.50174  i\n 5.9596 -0.317972  i\n 6.16162 -0.12127  i\n 6.36364  0.0803643  i\n 6.56566  0.27873  i\n 6.76768  0.465758  i\n 6.9697  0.633843  i\n 7.17172  0.776147  i\n 7.37374  0.886882  i\n 7.57576  0.961545  i\n 7.77778  0.997098  i\n 7.9798  0.992096  i\n 8.18182  0.946741  i\n 8.38384  0.862879  i\n 8.58586  0.743921  i\n 8.78788  0.594705  i\n 8.9899  0.421301  i\n 9.19192  0.23076  i\n 9.39394  0.0308337  i\n 9.59596 -0.170347  i\n 9.79798 -0.364599  i\n 10 -0.544021  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.function_samples_range",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 11\nset xrange [0:1]\nplot x**2, 1-x\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 11 points\n# Curve title: \"x**2\"\n# x y type\n 0  0  i\n 0.1  0.01  i\n 0.2  0.04  i\n 0.3  0.09  i\n 0.4  0.16  i\n 0.5  0.25  i\n 0.6  0.36  i\n 0.7  0.49  i\n 0.8  0.64  i\n 0.9  0.81  i\n 1  1  i\n\n\n# Curve 1 of 2, 11 points\n# Curve title: \"1-x\"\n# x y type\n 0  1  i\n 0.1  0.9  i\n 0.2  0.8  i\n 0.3  0.7  i\n 0.4  0.6  i\n 0.5  0.5  i\n 0.6  0.4  i\n 0.7  0.3  i\n 0.8  0.2  i\n 0.9  0.1  i\n 1  0  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.two_functions_titles",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 5\nplot [0:4] x title 'line', x**2 notitle\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 5 points\n# Curve title: \"line\"\n# x y type\n 0  0  i\n 1  1  i\n 2  2  i\n 3  3  i\n 4  4  i\n\n\n# Curve 1 of 2, 5 points\n# x y type\n 0  0  i\n 1  1  i\n 2  4  i\n 3  9  i\n 4  16  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.undefined_points",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 9\nplot [-2:2] sqrt(x), 1/x\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 9 points\n# Curve title: \"sqrt(x)\"\n# x y type\n 0  0  u\n 0  0  u\n 0  0  u\n 0  0  u\n 0  0  i\n 0.5  0.707107  i\n 1  1  i\n 1.5  1.22474  i\n 2  1.41421  i\n\n\n# Curve 1 of 2, 9 points\n# Curve title: \"1/x\"\n# x y type\n-2 -0.5  i\n-1.5 -0.666667  i\n-1 -1  i\n-0.5 -2  i\n 0  0  u\n 0.5  2  i\n 1  1  i\n 1.5  0.666667  i\n 2  0.5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.log_x_sampling",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 8\nset logscale x\nplot [1:1000] log10(x)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 8 points\n# Curve title: \"log10(x)\"\n# x y type\n 1  0  i\n 2.6827  0.428571  i\n 7.19686  0.857143  i\n 19.307  1.28571  i\n 51.7947  1.71429  i\n 138.95  2.14286  i\n 372.759  2.57143  i\n 1000  3  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.data_basic",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nplot $d\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"$d\"\n# x y type\n 1  2  i\n 2  4.1  i\n 3  5.9  i\n 4  8.2  i\n 5  9.8  i\n 6  12.3  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.data_using_expressions",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nplot $d using 1:($2*2), '' using ($1+0.5):(sqrt($2)) title 'sqrt'\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 6 points\n# Curve title: \"$d using 1:($2*2)\"\n# x y type\n 1  4  i\n 2  8.2  i\n 3  11.8  i\n 4  16.4  i\n 5  19.6  i\n 6  24.6  i\n\n\n# Curve 1 of 2, 6 points\n# Curve title: \"sqrt\"\n# x y type\n 1.5  1.41421  i\n 2.5  2.02485  i\n 3.5  2.42899  i\n 4.5  2.86356  i\n 5.5  3.1305  i\n 6.5  3.50714  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.data_using_column_functions",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nplot $d using 0:2, $d using (column(0)):(valid(2) ? $2 : 1/0), $d using 1:(stringcolumn(1).'x')\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 3, 6 points\n# Curve title: \"$d using 0:2\"\n# x y type\n 0  2  i\n 1  4.1  i\n 2  5.9  i\n 3  8.2  i\n 4  9.8  i\n 5  12.3  i\n\n\n# Curve 1 of 3, 6 points\n# Curve title: \"$d using (column(0)):(valid(2) ? $2 : 1/0)\"\n# x y type\n 0  2  i\n 1  4.1  i\n 2  5.9  i\n 3  8.2  i\n 4  9.8  i\n 5  12.3  i\n\n\n# Curve 2 of 3, 5 points\n# Curve title: \"$d using 1:(stringcolumn(1).'x')\"\n# x y type\n 1  NaN  u\n 2  NaN  u\n 3  NaN  u\n 4  NaN  u\n 5  NaN  u\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.data_every",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nplot $d every 2, $d every ::2::4\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 3 points\n# Curve title: \"$d every 2\"\n# x y type\n 1  2  i\n 3  5.9  i\n 5  9.8  i\n\n\n# Curve 1 of 2, 3 points\n# Curve title: \"$d every ::2::4\"\n# x y type\n 3  5.9  i\n 4  8.2  i\n 5  9.8  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.data_index_blocks",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n# x y err\n0 1.0 0.1\n1 2.7 0.2\n2 7.4 0.3\n3 20.1 0.5\n4 54.6 1.0\n\n\n0 3\n1 2\n2 4\n3 1\n4 5\nEOD\nplot $d index 0 using 1:2, $d index 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 5 points\n# Curve title: \"$d index 0 using 1:2\"\n# x y type\n 0  1  i\n 1  2.7  i\n 2  7.4  i\n 3  20.1  i\n 4  54.6  i\n\n\n# Curve 1 of 2, 5 points\n# Curve title: \"$d index 1\"\n# x y type\n 0  3  i\n 1  2  i\n 2  4  i\n 3  1  i\n 4  5  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.data_with_errorbars",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n# x y err\n0 1.0 0.1\n1 2.7 0.2\n2 7.4 0.3\n3 20.1 0.5\n4 54.6 1.0\n\n\n0 3\n1 2\n2 4\n3 1\n4 5\nEOD\nplot $d index 0 using 1:2:3 with yerrorbars\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 5 points\n# Curve title: \"$d index 0 using 1:2:3\"\n# x y ylow yhigh type\n 0  1  0.9  1.1  i\n 1  2.7  2.5  2.9  i\n 2  7.4  7.1  7.7  i\n 3  20.1  19.6  20.6  i\n 4  54.6  53.6  55.6  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.data_missing_and_comments",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$m << EOD\n# header\n1 1\n2 ?\n3 NaN\n\n4 4\n5 abc\n6 6\nEOD\nset datafile missing '?'\nplot $m\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 5 points\n# Curve title: \"$m\"\n# x y type\n 1  1  i\n 3  NaN  u\n\n 4  4  i\n 6  6  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.csv_separator",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$c << EOD\nx,y,z\n1,2,3\n4,,6\n7,8,9\nEOD\nset datafile separator comma\nplot $c using 1:3, $c using 1:2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 3 points\n# Curve title: \"$c using 1:3\"\n# x y type\n 1  3  i\n 4  6  i\n 7  9  i\n\n\n# Curve 1 of 2, 2 points\n# Curve title: \"$c using 1:2\"\n# x y type\n 1  2  i\n 7  8  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.columnheader",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$c << EOD\nname value other\n1 10 100\n2 20 200\nEOD\nplot $c using 1:2 title columnheader, $c using 1:3 title columnheader(3)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 2 points\n# Curve title: \"value\"\n# x y type\n 1  10  i\n 2  20  i\n\n\n# Curve 1 of 2, 2 points\n# Curve title: \"other\"\n# x y type\n 1  100  i\n 2  200  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.named_columns",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$c << EOD\nalpha beta\n1 10\n2 20\nEOD\nset key autotitle columnhead\nplot $c using 'alpha':'beta'\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 2 points\n# Curve title: \"beta\"\n# x y type\n 1  10  i\n 2  20  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.time_data",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$t << EOD\n2020-01-01 5\n2020-01-15 7\n2020-03-01 2\nEOD\nset xdata time\nset timefmt '%Y-%m-%d'\nset format x '%d/%m'\nplot $t using 1:2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 3 points\n# Curve title: \"$t using 1:2\"\n# x y type\n\"01/01\"  5  i\n\"15/01\"  7  i\n\"01/03\"  2  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.table_to_datablock",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset table $out\nset samples 4\nplot [0:3] x*x\nunset table\nprint $out\nprint |$out|\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n# Curve 0 of 1, 4 points\n# Curve title: \"x*x\"\n# x y type\n 0  0  i\n 1  1  i\n 2  4  i\n 3  9  i\n\n\n9\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.table_with_table_style",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nplot $d using 1:2:($1*$2) with table\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": " 1\t 2\t 2\n 2\t 4.1\t 8.2\n 3\t 5.9\t 17.7\n 4\t 8.2\t 32.8\n 5\t 9.8\t 49\n 6\t 12.3\t 73.8\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.table_with_table_format",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset table separator comma\nplot $d using 1:($2/3) with table\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": " 1, 0.666667\n 2, 1.36667\n 3, 1.96667\n 4, 2.73333\n 5, 3.26667\n 6, 4.1\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.splot_function",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset isosamples 3\nset samples 3\nsplot [0:1][0:1] x+y\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Surface 0 of 1 surfaces\n\n# Curve title: \"x+y\"\n\n# IsoCurve 0, 3 points\n# x y z type\n 0  0  0 i\n 0.5  0  0.5 i\n 1  0  1 i\n\n# IsoCurve 1, 3 points\n# x y z type\n 0  0.5  0.5 i\n 0.5  0.5  1 i\n 1  0.5  1.5 i\n\n# IsoCurve 2, 3 points\n# x y z type\n 0  1  1 i\n 0.5  1  1.5 i\n 1  1  2 i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.splot_data",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$g << EOD\n0 0 1\n0 1 2\n\n1 0 3\n1 1 4\nEOD\nsplot $g using 1:2:3\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Surface 0 of 1 surfaces\n\n# Curve title: \"$g using 1:2:3\"\n\n# IsoCurve 0, 2 points\n# x y z type\n 1  0  3 i\n 1  1  4 i\n\n# IsoCurve 1, 2 points\n# x y z type\n 0  0  1 i\n 0  1  2 i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.parametric",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset parametric\nset samples 5\nplot [0:pi] cos(t), sin(t)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 5 points\n# Curve title: \"cos(t), sin(t)\"\n# x y type\n 1  0  i\n 0.707107  0.707107  i\n 6.12323e-17  1  i\n-0.707107  0.707107  i\n-1  1.22465e-16  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.polar",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset polar\nset samples 5\nplot [0:pi] 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 5 points\n# Curve title: \"1\"\n# x y type\n 1  0  i\n 0.707107  0.707107  i\n 6.12323e-17  1  i\n-0.707107  0.707107  i\n-1  1.22465e-16  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.iteration_plot",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 3\nplot [0:2] for [n=1:3] x**n title sprintf('n=%d', n)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 3, 3 points\n# Curve title: \"n=1\"\n# x y type\n 0  0  i\n 1  1  i\n 2  2  i\n\n\n# Curve 1 of 3, 3 points\n# Curve title: \"n=2\"\n# x y type\n 0  0  i\n 1  1  i\n 2  4  i\n\n\n# Curve 2 of 3, 3 points\n# Curve title: \"n=3\"\n# x y type\n 0  0  i\n 1  1  i\n 2  8  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.histogram_style_table",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$h << EOD\nA 3 4\nB 5 1\nC 2 6\nEOD\nset style data histograms\nplot $h using 2:xtic(1), '' using 3\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 3 points\n# Curve title: \"$h using 2:xtic(1)\"\n# x y type\n 0  3  i\n 1  5  i\n 2  2  i\n\n\n# Curve 1 of 2, 3 points\n# Curve title: \"'' using 3\"\n# x y type\n 0  4  i\n 1  1  i\n 2  6  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.boxes_and_steps",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nplot $d with boxes, $d with steps, $d with fsteps\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 3, 6 points\n# Curve title: \"$d\"\n# x y xlow xhigh type\n 1  2  1  1  i\n 2  4.1  2  2  i\n 3  5.9  3  3  i\n 4  8.2  4  4  i\n 5  9.8  5  5  i\n 6  12.3  6  6  i\n\n\n# Curve 1 of 3, 6 points\n# Curve title: \"$d\"\n# x y type\n 1  2  i\n 2  4.1  i\n 3  5.9  i\n 4  8.2  i\n 5  9.8  i\n 6  12.3  i\n\n\n# Curve 2 of 3, 6 points\n# Curve title: \"$d\"\n# x y type\n 1  2  i\n 2  4.1  i\n 3  5.9  i\n 4  8.2  i\n 5  9.8  i\n 6  12.3  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.filledcurves_table",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nplot $d using 1:2:($2+1) with filledcurves\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"$d using 1:2:($2+1)\"\n# x y1 y2 type\n 1  2  3  i\n 2  4.1  5.1  i\n 3  5.9  6.9  i\n 4  8.2  9.2  i\n 5  9.8  10.8  i\n 6  12.3  13.3  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.ranges_clip_data",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset xrange [2:4.5]\nplot $d\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"$d\"\n# x y type\n 1  2  o\n 2  4.1  i\n 3  5.9  i\n 4  8.2  i\n 5  9.8  o\n 6  12.3  o\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.autoscale_extend_table",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset samples 4\nplot [-1:1] 3*x\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 4 points\n# Curve title: \"3*x\"\n# x y type\n-1 -3  i\n-0.333333 -1  i\n 0.333333  1  i\n 1  3  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.x2_y2_axes",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nplot $d axes x2y2, $d using 1:($2*10) axes x1y2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 6 points\n# Curve title: \"$d\"\n# x y type\n 1  2  i\n 2  4.1  i\n 3  5.9  i\n 4  8.2  i\n 5  9.8  i\n 6  12.3  i\n\n\n# Curve 1 of 2, 6 points\n# Curve title: \"$d using 1:($2*10)\"\n# x y type\n 1  20  i\n 2  41  i\n 3  59  i\n 4  82  i\n 5  98  i\n 6  123  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.sample_keyword",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nplot sample [0:1:0.25] x, [2:3:0.5] x**2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 100 points\n# Curve title: \"[0:1:0.25] x\"\n# x y type\n 0  0  i\n 0.010101  0.010101  i\n 0.020202  0.020202  i\n 0.030303  0.030303  i\n 0.040404  0.040404  i\n 0.0505051  0.0505051  i\n 0.0606061  0.0606061  i\n 0.0707071  0.0707071  i\n 0.0808081  0.0808081  i\n 0.0909091  0.0909091  i\n 0.10101  0.10101  i\n 0.111111  0.111111  i\n 0.121212  0.121212  i\n 0.131313  0.131313  i\n 0.141414  0.141414  i\n 0.151515  0.151515  i\n 0.161616  0.161616  i\n 0.171717  0.171717  i\n 0.181818  0.181818  i\n 0.191919  0.191919  i\n 0.20202  0.20202  i\n 0.212121  0.212121  i\n 0.222222  0.222222  i\n 0.232323  0.232323  i\n 0.242424  0.242424  i\n 0.252525  0.252525  i\n 0.262626  0.262626  i\n 0.272727  0.272727  i\n 0.282828  0.282828  i\n 0.292929  0.292929  i\n 0.30303  0.30303  i\n 0.313131  0.313131  i\n 0.323232  0.323232  i\n 0.333333  0.333333  i\n 0.343434  0.343434  i\n 0.353535  0.353535  i\n 0.363636  0.363636  i\n 0.373737  0.373737  i\n 0.383838  0.383838  i\n 0.393939  0.393939  i\n 0.40404  0.40404  i\n 0.414141  0.414141  i\n 0.424242  0.424242  i\n 0.434343  0.434343  i\n 0.444444  0.444444  i\n 0.454545  0.454545  i\n 0.464646  0.464646  i\n 0.474747  0.474747  i\n 0.484848  0.484848  i\n 0.494949  0.494949  i\n 0.505051  0.505051  i\n 0.515152  0.515152  i\n 0.525253  0.525253  i\n 0.535354  0.535354  i\n 0.545455  0.545455  i\n 0.555556  0.555556  i\n 0.565657  0.565657  i\n 0.575758  0.575758  i\n 0.585859  0.585859  i\n 0.59596  0.59596  i\n 0.606061  0.606061  i\n 0.616162  0.616162  i\n 0.626263  0.626263  i\n 0.636364  0.636364  i\n 0.646465  0.646465  i\n 0.656566  0.656566  i\n 0.666667  0.666667  i\n 0.676768  0.676768  i\n 0.686869  0.686869  i\n 0.69697  0.69697  i\n 0.707071  0.707071  i\n 0.717172  0.717172  i\n 0.727273  0.727273  i\n 0.737374  0.737374  i\n 0.747475  0.747475  i\n 0.757576  0.757576  i\n 0.767677  0.767677  i\n 0.777778  0.777778  i\n 0.787879  0.787879  i\n 0.79798  0.79798  i\n 0.808081  0.808081  i\n 0.818182  0.818182  i\n 0.828283  0.828283  i\n 0.838384  0.838384  i\n 0.848485  0.848485  i\n 0.858586  0.858586  i\n 0.868687  0.868687  i\n 0.878788  0.878788  i\n 0.888889  0.888889  i\n 0.89899  0.89899  i\n 0.909091  0.909091  i\n 0.919192  0.919192  i\n 0.929293  0.929293  i\n 0.939394  0.939394  i\n 0.949495  0.949495  i\n 0.959596  0.959596  i\n 0.969697  0.969697  i\n 0.979798  0.979798  i\n 0.989899  0.989899  i\n 1  1  i\n\n\n# Curve 1 of 2, 100 points\n# Curve title: \"[2:3:0.5] x**2\"\n# x y type\n 2  4  i\n 2.0101  4.04051  i\n 2.0202  4.08122  i\n 2.0303  4.12213  i\n 2.0404  4.16325  i\n 2.05051  4.20457  i\n 2.06061  4.2461  i\n 2.07071  4.28783  i\n 2.08081  4.32976  i\n 2.09091  4.3719  i\n 2.10101  4.41424  i\n 2.11111  4.45679  i\n 2.12121  4.49954  i\n 2.13131  4.5425  i\n 2.14141  4.58565  i\n 2.15152  4.62902  i\n 2.16162  4.67258  i\n 2.17172  4.71636  i\n 2.18182  4.76033  i\n 2.19192  4.80451  i\n 2.20202  4.84889  i\n 2.21212  4.89348  i\n 2.22222  4.93827  i\n 2.23232  4.98327  i\n 2.24242  5.02847  i\n 2.25253  5.07387  i\n 2.26263  5.11948  i\n 2.27273  5.16529  i\n 2.28283  5.2113  i\n 2.29293  5.25752  i\n 2.30303  5.30395  i\n 2.31313  5.35058  i\n 2.32323  5.39741  i\n 2.33333  5.44444  i\n 2.34343  5.49168  i\n 2.35354  5.53913  i\n 2.36364  5.58678  i\n 2.37374  5.63463  i\n 2.38384  5.68269  i\n 2.39394  5.73095  i\n 2.40404  5.77941  i\n 2.41414  5.82808  i\n 2.42424  5.87695  i\n 2.43434  5.92603  i\n 2.44444  5.97531  i\n 2.45455  6.02479  i\n 2.46465  6.07448  i\n 2.47475  6.12438  i\n 2.48485  6.17447  i\n 2.49495  6.22477  i\n 2.50505  6.27528  i\n 2.51515  6.32599  i\n 2.52525  6.3769  i\n 2.53535  6.42802  i\n 2.54545  6.47934  i\n 2.55556  6.53086  i\n 2.56566  6.58259  i\n 2.57576  6.63453  i\n 2.58586  6.68666  i\n 2.59596  6.73901  i\n 2.60606  6.79155  i\n 2.61616  6.8443  i\n 2.62626  6.89726  i\n 2.63636  6.95041  i\n 2.64646  7.00378  i\n 2.65657  7.05734  i\n 2.66667  7.11111  i\n 2.67677  7.16509  i\n 2.68687  7.21926  i\n 2.69697  7.27365  i\n 2.70707  7.32823  i\n 2.71717  7.38302  i\n 2.72727  7.43802  i\n 2.73737  7.49321  i\n 2.74747  7.54862  i\n 2.75758  7.60422  i\n 2.76768  7.66003  i\n 2.77778  7.71605  i\n 2.78788  7.77227  i\n 2.79798  7.82869  i\n 2.80808  7.88532  i\n 2.81818  7.94215  i\n 2.82828  7.99918  i\n 2.83838  8.05642  i\n 2.84848  8.11387  i\n 2.85859  8.17151  i\n 2.86869  8.22936  i\n 2.87879  8.28742  i\n 2.88889  8.34568  i\n 2.89899  8.40414  i\n 2.90909  8.46281  i\n 2.91919  8.52168  i\n 2.92929  8.58076  i\n 2.93939  8.64004  i\n 2.94949  8.69952  i\n 2.9596  8.75921  i\n 2.9697  8.8191  i\n 2.9798  8.8792  i\n 2.9899  8.9395  i\n 3  9  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.dummy_variable",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\nset dummy u\nset samples 3\nplot [0:2] u**3\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 3 points\n# Curve title: \"u**3\"\n# x y type\n 0  0  i\n 1  1  i\n 2  8  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.binary_operators_in_using",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nplot $d using 1:($2 > 5 ? $2 : NaN)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 1, 6 points\n# Curve title: \"$d using 1:($2 > 5 ? $2 : NaN)\"\n# x y type\n 1  NaN  u\n 2  NaN  u\n 3  5.9  i\n 4  8.2  i\n 5  9.8  i\n 6  12.3  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.array_plot",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\narray A = [5, 3, 8]\nplot A, A using 1:(A[$1]*2)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": "\n# Curve 0 of 2, 3 points\n# Curve title: \"A\"\n# x y type\n 1  5  i\n 2  3  i\n 3  8  i\n\n\n# Curve 1 of 2, 3 points\n# Curve title: \"A using 1:(A[$1]*2)\"\n# x y type\n 1  10  i\n 2  6  i\n 3  16  i\n\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "table.string_column_xtic",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set table\n$h << EOD\nmon 1\ntue 3\nwed 2\nEOD\nplot $h using 0:2:xtic(1) with table\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": " 0\t 1\n 1\t 3\n 2\t 2\n"
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ }
+]

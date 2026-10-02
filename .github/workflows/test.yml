@@ -1,0 +1,28 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - run: python -m pytest -q tests                       # harness self-tests (reference 100%, stub 0%, anti-cheat)
+      - run: PROGRAMBENCH_SLOW=1 python -m pytest -q tests -k gold   # gold submission built from source
+
+  gold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y autoconf automake bison zlib1g-dev python3-pytest
+      - run: cd src && python3 -m programbench gold

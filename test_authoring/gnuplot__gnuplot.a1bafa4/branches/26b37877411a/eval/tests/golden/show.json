@@ -1,0 +1,1627 @@
+[
+ {
+  "id": "show.default_xrange",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show xrange\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tset xrange [ * : * ] noreverse nowriteback  # (currently [-10.0000:10.0000] )\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_yrange",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show yrange\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tset yrange [ * : * ] noreverse nowriteback  # (currently [-10.0000:10.0000] )\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_samples",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show samples\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tsampling rate is 100, 100\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_angles",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show angles\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tAngles are in radians\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_style_data",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show style data\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tData are plotted with points\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_style_function",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show style function\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tFunctions are plotted with lines\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_key",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show key\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tkey is ON, position: top right vertical fixed  offset: (character 0, 0)\n\tkey is right justified, not reversed, not inverted, enhanced and not boxed\n\tsample length is 4 characters\n\tvertical spacing is 1 characters\n\twidth adjustment is 0 characters\n\theight adjustment is 0 characters\n\tcurves are automatically titled with filename\n\tmaximum number of columns is calculated automatically\n\tmaximum number of rows is calculated automatically\n\n\tkey title is \"\" center justified \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_border",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show border\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tborder 31 (0x1F) is drawn in front layer with\n\t  lt black linewidth 1.000 dashtype solid\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_logscale",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show logscale\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tlogscaling on none\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_xtics",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show xtics\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\ttics are in back of plot\n\tx-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tx-axis tics:\ton border and mirrored on opposite border\n\t  labels are justified automatically, format \"% h\" and are not rotated,\n\t    offset (character 0, 0, 0)\n\t  intervals computed automatically\n\tx2-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tx2-axis tics:\tOFF\n\tScales for user tic levels 2-4 are:  1, 1, 1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_ytics",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show ytics\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\ttics are in back of plot\n\ty-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\ty-axis tics:\ton border and mirrored on opposite border\n\t  labels are justified automatically, format \"% h\" and are not rotated,\n\t    offset (character 0, 0, 0)\n\t  intervals computed automatically\n\ty2-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\ty2-axis tics:\tOFF\n\tScales for user tic levels 2-4 are:  1, 1, 1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_mxtics",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show mxtics\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\tminor xtics are off for linear scales\n\tminor xtics are computed automatically for log scales\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_grid",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show grid\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tgrid is OFF\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_title",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show title\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\ttitle is \"\", offset at (character 0, 0, 0)center justified  textcolor lt -1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_xlabel",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show xlabel\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\txlabel is \"\", offset at (character 0, 0, 0)center justified  textcolor lt -1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_size",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show size\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tsize is scaled by 1,1\n\tNo attempt to control aspect ratio\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_origin",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show origin\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\torigin is set to 0,0\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_margin",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show margin\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tlmargin is computed automatically\n\trmargin is computed automatically\n\tbmargin is computed automatically\n\ttmargin is computed automatically\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_datafile",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show datafile\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tNo missing data string set for datafile\n\tdatafile fields separated by whitespace\n\tComments chars are \"#\"\n\tFirst line is treated as headers only if accessed explicitly\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_zero",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show zero\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tzero is 1e-08\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_clip",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show clip\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tpoint clip is OFF\n\tclipping lines with one end out of range (clip one)\n\tnot drawing lines with both ends out of range (clip two)\n\tnot clipping lines on polar plot at maximum radius\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_offsets",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show offsets\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\toffsets are 0, 0, 0, 0\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_isosamples",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show isosamples\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tiso sampling rate is 10, 10\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_view",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show view\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tview is 60 rot_x, 30 rot_z, 1 scale, 1 scale_z\n\t\t axes are independently scaled\n\t\t azimuth 0\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_palette",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show palette\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\tpalette is COLOR\n\trgb color mapping by rgbformulae are 7,5,15\n\tfigure is POSITIVE\n\tall color formulae ARE NOT written into output postscript file\n\tallocating ALL remaining color positions for discrete palette terminals\n\tColor-Model: RGB\n\tgamma is 1.5\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_colorbox",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show colorbox\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\tcolor box with border, DEFAULT line type is drawn front\n\tat DEFAULT position\n\tcolor gradient is vertical \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_boxwidth",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show boxwidth\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tboxwidth is auto\n\tboxdepth is 0\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_style_line",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show style line\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_dummy",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show dummy\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tdummy variables are x y \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_encoding",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show encoding\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tnominal character encoding is utf8\n\thowever LC_CTYPE in current locale is C.UTF-8\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_timefmt",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show timefmt\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tDefault format for reading time data is \"%d/%m/%y,%H:%M\"\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_xdata",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show xdata\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tx is set to numerical\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_fit",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show fit\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tfit will output brief results to console and log-file.\n\tfit can handle up to 12 independent variables\n\tfit will prescale parameters by their initial values\n\tfit will place parameter errors in variables\n\tfit will not place covariances in variables\n\tfit will scale parameter errors with the reduced chi square\n\tlog-file for fits is unchanged from the environment default of\n\t\t'fit.log'\n\tfits will be considered to have converged if  delta chisq < chisq * 1e-05\n\tfit has no limit in the number of iterations\n\tfit will default to `unitweights` if no `error`keyword is given on the command line.\n\tfit can run the following command when interrupted:\n\t\t'replot'\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_loadpath",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show loadpath\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tloadpath is empty\n\tgnuplotrc is read from /usr/local/share/gnuplot/5.4\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_bars",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show bars\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "set errorbars front 1.000000 \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_pointsize",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show pointsize\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tpointsize is 1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_polar",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show polar\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tpolar is OFF\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_parametric",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show parametric\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tparametric is OFF\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_contour",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show contour\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tcontour for surfaces are not drawn\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_hidden3d",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show hidden3d\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\thidden surface is drawn\n\t  Hidden3d elements will be drawn in back of non-hidden3d elements\n\t  Back side of surfaces has linestyle offset of 1\n\t  Bit-Mask of Lines to draw in each triangle is 3\n\t  1: Outranged and undefined datapoints are omitted from the surface.\n\t  Will use other diagonal if it gives a less jaggy outline\n\t  Will draw diagonal visibly if quadrangle is 'bent over'\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_minussign",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show minussign\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tno special minus sign\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_decimalsign",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show decimalsign\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tdecimalsign for input is  . \n\tdecimalsign for output has default value (normally '.')\n\tdegree sign for output is ° \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_tics",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show tics\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\ttics are in back of plot\n\tx-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tx-axis tics:\ton border and mirrored on opposite border\n\t  labels are justified automatically, format \"% h\" and are not rotated,\n\t    offset (character 0, 0, 0)\n\t  intervals computed automatically\n\tx2-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tx2-axis tics:\tOFF\n\ty-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\ty-axis tics:\ton border and mirrored on opposite border\n\t  labels are justified automatically, format \"% h\" and are not rotated,\n\t    offset (character 0, 0, 0)\n\t  intervals computed automatically\n\ty2-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\ty2-axis tics:\tOFF\n\tz-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tz-axis tics:\ton border\n\t  labels are justified automatically, format \"% h\" and are not rotated,\n\t    offset (character 0, 0, 0)\n\t  intervals computed automatically\n\tcb-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tcb-axis tics:\ton border and mirrored on opposite border\n\t  labels are justified automatically, format \"% h\" and are not rotated,\n\t    offset (character 0, 0, 0)\n\t  intervals computed automatically\n\tScales for user tic levels 2-4 are:  1, 1, 1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_autoscale",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show autoscale\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tautoscaling is \tx: ON, \ty: ON, \n\t               \tx2: ON, \ty2: ON, \n\t               \tz: ON, \tcb: ON, \n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_jitter",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show jitter\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\tno jitter\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.default_errorbars",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "show errorbars\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "set errorbars front 1.000000 \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.xrange_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set xrange [-2.5:10]\nshow xrange\nset xrange [*:5] reverse\nshow xrange\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tset xrange [ -2.50000 : 10.0000 ] noreverse nowriteback\n\n\n\tset xrange [ * : 5.00000 ] reverse nowriteback  # (currently [-10.0000:10.0000] )\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.key_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set key top left box title 'Legend' font ',10' spacing 1.5\nshow key\nunset key\nshow key\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tkey is ON, position: top left vertical fixed  offset: (character 0, 0)\n\tkey is right justified, not reversed, not inverted, enhanced and boxed\n\twith  lt black linewidth 1.000 dashtype solid\n\tsample length is 4 characters\n\tvertical spacing is 1.5 characters\n\twidth adjustment is 0 characters\n\theight adjustment is 0 characters\n\tcurves are automatically titled with filename\n\tmaximum number of columns is calculated automatically\n\tmaximum number of rows is calculated automatically\n\n\tkey title is \"Legend\" font \",10\" center justified \n\n\n\tkey is OFF\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.logscale_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set logscale xy 2\nset logscale z\nshow logscale\nunset logscale y\nshow logscale\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tlogscaling on  x (base 2) y (base 2) z\n\n\n\tlogscaling on  x (base 2) z\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.tics_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set xtics 0, 0.5, 3 rotate by 45 nomirror out\nset ytics ('low' 0, 'mid' 5, 'high' 10)\nshow xtics\nshow ytics\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\ttics are in back of plot\n\tx-axis tics are OUT, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tx-axis tics:\ton border\n\t  labels are justified automatically, format \"% h\" rotated by 45 in 2D mode, terminal permitting,\n\t    offset (character 0, 0, 0)\n\t  series from 0.00000 by 0.5 until 3.00000\n\tx2-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tx2-axis tics:\tOFF\n\tScales for user tic levels 2-4 are:  1, 1, 1\n\n\n\ttics are in back of plot\n\ty-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\ty-axis tics:\ton border and mirrored on opposite border\n\t  labels are justified automatically, format \"% h\" and are not rotated,\n\t    offset (character 0, 0, 0)\n\t  no auto-generated tics\n\t  explicit list (\"low\" 0.00000, \"mid\" 5.00000, \"high\" 10.0000)\n\ty2-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\ty2-axis tics:\tOFF\n\tScales for user tic levels 2-4 are:  1, 1, 1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.label_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set label 1 'first' at 1,2 center\nset label 'second' at graph 0.5,0.5 right rotate by 90\nset label 3 'x' at screen 0.1, second 2 front tc rgb 'red'\nshow label\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tlabel 1 \"first\" at (1.00000, 2.00000, 0.00000) centre not rotated back  nopoint\n\tlabel 2 \"second\" at (graph 0.5, 0.5, 0) right rotated by 90 degrees (if possible) back  nopoint\n\tlabel 3 \"x\" at (screen 0.1, second 2, 0) left not rotated front  textcolor rgb \"red\"  nopoint\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.arrow_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set arrow from 0,0 to 1,1\nset arrow 5 from graph 0,0 rto 1,2 nohead lw 2 dt 2\nshow arrow\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tarrow 1, head nofilled back linewidth 1.000 dashtype solid\n\t  from (0.00000, 0.00000, 0.00000) to (1.00000, 1.00000, 0.00000)\n\tarrow 5, nohead nofilled back linewidth 2.000 dashtype 2\n\t  from (graph 0, 0, 0) rto (1.00000, 2.00000, 0.00000)\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.style_line_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set style line 1 lc rgb '#ff0000' lw 2 pt 7 ps 1.5\nset style line 2 lt 3 dashtype '--'\nshow style line\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\tlinestyle 1,  linecolor rgb \"red\"  linewidth 2.000 dashtype solid pointtype 7 pointsize 1.500\n\tlinestyle 2,  linecolor rgb \"#56b4e9\"  linewidth 1.000 dashtype \"--\" (10.00, 10.00, 10.00, 10.00) pointtype 3 pointsize default\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.grid_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set grid xtics mytics lt 0 lw 1, lt 2\nshow grid\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tRectangular grid drawn at x my tics\n\tMajor grid drawn with lt 0 linecolor 0 linewidth 1.000 dashtype solid\n\tMinor grid drawn with linecolor rgb \"#009e73\"  linewidth 1.000 dashtype solid\n\tGrid drawn at default layer\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.margins_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set lmargin 5\nset rmargin at screen 0.9\nset tmargin 0\nshow margin\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tlmargin is set to 5\n\trmargin is set to screen 0.9\n\tbmargin is computed automatically\n\ttmargin is set to 0\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.multiple_ranges",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set xrange [1:2]; set yrange [3:4]; set y2range [5:6]; set cbrange [7:8]\nshow xrange\nshow yrange\nshow y2range\nshow cbrange\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tset xrange [ 1.00000 : 2.00000 ] noreverse nowriteback\n\n\n\tset yrange [ 3.00000 : 4.00000 ] noreverse nowriteback\n\n\n\tset y2range [ 5.00000 : 6.00000 ] noreverse nowriteback\n\n\n\tset cbrange [ 7.00000 : 8.00000 ] noreverse nowriteback\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.timefmt_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set xdata time\nset timefmt '%Y-%m-%d'\nset format x '%b %d'\nshow xdata\nshow timefmt\nshow format\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tx is set to time\n\n\n\tDefault format for reading time data is \"%Y-%m-%d\"\n\n\n\ttic format is:\n\t  x-axis: \"%b %d\"timedate\n\t  y-axis: \"% h\"\n\t  x2-axis: \"% h\"\n\t  y2-axis: \"% h\"\n\t  z-axis: \"% h\"\n\t  cb-axis: \"% h\"\n\t  r-axis: \"% h\"\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.datafile_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set datafile separator ','\nset datafile missing 'NaN'\nset datafile commentschars '#!'\nshow datafile\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tall NaN (not-a-number) values will be treated as missing data\n\tdatafile fields separated by any of 1 characters \",\"\n\tComments chars are \"#!\"\n\tFirst line is treated as headers only if accessed explicitly\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.samples_isosamples",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set samples 50, 60\nset isosamples 12\nshow samples\nshow isosamples\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tsampling rate is 50, 60\n\n\n\tiso sampling rate is 12, 12\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.reset_restores",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set xrange [1:2]\nset samples 10\nset key off\nreset\nshow xrange\nshow samples\nshow key\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tset xrange [ * : * ] noreverse nowriteback  # (currently [-10.0000:10.0000] )\n\n\n\tsampling rate is 100, 100\n\n\n\tkey is ON, position: top right vertical fixed  offset: (character 0, 0)\n\tkey is right justified, not reversed, not inverted, enhanced and not boxed\n\tsample length is 4 characters\n\tvertical spacing is 1 characters\n\twidth adjustment is 0 characters\n\theight adjustment is 0 characters\n\tcurves are automatically titled with filename\n\tmaximum number of columns is calculated automatically\n\tmaximum number of rows is calculated automatically\n\n\tkey title is \"\" center justified \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.save_settings_subset",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set xrange [0:5]\nset title 'T'\nshow title\nshow xrange\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\ttitle is \"T\", offset at (character 0, 0, 0)center justified  textcolor lt -1\n\n\n\tset xrange [ 0.00000 : 5.00000 ] noreverse nowriteback\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.show_all_style",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set style data linespoints\nset style function impulses\nset style fill solid 0.5 border -1\nshow style\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\tData are plotted with linespoints\n\tFunctions are plotted with impulses\n\n\tFill style uses  solid colour with density 0.500 with border  lt -1\n\tPlot lines increment over default linetypes\n\tHistogram style is clustered gap 2 \n\t\ttitle textcolor lt -1\nset style textbox  transparent margins  1.0,  1.0 border  lt -1 linewidth  1.0\n\tset style parallel front  lt black linewidth 2.000 dashtype solid\n\tboxplot representation is box and whisker\n\tboxplot range extends from the   box by  1.50 of the interquartile distance\n\toutliers will be drawn using point type 7\n\tseparation between boxplots is 1\n\tfactor labels are automatic\n\tfactor labels will appear in the order they were found\n\n\tRectangle style is back, fill color  bgnd, lw 1.0 , fillstyle  solid 1.00 border lt -1\n\n\tCircle style has default radius (graph 0.02) [wedge]\n\n\tEllipse style has default size (graph 0.05, 0.03), default angle is 0.0 degrees, diameters are in different units (major: x axis, minor: y axis)\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.boxwidth_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set boxwidth 0.8 relative\nshow boxwidth\nset boxwidth 2 absolute\nshow boxwidth\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tboxwidth is 0.8 relative\n\tboxdepth is 0\n\n\n\tboxwidth is 2 absolute\n\tboxdepth is 0\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.view_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set view 30, 120, 1.2, 0.8\nshow view\nset view map\nshow view\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tview is 30 rot_x, 120 rot_z, 1.2 scale, 0.8 scale_z\n\t\t axes are independently scaled\n\t\t azimuth 0\n\n\n\tview is map scale 1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "show.unset_and_show",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "unset border\nunset xtics\nunset title\nshow border\nshow xtics\nshow title\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tborder is not drawn\n\n\n\ttics are in back of plot\n\tx-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tx-axis tics:\tOFF\n\tx2-axis tics are IN, \tmajor ticscale is 1 and minor ticscale is 0.5\n\tx2-axis tics:\tOFF\n\tScales for user tic levels 2-4 are:  1, 1, 1\n\n\n\ttitle is \"\", offset at (character 0, 0, 0)center justified  textcolor lt -1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ }
+]

@@ -1,0 +1,4252 @@
+{
+ "test_results": [
+  {
+   "name": "eval.tests.test_fit.test_brief_errorvariables",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_covariance_variables",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_exponential_with_errors",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_fit_ranges",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_fixed_parameter_file",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_limits_and_start",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_linear",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.008
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_maxiter_hit",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_quadratic_quiet",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_singular_fit",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_two_dimensional",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_update_file",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit.test_verbose",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model0",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model0_noisy",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model1",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model1_noisy",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model2",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model2_noisy",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model3",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model3_noisy",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model4",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model4_noisy",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.002
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model5",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_fit_matrix.test_model5_noisy",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_acsplines",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_acsplines_weights",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_bezier",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_bezier_samples",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_bins",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_cnormal",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.002
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_csplines",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.002
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_csplines_two_points",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_cumulative",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.002
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_cumulative_normalized",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_fnormal",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_frequency",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_kdensity",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_kdensity_bandwidth",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_kdensity_period",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_mcsplines",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_mcsplines_monotone",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_path",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_sbezier",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_smooth_with_log",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_unique",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_unique_averages_duplicates",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_unwrap",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth.test_zsort_and_convexhull",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_acsplines_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_acsplines_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_bezier_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_bezier_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_cnormal_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_cnormal_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_csplines_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_csplines_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_cumulative_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_cumulative_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.008
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_fnormal_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_fnormal_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_frequency_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_frequency_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_kdensity_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_kdensity_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_mcsplines_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_mcsplines_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_sbezier_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_sbezier_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_unique_sample",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_smooth_matrix.test_unique_xrange",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_default_variables",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_expression_columns",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_index_and_every",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_matrix",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_multiple_blocks",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_named_prefix_variables",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_noisy_data",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_output_to_print_file",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_range_restricted",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_show_variables_after",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_single_column",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_two_columns",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats.test_with_missing_and_invalid",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_stats_matrix.test_s0",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats_matrix.test_s1",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats_matrix.test_s2",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats_matrix.test_s3",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_stats_matrix.test_s4",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_stats_matrix.test_s5",
+   "branch": "1fe6fa7ee706",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_array_bad_index",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_array_not_array",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_bad_format_in_gprintf",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_bad_range",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_bad_range_2",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_bad_using",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_builtin_wrong_args",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_column_out_of_range",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_do_for_bad",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_empty_range",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_error_from_e_flag",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_error_from_stdin_line",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_error_line_numbers",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_error_with_long_line",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_fit_no_params",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_fit_undefined_function",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_invalid_expression",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_log_negative_range",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_missing_quote",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_plot_missing_datablock",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_plot_missing_file",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_plot_nothing",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_plot_undefined_function",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_set_samples_invalid",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_set_terminal_unknown",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_show_unknown",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_stats_no_data",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_string_arith",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_string_index_error",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_type_error_bitwise",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_type_error_modulo_float",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_unbalanced_paren",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_undefined_function",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_undefined_in_function_body",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_unknown_command",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_unknown_set_option",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_unset_unknown",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_warning_continues",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_errors.test_wrong_arg_count",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_arrow_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_boxwidth_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_datafile_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_angles",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_autoscale",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_bars",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_border",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.002
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_boxwidth",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_clip",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_colorbox",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_contour",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_datafile",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_decimalsign",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_dummy",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_encoding",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_errorbars",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_fit",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_grid",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_hidden3d",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.008
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_isosamples",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_jitter",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_key",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_loadpath",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_logscale",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_margin",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_minussign",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_mxtics",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_offsets",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_origin",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_palette",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_parametric",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_pointsize",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_polar",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_samples",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_size",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_style_data",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.002
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_style_function",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_style_line",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_tics",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_timefmt",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_title",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_view",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_xdata",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_xlabel",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_xrange",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_xtics",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_yrange",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_ytics",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_default_zero",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_grid_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_key_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_label_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_logscale_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_margins_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_multiple_ranges",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_reset_restores",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_samples_isosamples",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_save_settings_subset",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_show_all_style",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_style_line_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_tics_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_timefmt_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_unset_and_show",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_view_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_show.test_xrange_set",
+   "branch": "26b37877411a",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_svg.test_basic_lines",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.009
+   }
+  },
+  {
+   "name": "eval.tests.test_svg.test_boxes_fill",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_svg.test_dashed_colors",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_svg.test_logscale_grid",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_svg.test_points_and_key",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_svg.test_title_labels",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_terminals.test_canvas_simple",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.011
+   }
+  },
+  {
+   "name": "eval.tests.test_terminals.test_postscript_header_tail",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_terminals.test_show_terminal_dumb",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_terminals.test_svg_simple",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_terminals.test_svg_with_text",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_terminals.test_term_list",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_terminals.test_unknown_terminal_option",
+   "branch": "743807875866",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_boxes",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_contour",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_custom_tics",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_data_linespoints",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_data_points",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_datafile_columns_plot",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_dumb_noenhanced_feed",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_dumb_options_aspect",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_errorbars",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_filledcurves",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_format_tics",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_grid",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_histogram",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_huge_values",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_impulses",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_key_outside_box",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_key_positions",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_labels_and_arrows",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.012
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_log_both",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_log_scale",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_mirror_off_and_out",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_multiplot_layout",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_negative_ranges",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_no_key_no_border",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_parametric_circle",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_point_types",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_polar_plot",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_replot",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_set_output_file",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_sin_default",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_small_canvas",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_splot_hidden3d",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_splot_surface",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.008
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_splot_view_map",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_steps",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_time_axis",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_tiny_values",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.008
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_title_labels",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_two_functions",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_wide_canvas",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_y2_axis",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_yrange_fixed",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb.test_zero_axis",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_bump__default",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.008
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_bump__hidden3d",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_bump__map_contour",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_bump__ticslevel0_iso6",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_bump__view_60_30",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_plane__default",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_plane__hidden3d",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_plane__map_contour",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_plane__ticslevel0_iso6",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_plane__view_60_30",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_ripple__default",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.008
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_ripple__hidden3d",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_ripple__map_contour",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_ripple__ticslevel0_iso6",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_ripple__view_60_30",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_saddle__default",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_saddle__hidden3d",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_saddle__map_contour",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_saddle__ticslevel0_iso6",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb3d.test_saddle__view_60_30",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_abs_saw__impulses_s15",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_abs_saw__narrow",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_abs_saw__noborder_keyleft",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_abs_saw__plain",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_abs_saw__samples20_points",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_abs_saw__tall",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_abs_saw__yrange_grid",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_atan__impulses_s15",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_atan__narrow",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_atan__noborder_keyleft",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_atan__plain",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.01
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_atan__samples20_points",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_atan__tall",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_atan__yrange_grid",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_cosh__impulses_s15",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_cosh__narrow",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_cosh__noborder_keyleft",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_cosh__plain",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_cosh__samples20_points",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_cosh__tall",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_cosh__yrange_grid",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_gauss__impulses_s15",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_gauss__narrow",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_gauss__noborder_keyleft",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_gauss__plain",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_gauss__samples20_points",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_gauss__tall",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_gauss__yrange_grid",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_lin__impulses_s15",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_lin__narrow",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_lin__noborder_keyleft",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_lin__plain",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_lin__samples20_points",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_lin__tall",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_lin__yrange_grid",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_poly__impulses_s15",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_poly__narrow",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_poly__noborder_keyleft",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_poly__plain",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_poly__samples20_points",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_poly__tall",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_poly__yrange_grid",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_sinc__impulses_s15",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_sinc__narrow",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_sinc__noborder_keyleft",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_sinc__plain",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_sinc__samples20_points",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_sinc__tall",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_sinc__yrange_grid",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_step__impulses_s15",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_step__narrow",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_step__noborder_keyleft",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_step__plain",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_step__samples20_points",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_step__tall",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_dumb_matrix.test_step__yrange_grid",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_multiplot.test_layout_0",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_multiplot.test_layout_1",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.024
+   }
+  },
+  {
+   "name": "eval.tests.test_multiplot.test_layout_2",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_multiplot.test_layout_3",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_multiplot.test_layout_4",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_multiplot.test_manual_size_origin",
+   "branch": "8f4b382f07f4",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_call_with_args",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_dash_stdin",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_default_settings_flag",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_e_error_exit",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.002
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_e_multiple",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_e_then_file",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_error_stops_script",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_exit_error_message",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_exit_status",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_file_then_e",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_help",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_help_short",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_missing_script",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_persist_ignored",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_quit_in_middle",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_stdin_script",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_two_files",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_unknown_option",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_version_long",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_cli.test_version_short",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_break_continue",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_comments_and_continuation",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_datablock_print",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_datablock_redefine_and_undefine",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_do_for_loop",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_error_inside_load",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_error_inside_loop",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_eval_and_macro",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_evaluate_with_reset",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_functions_listing",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_if_else_chain",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_iteration_in_print",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_load_and_call",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_multiple_statements_per_line",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_nested_loops",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_reread_and_pause",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_set_print_append",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_set_print_datablock",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_set_print_to_file",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_string_interpolation_in_set",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_variables_listing",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_program.test_while_loop",
+   "branch": "d909783f33c7",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_array_errors",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_arrays",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_bit_ops",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_column_outside_plot",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_complex_numbers",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_degrees_mode",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_division_by_zero",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_factorial_operator",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_float_print_precision",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_function_recursion_depth",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_hex_octal_literals",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_int_arith",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_int_overflow",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_integer_valued_functions",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_logic_and_compare",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_math_functions",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_math_functions_2",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_nan_inf",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_precedence",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_print_many_types",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_rand_reproducible",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_rounding",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_special_functions",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_special_functions_2",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_string_compare_numbers",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_string_functions_more",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_string_number_coercion",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_string_ops",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_sum_operator",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_ternary_and_comma",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_time_functions",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_time_functions_2",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_user_functions",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_valid_and_value",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_variables_and_exists",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr.test_words_and_trim",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e00",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e02",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e04",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e06",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e08",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e10",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e12",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e14",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e16",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e18",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e20",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e22",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e24",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e26",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_expr_print.test_e28",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_format_command_and_show",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_gprintf_basic",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_gprintf_combined",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_gprintf_mantissa_exponent",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_gprintf_pi_and_binary",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_print_default_format",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_set_decimalsign",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_sprintf_errors_bad",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_sprintf_errors_too_few",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_sprintf_floats",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_sprintf_ints",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_sprintf_many",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_sprintf_strings",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_format.test_sprintf_type_coercion",
+   "branch": "e25ad822d6e3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_array_plot",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_autoscale_extend_table",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_binary_operators_in_using",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.009
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_boxes_and_steps",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_columnheader",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_csv_separator",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_data_basic",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_data_every",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_data_index_blocks",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_data_missing_and_comments",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_data_using_column_functions",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_data_using_expressions",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_data_with_errorbars",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_dummy_variable",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_filledcurves_table",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_function_default_samples",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_function_samples_range",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_histogram_style_table",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.006
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_iteration_plot",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_log_x_sampling",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_named_columns",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_parametric",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_polar",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_ranges_clip_data",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_sample_keyword",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_splot_data",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_splot_function",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_string_column_xtic",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.008
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_table_to_datablock",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_table_with_table_format",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_table_with_table_style",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_time_data",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_two_functions_titles",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_undefined_points",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table.test_x2_y2_axes",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_bump__contour",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_bump__dgrid3d",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_bump__grid",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_plane__contour",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_plane__dgrid3d",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_plane__grid",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_ripple__contour",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.007
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_ripple__dgrid3d",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_ripple__grid",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.008
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_saddle__contour",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.009
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_saddle__dgrid3d",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table3d.test_saddle__grid",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.012
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_abs_saw__log",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_abs_saw__s7",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_abs_saw__y_restricted",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_atan__log",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_atan__s7",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_atan__y_restricted",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_cosh__log",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_cosh__s7",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_cosh__y_restricted",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.005
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_gauss__log",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_gauss__s7",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_gauss__y_restricted",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_lin__log",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_lin__s7",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_lin__y_restricted",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_poly__log",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_poly__s7",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_poly__y_restricted",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_sinc__log",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_sinc__s7",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_sinc__y_restricted",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.004
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_step__log",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_step__s7",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  },
+  {
+   "name": "eval.tests.test_table_matrix.test_step__y_restricted",
+   "branch": "edd4682a61c3",
+   "status": "passed",
+   "extra": {
+    "time": 0.003
+   }
+  }
+ ],
+ "error_code": null,
+ "error_details": null,
+ "log": [
+  {
+   "step": "remove_hashed_files",
+   "command": "internal",
+   "wall_time": 0,
+   "output": "",
+   "returncode": 0,
+   "exception_info": ""
+  },
+  {
+   "step": "compile",
+   "command": "bash -c chmod +x ./compile.sh && ./compile.sh",
+   "wall_time": 35.472,
+   "output": "",
+   "returncode": 0,
+   "exception_info": ""
+  },
+  {
+   "step": "hash_executable",
+   "command": "sha256sum ./executable",
+   "wall_time": 0,
+   "output": "6c0890287d60212a0a5bf8ddb27abe42c0527ee6c407a456b83c93764d3d6665",
+   "returncode": 0,
+   "exception_info": ""
+  },
+  {
+   "step": "run_tests",
+   "command": "bash -c chmod +x ./eval/run.sh && ./eval/run.sh",
+   "wall_time": 0.863,
+   "output": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3\nrootdir: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-1fe6fa7ee706\nplugins: anyio-4.15.1\ncollecting ... collected 90 items\n\neval/tests/test_fit.py::test_linear PASSED                               [  1%]\neval/tests/test_fit.py::test_quadratic_quiet PASSED                      [  2%]\neval/tests/test_fit.py::test_exponential_with_errors PASSED              [  3%]\neval/tests/test_fit.py::test_brief_errorvariables PASSED                 [  4%]\neval/tests/test_fit.py::test_verbose PASSED                              [  5%]\neval/tests/test_fit.py::test_limits_and_start PASSED                     [  6%]\neval/tests/test_fit.py::test_maxiter_hit PASSED                          [  7%]\neval/tests/test_fit.py::test_fit_ranges PASSED                           [  8%]\neval/tests/test_fit.py::test_fixed_parameter_file PASSED                 [ 10%]\neval/tests/test_fit.py::test_covariance_variables PASSED                 [ 11%]\neval/tests/test_fit.py::test_two_dimensional PASSED                      [ 12%]\neval/tests/test_fit.py::test_singular_fit PASSED                         [ 13%]\neval/tests/test_fit.py::test_update_file PASSED                          [ 14%]\neval/tests/test_fit_matrix.py::test_model0 PASSED                        [ 15%]\neval/tests/test_fit_matrix.py::test_model0_noisy PASSED                  [ 16%]\neval/tests/test_fit_matrix.py::test_model1 PASSED                        [ 17%]\neval/tests/test_fit_matrix.py::test_model1_noisy PASSED                  [ 18%]\neval/tests/test_fit_matrix.py::test_model2 PASSED                        [ 20%]\neval/tests/test_fit_matrix.py::test_model2_noisy PASSED                  [ 21%]\neval/tests/test_fit_matrix.py::test_model3 PASSED                        [ 22%]\neval/tests/test_fit_matrix.py::test_model3_noisy PASSED                  [ 23%]\neval/tests/test_fit_matrix.py::test_model4 PASSED                        [ 24%]\neval/tests/test_fit_matrix.py::test_model4_noisy PASSED                  [ 25%]\neval/tests/test_fit_matrix.py::test_model5 PASSED                        [ 26%]\neval/tests/test_fit_matrix.py::test_model5_noisy PASSED                  [ 27%]\neval/tests/test_smooth.py::test_unique PASSED                            [ 28%]\neval/tests/test_smooth.py::test_frequency PASSED                         [ 30%]\neval/tests/test_smooth.py::test_fnormal PASSED                           [ 31%]\neval/tests/test_smooth.py::test_cumulative PASSED                        [ 32%]\neval/tests/test_smooth.py::test_cnormal PASSED                           [ 33%]\neval/tests/test_smooth.py::test_csplines PASSED                          [ 34%]\neval/tests/test_smooth.py::test_acsplines PASSED                         [ 35%]\neval/tests/test_smooth.py::test_mcsplines PASSED                         [ 36%]\neval/tests/test_smooth.py::test_bezier PASSED                            [ 37%]\neval/tests/test_smooth.py::test_sbezier PASSED                           [ 38%]\neval/tests/test_smooth.py::test_kdensity PASSED                          [ 40%]\neval/tests/test_smooth.py::test_path PASSED                              [ 41%]\neval/tests/test_smooth.py::test_unique_averages_duplicates PASSED        [ 42%]\neval/tests/test_smooth.py::test_kdensity_bandwidth PASSED                [ 43%]\neval/tests/test_smooth.py::test_kdensity_period PASSED                   [ 44%]\neval/tests/test_smooth.py::test_bins PASSED                              [ 45%]\neval/tests/test_smooth.py::test_acsplines_weights PASSED                 [ 46%]\neval/tests/test_smooth.py::test_csplines_two_points PASSED               [ 47%]\neval/tests/test_smooth.py::test_cumulative_normalized PASSED             [ 48%]\neval/tests/test_smooth.py::test_bezier_samples PASSED                    [ 50%]\neval/tests/test_smooth.py::test_smooth_with_log PASSED                   [ 51%]\neval/tests/test_smooth.py::test_zsort_and_convexhull PASSED              [ 52%]\neval/tests/test_smooth.py::test_unwrap PASSED                            [ 53%]\neval/tests/test_smooth.py::test_mcsplines_monotone PASSED                [ 54%]\neval/tests/test_smooth_matrix.py::test_csplines_sample PASSED            [ 55%]\neval/tests/test_smooth_matrix.py::test_csplines_xrange PASSED            [ 56%]\neval/tests/test_smooth_matrix.py::test_acsplines_sample PASSED           [ 57%]\neval/tests/test_smooth_matrix.py::test_acsplines_xrange PASSED           [ 58%]\neval/tests/test_smooth_matrix.py::test_mcsplines_sample PASSED           [ 60%]\neval/tests/test_smooth_matrix.py::test_mcsplines_xrange PASSED           [ 61%]\neval/tests/test_smooth_matrix.py::test_bezier_sample PASSED              [ 62%]\neval/tests/test_smooth_matrix.py::test_bezier_xrange PASSED              [ 63%]\neval/tests/test_smooth_matrix.py::test_sbezier_sample PASSED             [ 64%]\neval/tests/test_smooth_matrix.py::test_sbezier_xrange PASSED             [ 65%]\neval/tests/test_smooth_matrix.py::test_kdensity_sample PASSED            [ 66%]\neval/tests/test_smooth_matrix.py::test_kdensity_xrange PASSED            [ 67%]\neval/tests/test_smooth_matrix.py::test_cumulative_sample PASSED          [ 68%]\neval/tests/test_smooth_matrix.py::test_cumulative_xrange PASSED          [ 70%]\neval/tests/test_smooth_matrix.py::test_cnormal_sample PASSED             [ 71%]\neval/tests/test_smooth_matrix.py::test_cnormal_xrange PASSED             [ 72%]\neval/tests/test_smooth_matrix.py::test_unique_sample PASSED              [ 73%]\neval/tests/test_smooth_matrix.py::test_unique_xrange PASSED              [ 74%]\neval/tests/test_smooth_matrix.py::test_frequency_sample PASSED           [ 75%]\neval/tests/test_smooth_matrix.py::test_frequency_xrange PASSED           [ 76%]\neval/tests/test_smooth_matrix.py::test_fnormal_sample PASSED             [ 77%]\neval/tests/test_smooth_matrix.py::test_fnormal_xrange PASSED             [ 78%]\neval/tests/test_stats.py::test_two_columns PASSED                        [ 80%]\neval/tests/test_stats.py::test_single_column PASSED                      [ 81%]\neval/tests/test_stats.py::test_named_prefix_variables PASSED             [ 82%]\neval/tests/test_stats.py::test_default_variables PASSED                  [ 83%]\neval/tests/test_stats.py::test_multiple_blocks PASSED                    [ 84%]\neval/tests/test_stats.py::test_index_and_every PASSED                    [ 85%]\neval/tests/test_stats.py::test_with_missing_and_invalid PASSED           [ 86%]\neval/tests/test_stats.py::test_range_restricted PASSED                   [ 87%]\neval/tests/test_stats.py::test_matrix PASSED                             [ 88%]\neval/tests/test_stats.py::test_expression_columns PASSED                 [ 90%]\neval/tests/test_stats.py::test_noisy_data PASSED                         [ 91%]\neval/tests/test_stats.py::test_show_variables_after PASSED               [ 92%]\neval/tests/test_stats.py::test_output_to_print_file PASSED               [ 93%]\neval/tests/test_stats_matrix.py::test_s0 PASSED                          [ 94%]\neval/tests/test_stats_matrix.py::test_s1 PASSED                          [ 95%]\neval/tests/test_stats_matrix.py::test_s2 PASSED                          [ 96%]\neval/tests/test_stats_matrix.py::test_s3 PASSED                          [ 97%]\neval/tests/test_stats_matrix.py::test_s4 PASSED                          [ 98%]\neval/tests/test_stats_matrix.py::test_s5 PASSED                          [100%]\n\n- generated xml file: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-1fe6fa7ee706/eval/results.xml -\n============================== 90 passed in 0.40s ==============================\n",
+   "returncode": 0,
+   "exception_info": "",
+   "branch": "1fe6fa7ee706"
+  },
+  {
+   "step": "run_tests",
+   "command": "bash -c chmod +x ./eval/run.sh && ./eval/run.sh",
+   "wall_time": 0.966,
+   "output": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3\nrootdir: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-26b37877411a\nplugins: anyio-4.15.1\ncollecting ... collected 104 items\n\neval/tests/test_errors.py::test_invalid_expression PASSED                [  0%]\neval/tests/test_errors.py::test_unbalanced_paren PASSED                  [  1%]\neval/tests/test_errors.py::test_undefined_function PASSED                [  2%]\neval/tests/test_errors.py::test_wrong_arg_count PASSED                   [  3%]\neval/tests/test_errors.py::test_builtin_wrong_args PASSED                [  4%]\neval/tests/test_errors.py::test_string_arith PASSED                      [  5%]\neval/tests/test_errors.py::test_unknown_command PASSED                   [  6%]\neval/tests/test_errors.py::test_unknown_set_option PASSED                [  7%]\neval/tests/test_errors.py::test_bad_range PASSED                         [  8%]\neval/tests/test_errors.py::test_bad_range_2 PASSED                       [  9%]\neval/tests/test_errors.py::test_plot_nothing PASSED                      [ 10%]\neval/tests/test_errors.py::test_plot_undefined_function PASSED           [ 11%]\neval/tests/test_errors.py::test_plot_missing_datablock PASSED            [ 12%]\neval/tests/test_errors.py::test_plot_missing_file PASSED                 [ 13%]\neval/tests/test_errors.py::test_bad_using PASSED                         [ 14%]\neval/tests/test_errors.py::test_column_out_of_range PASSED               [ 15%]\neval/tests/test_errors.py::test_empty_range PASSED                       [ 16%]\neval/tests/test_errors.py::test_log_negative_range PASSED                [ 17%]\neval/tests/test_errors.py::test_set_terminal_unknown PASSED              [ 18%]\neval/tests/test_errors.py::test_set_samples_invalid PASSED               [ 19%]\neval/tests/test_errors.py::test_fit_no_params PASSED                     [ 20%]\neval/tests/test_errors.py::test_fit_undefined_function PASSED            [ 21%]\neval/tests/test_errors.py::test_do_for_bad PASSED                        [ 22%]\neval/tests/test_errors.py::test_error_line_numbers PASSED                [ 23%]\neval/tests/test_errors.py::test_error_with_long_line PASSED              [ 24%]\neval/tests/test_errors.py::test_missing_quote PASSED                     [ 25%]\neval/tests/test_errors.py::test_array_bad_index PASSED                   [ 25%]\neval/tests/test_errors.py::test_array_not_array PASSED                   [ 26%]\neval/tests/test_errors.py::test_stats_no_data PASSED                     [ 27%]\neval/tests/test_errors.py::test_bad_format_in_gprintf PASSED             [ 28%]\neval/tests/test_errors.py::test_unset_unknown PASSED                     [ 29%]\neval/tests/test_errors.py::test_show_unknown PASSED                      [ 30%]\neval/tests/test_errors.py::test_undefined_in_function_body PASSED        [ 31%]\neval/tests/test_errors.py::test_type_error_bitwise PASSED                [ 32%]\neval/tests/test_errors.py::test_type_error_modulo_float PASSED           [ 33%]\neval/tests/test_errors.py::test_string_index_error PASSED                [ 34%]\neval/tests/test_errors.py::test_warning_continues PASSED                 [ 35%]\neval/tests/test_errors.py::test_error_from_e_flag PASSED                 [ 36%]\neval/tests/test_errors.py::test_error_from_stdin_line PASSED             [ 37%]\neval/tests/test_show.py::test_default_xrange PASSED                      [ 38%]\neval/tests/test_show.py::test_default_yrange PASSED                      [ 39%]\neval/tests/test_show.py::test_default_samples PASSED                     [ 40%]\neval/tests/test_show.py::test_default_angles PASSED                      [ 41%]\neval/tests/test_show.py::test_default_style_data PASSED                  [ 42%]\neval/tests/test_show.py::test_default_style_function PASSED              [ 43%]\neval/tests/test_show.py::test_default_key PASSED                         [ 44%]\neval/tests/test_show.py::test_default_border PASSED                      [ 45%]\neval/tests/test_show.py::test_default_logscale PASSED                    [ 46%]\neval/tests/test_show.py::test_default_xtics PASSED                       [ 47%]\neval/tests/test_show.py::test_default_ytics PASSED                       [ 48%]\neval/tests/test_show.py::test_default_mxtics PASSED                      [ 49%]\neval/tests/test_show.py::test_default_grid PASSED                        [ 50%]\neval/tests/test_show.py::test_default_title PASSED                       [ 50%]\neval/tests/test_show.py::test_default_xlabel PASSED                      [ 51%]\neval/tests/test_show.py::test_default_size PASSED                        [ 52%]\neval/tests/test_show.py::test_default_origin PASSED                      [ 53%]\neval/tests/test_show.py::test_default_margin PASSED                      [ 54%]\neval/tests/test_show.py::test_default_datafile PASSED                    [ 55%]\neval/tests/test_show.py::test_default_zero PASSED                        [ 56%]\neval/tests/test_show.py::test_default_clip PASSED                        [ 57%]\neval/tests/test_show.py::test_default_offsets PASSED                     [ 58%]\neval/tests/test_show.py::test_default_isosamples PASSED                  [ 59%]\neval/tests/test_show.py::test_default_view PASSED                        [ 60%]\neval/tests/test_show.py::test_default_palette PASSED                     [ 61%]\neval/tests/test_show.py::test_default_colorbox PASSED                    [ 62%]\neval/tests/test_show.py::test_default_boxwidth PASSED                    [ 63%]\neval/tests/test_show.py::test_default_style_line PASSED                  [ 64%]\neval/tests/test_show.py::test_default_dummy PASSED                       [ 65%]\neval/tests/test_show.py::test_default_encoding PASSED                    [ 66%]\neval/tests/test_show.py::test_default_timefmt PASSED                     [ 67%]\neval/tests/test_show.py::test_default_xdata PASSED                       [ 68%]\neval/tests/test_show.py::test_default_fit PASSED                         [ 69%]\neval/tests/test_show.py::test_default_loadpath PASSED                    [ 70%]\neval/tests/test_show.py::test_default_bars PASSED                        [ 71%]\neval/tests/test_show.py::test_default_pointsize PASSED                   [ 72%]\neval/tests/test_show.py::test_default_polar PASSED                       [ 73%]\neval/tests/test_show.py::test_default_parametric PASSED                  [ 74%]\neval/tests/test_show.py::test_default_contour PASSED                     [ 75%]\neval/tests/test_show.py::test_default_hidden3d PASSED                    [ 75%]\neval/tests/test_show.py::test_default_minussign PASSED                   [ 76%]\neval/tests/test_show.py::test_default_decimalsign PASSED                 [ 77%]\neval/tests/test_show.py::test_default_tics PASSED                        [ 78%]\neval/tests/test_show.py::test_default_autoscale PASSED                   [ 79%]\neval/tests/test_show.py::test_default_jitter PASSED                      [ 80%]\neval/tests/test_show.py::test_default_errorbars PASSED                   [ 81%]\neval/tests/test_show.py::test_xrange_set PASSED                          [ 82%]\neval/tests/test_show.py::test_key_set PASSED                             [ 83%]\neval/tests/test_show.py::test_logscale_set PASSED                        [ 84%]\neval/tests/test_show.py::test_tics_set PASSED                            [ 85%]\neval/tests/test_show.py::test_label_set PASSED                           [ 86%]\neval/tests/test_show.py::test_arrow_set PASSED                           [ 87%]\neval/tests/test_show.py::test_style_line_set PASSED                      [ 88%]\neval/tests/test_show.py::test_grid_set PASSED                            [ 89%]\neval/tests/test_show.py::test_margins_set PASSED                         [ 90%]\neval/tests/test_show.py::test_multiple_ranges PASSED                     [ 91%]\neval/tests/test_show.py::test_timefmt_set PASSED                         [ 92%]\neval/tests/test_show.py::test_datafile_set PASSED                        [ 93%]\neval/tests/test_show.py::test_samples_isosamples PASSED                  [ 94%]\neval/tests/test_show.py::test_reset_restores PASSED                      [ 95%]\neval/tests/test_show.py::test_save_settings_subset PASSED                [ 96%]\neval/tests/test_show.py::test_show_all_style PASSED                      [ 97%]\neval/tests/test_show.py::test_boxwidth_set PASSED                        [ 98%]\neval/tests/test_show.py::test_view_set PASSED                            [ 99%]\neval/tests/test_show.py::test_unset_and_show PASSED                      [100%]\n\n- generated xml file: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-26b37877411a/eval/results.xml -\n============================= 104 passed in 0.48s ==============================\n",
+   "returncode": 0,
+   "exception_info": "",
+   "branch": "26b37877411a"
+  },
+  {
+   "step": "run_tests",
+   "command": "bash -c chmod +x ./eval/run.sh && ./eval/run.sh",
+   "wall_time": 0.614,
+   "output": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3\nrootdir: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-743807875866\nplugins: anyio-4.15.1\ncollecting ... collected 13 items\n\neval/tests/test_svg.py::test_basic_lines PASSED                          [  7%]\neval/tests/test_svg.py::test_points_and_key PASSED                       [ 15%]\neval/tests/test_svg.py::test_title_labels PASSED                         [ 23%]\neval/tests/test_svg.py::test_boxes_fill PASSED                           [ 30%]\neval/tests/test_svg.py::test_logscale_grid PASSED                        [ 38%]\neval/tests/test_svg.py::test_dashed_colors PASSED                        [ 46%]\neval/tests/test_terminals.py::test_svg_simple PASSED                     [ 53%]\neval/tests/test_terminals.py::test_svg_with_text PASSED                  [ 61%]\neval/tests/test_terminals.py::test_canvas_simple PASSED                  [ 69%]\neval/tests/test_terminals.py::test_postscript_header_tail PASSED         [ 76%]\neval/tests/test_terminals.py::test_show_terminal_dumb PASSED             [ 84%]\neval/tests/test_terminals.py::test_unknown_terminal_option PASSED        [ 92%]\neval/tests/test_terminals.py::test_term_list PASSED                      [100%]\n\n- generated xml file: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-743807875866/eval/results.xml -\n============================== 13 passed in 0.13s ==============================\n",
+   "returncode": 0,
+   "exception_info": "",
+   "branch": "743807875866"
+  },
+  {
+   "step": "run_tests",
+   "command": "bash -c chmod +x ./eval/run.sh && ./eval/run.sh",
+   "wall_time": 1.301,
+   "output": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3\nrootdir: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-8f4b382f07f4\nplugins: anyio-4.15.1\ncollecting ... collected 125 items\n\neval/tests/test_dumb.py::test_sin_default PASSED                         [  0%]\neval/tests/test_dumb.py::test_two_functions PASSED                       [  1%]\neval/tests/test_dumb.py::test_small_canvas PASSED                        [  2%]\neval/tests/test_dumb.py::test_wide_canvas PASSED                         [  3%]\neval/tests/test_dumb.py::test_data_points PASSED                         [  4%]\neval/tests/test_dumb.py::test_data_linespoints PASSED                    [  4%]\neval/tests/test_dumb.py::test_impulses PASSED                            [  5%]\neval/tests/test_dumb.py::test_boxes PASSED                               [  6%]\neval/tests/test_dumb.py::test_histogram PASSED                           [  7%]\neval/tests/test_dumb.py::test_steps PASSED                               [  8%]\neval/tests/test_dumb.py::test_errorbars PASSED                           [  8%]\neval/tests/test_dumb.py::test_title_labels PASSED                        [  9%]\neval/tests/test_dumb.py::test_key_positions PASSED                       [ 10%]\neval/tests/test_dumb.py::test_key_outside_box PASSED                     [ 11%]\neval/tests/test_dumb.py::test_no_key_no_border PASSED                    [ 12%]\neval/tests/test_dumb.py::test_grid PASSED                                [ 12%]\neval/tests/test_dumb.py::test_custom_tics PASSED                         [ 13%]\neval/tests/test_dumb.py::test_mirror_off_and_out PASSED                  [ 14%]\neval/tests/test_dumb.py::test_log_scale PASSED                           [ 15%]\neval/tests/test_dumb.py::test_log_both PASSED                            [ 16%]\neval/tests/test_dumb.py::test_yrange_fixed PASSED                        [ 16%]\neval/tests/test_dumb.py::test_negative_ranges PASSED                     [ 17%]\neval/tests/test_dumb.py::test_tiny_values PASSED                         [ 18%]\neval/tests/test_dumb.py::test_huge_values PASSED                         [ 19%]\neval/tests/test_dumb.py::test_format_tics PASSED                         [ 20%]\neval/tests/test_dumb.py::test_time_axis PASSED                           [ 20%]\neval/tests/test_dumb.py::test_labels_and_arrows PASSED                   [ 21%]\neval/tests/test_dumb.py::test_multiplot_layout PASSED                    [ 22%]\neval/tests/test_dumb.py::test_parametric_circle PASSED                   [ 23%]\neval/tests/test_dumb.py::test_polar_plot PASSED                          [ 24%]\neval/tests/test_dumb.py::test_zero_axis PASSED                           [ 24%]\neval/tests/test_dumb.py::test_y2_axis PASSED                             [ 25%]\neval/tests/test_dumb.py::test_filledcurves PASSED                        [ 26%]\neval/tests/test_dumb.py::test_splot_surface PASSED                       [ 27%]\neval/tests/test_dumb.py::test_splot_hidden3d PASSED                      [ 28%]\neval/tests/test_dumb.py::test_splot_view_map PASSED                      [ 28%]\neval/tests/test_dumb.py::test_contour PASSED                             [ 29%]\neval/tests/test_dumb.py::test_dumb_options_aspect PASSED                 [ 30%]\neval/tests/test_dumb.py::test_dumb_noenhanced_feed PASSED                [ 31%]\neval/tests/test_dumb.py::test_point_types PASSED                         [ 32%]\neval/tests/test_dumb.py::test_replot PASSED                              [ 32%]\neval/tests/test_dumb.py::test_datafile_columns_plot PASSED               [ 33%]\neval/tests/test_dumb.py::test_set_output_file PASSED                     [ 34%]\neval/tests/test_dumb3d.py::test_saddle__default PASSED                   [ 35%]\neval/tests/test_dumb3d.py::test_saddle__view_60_30 PASSED                [ 36%]\neval/tests/test_dumb3d.py::test_saddle__hidden3d PASSED                  [ 36%]\neval/tests/test_dumb3d.py::test_saddle__map_contour PASSED               [ 37%]\neval/tests/test_dumb3d.py::test_saddle__ticslevel0_iso6 PASSED           [ 38%]\neval/tests/test_dumb3d.py::test_bump__default PASSED                     [ 39%]\neval/tests/test_dumb3d.py::test_bump__view_60_30 PASSED                  [ 40%]\neval/tests/test_dumb3d.py::test_bump__hidden3d PASSED                    [ 40%]\neval/tests/test_dumb3d.py::test_bump__map_contour PASSED                 [ 41%]\neval/tests/test_dumb3d.py::test_bump__ticslevel0_iso6 PASSED             [ 42%]\neval/tests/test_dumb3d.py::test_ripple__default PASSED                   [ 43%]\neval/tests/test_dumb3d.py::test_ripple__view_60_30 PASSED                [ 44%]\neval/tests/test_dumb3d.py::test_ripple__hidden3d PASSED                  [ 44%]\neval/tests/test_dumb3d.py::test_ripple__map_contour PASSED               [ 45%]\neval/tests/test_dumb3d.py::test_ripple__ticslevel0_iso6 PASSED           [ 46%]\neval/tests/test_dumb3d.py::test_plane__default PASSED                    [ 47%]\neval/tests/test_dumb3d.py::test_plane__view_60_30 PASSED                 [ 48%]\neval/tests/test_dumb3d.py::test_plane__hidden3d PASSED                   [ 48%]\neval/tests/test_dumb3d.py::test_plane__map_contour PASSED                [ 49%]\neval/tests/test_dumb3d.py::test_plane__ticslevel0_iso6 PASSED            [ 50%]\neval/tests/test_dumb_matrix.py::test_poly__plain PASSED                  [ 51%]\neval/tests/test_dumb_matrix.py::test_poly__narrow PASSED                 [ 52%]\neval/tests/test_dumb_matrix.py::test_poly__tall PASSED                   [ 52%]\neval/tests/test_dumb_matrix.py::test_poly__samples20_points PASSED       [ 53%]\neval/tests/test_dumb_matrix.py::test_poly__noborder_keyleft PASSED       [ 54%]\neval/tests/test_dumb_matrix.py::test_poly__yrange_grid PASSED            [ 55%]\neval/tests/test_dumb_matrix.py::test_poly__impulses_s15 PASSED           [ 56%]\neval/tests/test_dumb_matrix.py::test_gauss__plain PASSED                 [ 56%]\neval/tests/test_dumb_matrix.py::test_gauss__narrow PASSED                [ 57%]\neval/tests/test_dumb_matrix.py::test_gauss__tall PASSED                  [ 58%]\neval/tests/test_dumb_matrix.py::test_gauss__samples20_points PASSED      [ 59%]\neval/tests/test_dumb_matrix.py::test_gauss__noborder_keyleft PASSED      [ 60%]\neval/tests/test_dumb_matrix.py::test_gauss__yrange_grid PASSED           [ 60%]\neval/tests/test_dumb_matrix.py::test_gauss__impulses_s15 PASSED          [ 61%]\neval/tests/test_dumb_matrix.py::test_sinc__plain PASSED                  [ 62%]\neval/tests/test_dumb_matrix.py::test_sinc__narrow PASSED                 [ 63%]\neval/tests/test_dumb_matrix.py::test_sinc__tall PASSED                   [ 64%]\neval/tests/test_dumb_matrix.py::test_sinc__samples20_points PASSED       [ 64%]\neval/tests/test_dumb_matrix.py::test_sinc__noborder_keyleft PASSED       [ 65%]\neval/tests/test_dumb_matrix.py::test_sinc__yrange_grid PASSED            [ 66%]\neval/tests/test_dumb_matrix.py::test_sinc__impulses_s15 PASSED           [ 67%]\neval/tests/test_dumb_matrix.py::test_abs_saw__plain PASSED               [ 68%]\neval/tests/test_dumb_matrix.py::test_abs_saw__narrow PASSED              [ 68%]\neval/tests/test_dumb_matrix.py::test_abs_saw__tall PASSED                [ 69%]\neval/tests/test_dumb_matrix.py::test_abs_saw__samples20_points PASSED    [ 70%]\neval/tests/test_dumb_matrix.py::test_abs_saw__noborder_keyleft PASSED    [ 71%]\neval/tests/test_dumb_matrix.py::test_abs_saw__yrange_grid PASSED         [ 72%]\neval/tests/test_dumb_matrix.py::test_abs_saw__impulses_s15 PASSED        [ 72%]\neval/tests/test_dumb_matrix.py::test_step__plain PASSED                  [ 73%]\neval/tests/test_dumb_matrix.py::test_step__narrow PASSED                 [ 74%]\neval/tests/test_dumb_matrix.py::test_step__tall PASSED                   [ 75%]\neval/tests/test_dumb_matrix.py::test_step__samples20_points PASSED       [ 76%]\neval/tests/test_dumb_matrix.py::test_step__noborder_keyleft PASSED       [ 76%]\neval/tests/test_dumb_matrix.py::test_step__yrange_grid PASSED            [ 77%]\neval/tests/test_dumb_matrix.py::test_step__impulses_s15 PASSED           [ 78%]\neval/tests/test_dumb_matrix.py::test_lin__plain PASSED                   [ 79%]\neval/tests/test_dumb_matrix.py::test_lin__narrow PASSED                  [ 80%]\neval/tests/test_dumb_matrix.py::test_lin__tall PASSED                    [ 80%]\neval/tests/test_dumb_matrix.py::test_lin__samples20_points PASSED        [ 81%]\neval/tests/test_dumb_matrix.py::test_lin__noborder_keyleft PASSED        [ 82%]\neval/tests/test_dumb_matrix.py::test_lin__yrange_grid PASSED             [ 83%]\neval/tests/test_dumb_matrix.py::test_lin__impulses_s15 PASSED            [ 84%]\neval/tests/test_dumb_matrix.py::test_atan__plain PASSED                  [ 84%]\neval/tests/test_dumb_matrix.py::test_atan__narrow PASSED                 [ 85%]\neval/tests/test_dumb_matrix.py::test_atan__tall PASSED                   [ 86%]\neval/tests/test_dumb_matrix.py::test_atan__samples20_points PASSED       [ 87%]\neval/tests/test_dumb_matrix.py::test_atan__noborder_keyleft PASSED       [ 88%]\neval/tests/test_dumb_matrix.py::test_atan__yrange_grid PASSED            [ 88%]\neval/tests/test_dumb_matrix.py::test_atan__impulses_s15 PASSED           [ 89%]\neval/tests/test_dumb_matrix.py::test_cosh__plain PASSED                  [ 90%]\neval/tests/test_dumb_matrix.py::test_cosh__narrow PASSED                 [ 91%]\neval/tests/test_dumb_matrix.py::test_cosh__tall PASSED                   [ 92%]\neval/tests/test_dumb_matrix.py::test_cosh__samples20_points PASSED       [ 92%]\neval/tests/test_dumb_matrix.py::test_cosh__noborder_keyleft PASSED       [ 93%]\neval/tests/test_dumb_matrix.py::test_cosh__yrange_grid PASSED            [ 94%]\neval/tests/test_dumb_matrix.py::test_cosh__impulses_s15 PASSED           [ 95%]\neval/tests/test_multiplot.py::test_layout_0 PASSED                       [ 96%]\neval/tests/test_multiplot.py::test_layout_1 PASSED                       [ 96%]\neval/tests/test_multiplot.py::test_layout_2 PASSED                       [ 97%]\neval/tests/test_multiplot.py::test_layout_3 PASSED                       [ 98%]\neval/tests/test_multiplot.py::test_layout_4 PASSED                       [ 99%]\neval/tests/test_multiplot.py::test_manual_size_origin PASSED             [100%]\n\n- generated xml file: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-8f4b382f07f4/eval/results.xml -\n============================= 125 passed in 0.74s ==============================\n",
+   "returncode": 0,
+   "exception_info": "",
+   "branch": "8f4b382f07f4"
+  },
+  {
+   "step": "run_tests",
+   "command": "bash -c chmod +x ./eval/run.sh && ./eval/run.sh",
+   "wall_time": 0.683,
+   "output": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3\nrootdir: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-d909783f33c7\nplugins: anyio-4.15.1\ncollecting ... collected 42 items\n\neval/tests/test_cli.py::test_version_long PASSED                         [  2%]\neval/tests/test_cli.py::test_version_short PASSED                        [  4%]\neval/tests/test_cli.py::test_help PASSED                                 [  7%]\neval/tests/test_cli.py::test_help_short PASSED                           [  9%]\neval/tests/test_cli.py::test_unknown_option PASSED                       [ 11%]\neval/tests/test_cli.py::test_missing_script PASSED                       [ 14%]\neval/tests/test_cli.py::test_e_multiple PASSED                           [ 16%]\neval/tests/test_cli.py::test_e_then_file PASSED                          [ 19%]\neval/tests/test_cli.py::test_file_then_e PASSED                          [ 21%]\neval/tests/test_cli.py::test_two_files PASSED                            [ 23%]\neval/tests/test_cli.py::test_stdin_script PASSED                         [ 26%]\neval/tests/test_cli.py::test_dash_stdin PASSED                           [ 28%]\neval/tests/test_cli.py::test_exit_status PASSED                          [ 30%]\neval/tests/test_cli.py::test_exit_error_message PASSED                   [ 33%]\neval/tests/test_cli.py::test_quit_in_middle PASSED                       [ 35%]\neval/tests/test_cli.py::test_error_stops_script PASSED                   [ 38%]\neval/tests/test_cli.py::test_e_error_exit PASSED                         [ 40%]\neval/tests/test_cli.py::test_default_settings_flag PASSED                [ 42%]\neval/tests/test_cli.py::test_call_with_args PASSED                       [ 45%]\neval/tests/test_cli.py::test_persist_ignored PASSED                      [ 47%]\neval/tests/test_program.py::test_do_for_loop PASSED                      [ 50%]\neval/tests/test_program.py::test_while_loop PASSED                       [ 52%]\neval/tests/test_program.py::test_if_else_chain PASSED                    [ 54%]\neval/tests/test_program.py::test_break_continue PASSED                   [ 57%]\neval/tests/test_program.py::test_nested_loops PASSED                     [ 59%]\neval/tests/test_program.py::test_eval_and_macro PASSED                   [ 61%]\neval/tests/test_program.py::test_load_and_call PASSED                    [ 64%]\neval/tests/test_program.py::test_datablock_print PASSED                  [ 66%]\neval/tests/test_program.py::test_datablock_redefine_and_undefine PASSED  [ 69%]\neval/tests/test_program.py::test_set_print_to_file PASSED                [ 71%]\neval/tests/test_program.py::test_set_print_append PASSED                 [ 73%]\neval/tests/test_program.py::test_set_print_datablock PASSED              [ 76%]\neval/tests/test_program.py::test_functions_listing PASSED                [ 78%]\neval/tests/test_program.py::test_variables_listing PASSED                [ 80%]\neval/tests/test_program.py::test_comments_and_continuation PASSED        [ 83%]\neval/tests/test_program.py::test_multiple_statements_per_line PASSED     [ 85%]\neval/tests/test_program.py::test_string_interpolation_in_set PASSED      [ 88%]\neval/tests/test_program.py::test_iteration_in_print PASSED               [ 90%]\neval/tests/test_program.py::test_error_inside_loop PASSED                [ 92%]\neval/tests/test_program.py::test_error_inside_load PASSED                [ 95%]\neval/tests/test_program.py::test_reread_and_pause PASSED                 [ 97%]\neval/tests/test_program.py::test_evaluate_with_reset PASSED              [100%]\n\n- generated xml file: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-d909783f33c7/eval/results.xml -\n============================== 42 passed in 0.18s ==============================\n",
+   "returncode": 0,
+   "exception_info": "",
+   "branch": "d909783f33c7"
+  },
+  {
+   "step": "run_tests",
+   "command": "bash -c chmod +x ./eval/run.sh && ./eval/run.sh",
+   "wall_time": 0.89,
+   "output": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3\nrootdir: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-e25ad822d6e3\nplugins: anyio-4.15.1\ncollecting ... collected 65 items\n\neval/tests/test_expr.py::test_int_arith PASSED                           [  1%]\neval/tests/test_expr.py::test_int_overflow PASSED                        [  3%]\neval/tests/test_expr.py::test_float_print_precision PASSED               [  4%]\neval/tests/test_expr.py::test_nan_inf PASSED                             [  6%]\neval/tests/test_expr.py::test_division_by_zero PASSED                    [  7%]\neval/tests/test_expr.py::test_bit_ops PASSED                             [  9%]\neval/tests/test_expr.py::test_logic_and_compare PASSED                   [ 10%]\neval/tests/test_expr.py::test_ternary_and_comma PASSED                   [ 12%]\neval/tests/test_expr.py::test_complex_numbers PASSED                     [ 13%]\neval/tests/test_expr.py::test_string_ops PASSED                          [ 15%]\neval/tests/test_expr.py::test_string_number_coercion PASSED              [ 16%]\neval/tests/test_expr.py::test_words_and_trim PASSED                      [ 18%]\neval/tests/test_expr.py::test_string_functions_more PASSED               [ 20%]\neval/tests/test_expr.py::test_math_functions PASSED                      [ 21%]\neval/tests/test_expr.py::test_math_functions_2 PASSED                    [ 23%]\neval/tests/test_expr.py::test_rounding PASSED                            [ 24%]\neval/tests/test_expr.py::test_special_functions PASSED                   [ 26%]\neval/tests/test_expr.py::test_special_functions_2 PASSED                 [ 27%]\neval/tests/test_expr.py::test_degrees_mode PASSED                        [ 29%]\neval/tests/test_expr.py::test_user_functions PASSED                      [ 30%]\neval/tests/test_expr.py::test_function_recursion_depth PASSED            [ 32%]\neval/tests/test_expr.py::test_variables_and_exists PASSED                [ 33%]\neval/tests/test_expr.py::test_sum_operator PASSED                        [ 35%]\neval/tests/test_expr.py::test_arrays PASSED                              [ 36%]\neval/tests/test_expr.py::test_array_errors PASSED                        [ 38%]\neval/tests/test_expr.py::test_integer_valued_functions PASSED            [ 40%]\neval/tests/test_expr.py::test_rand_reproducible PASSED                   [ 41%]\neval/tests/test_expr.py::test_time_functions PASSED                      [ 43%]\neval/tests/test_expr.py::test_time_functions_2 PASSED                    [ 44%]\neval/tests/test_expr.py::test_column_outside_plot PASSED                 [ 46%]\neval/tests/test_expr.py::test_valid_and_value PASSED                     [ 47%]\neval/tests/test_expr.py::test_print_many_types PASSED                    [ 49%]\neval/tests/test_expr.py::test_precedence PASSED                          [ 50%]\neval/tests/test_expr.py::test_string_compare_numbers PASSED              [ 52%]\neval/tests/test_expr.py::test_factorial_operator PASSED                  [ 53%]\neval/tests/test_expr.py::test_hex_octal_literals PASSED                  [ 55%]\neval/tests/test_expr_print.py::test_e00 PASSED                           [ 56%]\neval/tests/test_expr_print.py::test_e02 PASSED                           [ 58%]\neval/tests/test_expr_print.py::test_e04 PASSED                           [ 60%]\neval/tests/test_expr_print.py::test_e06 PASSED                           [ 61%]\neval/tests/test_expr_print.py::test_e08 PASSED                           [ 63%]\neval/tests/test_expr_print.py::test_e10 PASSED                           [ 64%]\neval/tests/test_expr_print.py::test_e12 PASSED                           [ 66%]\neval/tests/test_expr_print.py::test_e14 PASSED                           [ 67%]\neval/tests/test_expr_print.py::test_e16 PASSED                           [ 69%]\neval/tests/test_expr_print.py::test_e18 PASSED                           [ 70%]\neval/tests/test_expr_print.py::test_e20 PASSED                           [ 72%]\neval/tests/test_expr_print.py::test_e22 PASSED                           [ 73%]\neval/tests/test_expr_print.py::test_e24 PASSED                           [ 75%]\neval/tests/test_expr_print.py::test_e26 PASSED                           [ 76%]\neval/tests/test_expr_print.py::test_e28 PASSED                           [ 78%]\neval/tests/test_format.py::test_sprintf_ints PASSED                      [ 80%]\neval/tests/test_format.py::test_sprintf_floats PASSED                    [ 81%]\neval/tests/test_format.py::test_sprintf_strings PASSED                   [ 83%]\neval/tests/test_format.py::test_sprintf_type_coercion PASSED             [ 84%]\neval/tests/test_format.py::test_sprintf_errors_too_few PASSED            [ 86%]\neval/tests/test_format.py::test_sprintf_errors_bad PASSED                [ 87%]\neval/tests/test_format.py::test_sprintf_many PASSED                      [ 89%]\neval/tests/test_format.py::test_gprintf_basic PASSED                     [ 90%]\neval/tests/test_format.py::test_gprintf_mantissa_exponent PASSED         [ 92%]\neval/tests/test_format.py::test_gprintf_pi_and_binary PASSED             [ 93%]\neval/tests/test_format.py::test_gprintf_combined PASSED                  [ 95%]\neval/tests/test_format.py::test_print_default_format PASSED              [ 96%]\neval/tests/test_format.py::test_format_command_and_show PASSED           [ 98%]\neval/tests/test_format.py::test_set_decimalsign PASSED                   [100%]\n\n- generated xml file: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-e25ad822d6e3/eval/results.xml -\n============================== 65 passed in 0.28s ==============================\n",
+   "returncode": 0,
+   "exception_info": "",
+   "branch": "e25ad822d6e3"
+  },
+  {
+   "step": "run_tests",
+   "command": "bash -c chmod +x ./eval/run.sh && ./eval/run.sh",
+   "wall_time": 0.901,
+   "output": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3\nrootdir: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-edd4682a61c3\nplugins: anyio-4.15.1\ncollecting ... collected 71 items\n\neval/tests/test_table.py::test_function_default_samples PASSED           [  1%]\neval/tests/test_table.py::test_function_samples_range PASSED             [  2%]\neval/tests/test_table.py::test_two_functions_titles PASSED               [  4%]\neval/tests/test_table.py::test_undefined_points PASSED                   [  5%]\neval/tests/test_table.py::test_log_x_sampling PASSED                     [  7%]\neval/tests/test_table.py::test_data_basic PASSED                         [  8%]\neval/tests/test_table.py::test_data_using_expressions PASSED             [  9%]\neval/tests/test_table.py::test_data_using_column_functions PASSED        [ 11%]\neval/tests/test_table.py::test_data_every PASSED                         [ 12%]\neval/tests/test_table.py::test_data_index_blocks PASSED                  [ 14%]\neval/tests/test_table.py::test_data_with_errorbars PASSED                [ 15%]\neval/tests/test_table.py::test_data_missing_and_comments PASSED          [ 16%]\neval/tests/test_table.py::test_csv_separator PASSED                      [ 18%]\neval/tests/test_table.py::test_columnheader PASSED                       [ 19%]\neval/tests/test_table.py::test_named_columns PASSED                      [ 21%]\neval/tests/test_table.py::test_time_data PASSED                          [ 22%]\neval/tests/test_table.py::test_table_to_datablock PASSED                 [ 23%]\neval/tests/test_table.py::test_table_with_table_style PASSED             [ 25%]\neval/tests/test_table.py::test_table_with_table_format PASSED            [ 26%]\neval/tests/test_table.py::test_splot_function PASSED                     [ 28%]\neval/tests/test_table.py::test_splot_data PASSED                         [ 29%]\neval/tests/test_table.py::test_parametric PASSED                         [ 30%]\neval/tests/test_table.py::test_polar PASSED                              [ 32%]\neval/tests/test_table.py::test_iteration_plot PASSED                     [ 33%]\neval/tests/test_table.py::test_histogram_style_table PASSED              [ 35%]\neval/tests/test_table.py::test_boxes_and_steps PASSED                    [ 36%]\neval/tests/test_table.py::test_filledcurves_table PASSED                 [ 38%]\neval/tests/test_table.py::test_ranges_clip_data PASSED                   [ 39%]\neval/tests/test_table.py::test_autoscale_extend_table PASSED             [ 40%]\neval/tests/test_table.py::test_x2_y2_axes PASSED                         [ 42%]\neval/tests/test_table.py::test_sample_keyword PASSED                     [ 43%]\neval/tests/test_table.py::test_dummy_variable PASSED                     [ 45%]\neval/tests/test_table.py::test_binary_operators_in_using PASSED          [ 46%]\neval/tests/test_table.py::test_array_plot PASSED                         [ 47%]\neval/tests/test_table.py::test_string_column_xtic PASSED                 [ 49%]\neval/tests/test_table3d.py::test_saddle__grid PASSED                     [ 50%]\neval/tests/test_table3d.py::test_saddle__contour PASSED                  [ 52%]\neval/tests/test_table3d.py::test_saddle__dgrid3d PASSED                  [ 53%]\neval/tests/test_table3d.py::test_bump__grid PASSED                       [ 54%]\neval/tests/test_table3d.py::test_bump__contour PASSED                    [ 56%]\neval/tests/test_table3d.py::test_bump__dgrid3d PASSED                    [ 57%]\neval/tests/test_table3d.py::test_ripple__grid PASSED                     [ 59%]\neval/tests/test_table3d.py::test_ripple__contour PASSED                  [ 60%]\neval/tests/test_table3d.py::test_ripple__dgrid3d PASSED                  [ 61%]\neval/tests/test_table3d.py::test_plane__grid PASSED                      [ 63%]\neval/tests/test_table3d.py::test_plane__contour PASSED                   [ 64%]\neval/tests/test_table3d.py::test_plane__dgrid3d PASSED                   [ 66%]\neval/tests/test_table_matrix.py::test_poly__s7 PASSED                    [ 67%]\neval/tests/test_table_matrix.py::test_poly__log PASSED                   [ 69%]\neval/tests/test_table_matrix.py::test_poly__y_restricted PASSED          [ 70%]\neval/tests/test_table_matrix.py::test_gauss__s7 PASSED                   [ 71%]\neval/tests/test_table_matrix.py::test_gauss__log PASSED                  [ 73%]\neval/tests/test_table_matrix.py::test_gauss__y_restricted PASSED         [ 74%]\neval/tests/test_table_matrix.py::test_sinc__s7 PASSED                    [ 76%]\neval/tests/test_table_matrix.py::test_sinc__log PASSED                   [ 77%]\neval/tests/test_table_matrix.py::test_sinc__y_restricted PASSED          [ 78%]\neval/tests/test_table_matrix.py::test_abs_saw__s7 PASSED                 [ 80%]\neval/tests/test_table_matrix.py::test_abs_saw__log PASSED                [ 81%]\neval/tests/test_table_matrix.py::test_abs_saw__y_restricted PASSED       [ 83%]\neval/tests/test_table_matrix.py::test_step__s7 PASSED                    [ 84%]\neval/tests/test_table_matrix.py::test_step__log PASSED                   [ 85%]\neval/tests/test_table_matrix.py::test_step__y_restricted PASSED          [ 87%]\neval/tests/test_table_matrix.py::test_lin__s7 PASSED                     [ 88%]\neval/tests/test_table_matrix.py::test_lin__log PASSED                    [ 90%]\neval/tests/test_table_matrix.py::test_lin__y_restricted PASSED           [ 91%]\neval/tests/test_table_matrix.py::test_atan__s7 PASSED                    [ 92%]\neval/tests/test_table_matrix.py::test_atan__log PASSED                   [ 94%]\neval/tests/test_table_matrix.py::test_atan__y_restricted PASSED          [ 95%]\neval/tests/test_table_matrix.py::test_cosh__s7 PASSED                    [ 97%]\neval/tests/test_table_matrix.py::test_cosh__log PASSED                   [ 98%]\neval/tests/test_table_matrix.py::test_cosh__y_restricted PASSED          [100%]\n\n- generated xml file: /tmp/programbench-gnuplot__gnuplot.a1bafa4-9y9n3xpv/branch-edd4682a61c3/eval/results.xml -\n============================== 71 passed in 0.38s ==============================\n",
+   "returncode": 0,
+   "exception_info": "",
+   "branch": "edd4682a61c3"
+  }
+ ],
+ "solution_branch": "submission",
+ "test_branches": [
+  "1fe6fa7ee706",
+  "26b37877411a",
+  "743807875866",
+  "8f4b382f07f4",
+  "d909783f33c7",
+  "e25ad822d6e3",
+  "edd4682a61c3"
+ ],
+ "test_branch_errors": {},
+ "executable_hash": "6c0890287d60212a0a5bf8ddb27abe42c0527ee6c407a456b83c93764d3d6665",
+ "warnings": [],
+ "structure": {
+  "files": 801,
+  "languages": {
+   "Shell": {
+    "files": 4,
+    "nonblank_loc": 164
+   },
+   "C": {
+    "files": 204,
+    "nonblank_loc": 126859
+   },
+   "Lua": {
+    "files": 1,
+    "nonblank_loc": 2265
+   },
+   "JavaScript": {
+    "files": 7,
+    "nonblank_loc": 2575
+   },
+   "C++": {
+    "files": 20,
+    "nonblank_loc": 12912
+   },
+   "TypeScript": {
+    "files": 2,
+    "nonblank_loc": 323
+   }
+  },
+  "nonblank_loc": 145098,
+  "largest_files": [
+   [
+    6421,
+    "upstream/src/gplt_x11.c"
+   ],
+   [
+    6244,
+    "upstream/src/set.c"
+   ],
+   [
+    5042,
+    "upstream/src/datafile.c"
+   ],
+   [
+    5020,
+    "upstream/src/win/wgraph.c"
+   ],
+   [
+    4729,
+    "upstream/src/graphics.c"
+   ],
+   [
+    3831,
+    "upstream/src/graph3d.c"
+   ],
+   [
+    3777,
+    "upstream/src/wxterminal/wxt_gui.cpp"
+   ],
+   [
+    3770,
+    "upstream/src/os2/gclient.c"
+   ]
+  ]
+ }
+}

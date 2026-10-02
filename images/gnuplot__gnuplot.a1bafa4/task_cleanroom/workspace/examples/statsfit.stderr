@@ -1,0 +1,61 @@
+
+* FILE: 
+  Records:           4
+  Out of range:      0
+  Invalid:           0
+  Header records:    0
+  Blank:             0
+  Data Blocks:       1
+
+* COLUMNS:
+  Mean:               2.5000            5.0000
+  Std Dev:            1.1180            2.1737
+  Sample StdDev:      1.2910            2.5100
+  Skewness:           0.0000           -0.0497
+  Kurtosis:           1.6400            1.5199
+  Avg Dev:            1.0000            2.0000
+  Sum:               10.0000           20.0000
+  Sum Sq.:           30.0000          118.9000
+
+  Mean Err.:          0.5590            1.0869
+  Std Dev Err.:       0.3953            0.7685
+  Skewness Err.:      1.2247            1.2247
+  Kurtosis Err.:      2.4495            2.4495
+
+  Minimum:            1.0000 [0]        2.1000 [0]
+  Maximum:            4.0000 [3]        7.8000 [3]
+  Quartile:           1.5000            3.0000
+  Median:             2.5000            5.0500
+  Quartile:           3.5000            7.0000
+
+  Linear Model:       y = 1.94 x + 0.15
+  Slope:              1.94 +- 0.09055
+  Intercept:          0.15 +- 0.248
+  Correlation:        r = 0.9978
+  Sum xy:             59.7
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3500000000e+01   0.00e+00  2.06e+00    1.000000e+00   1.000000e+00
+   1 8.0776519791e-01  -1.57e+06  2.06e-01    1.561588e+00   1.046559e+00
+   2 8.4478146725e-02  -8.56e+05  2.06e-02    1.919202e+00   2.108742e-01
+   3 8.2000001247e-02  -3.02e+03  2.06e-03    1.939985e+00   1.500432e-01
+   4 8.2000000000e-02  -1.52e-03  2.06e-04    1.940000e+00   1.500000e-01
+iter      chisq       delta/lim  lambda   a             b            
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.082
+rel. change during last iteration : -1.52018e-08
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.202485
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.041
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.94             +/- 0.09055      (4.668%)
+b               = 0.15             +/- 0.248        (165.3%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.913  1.000 

@@ -1,0 +1,334 @@
+[
+ {
+  "id": "fit.linear",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nf(x) = a*x + b\nfit f(x) $d via a, b\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "iter      chisq       delta/lim  lambda   a             b            \n   0 5.7590000000e+01   0.00e+00  2.84e+00    1.000000e+00   1.000000e+00\n   1 1.8186650331e+00  -3.07e+06  2.84e-01    1.718400e+00   1.015166e+00\n   2 1.6966182640e-01  -9.72e+05  2.84e-02    2.008503e+00   3.346371e-02\n   3 1.6342857482e-01  -3.81e+03  2.84e-03    2.025702e+00  -3.994579e-02\n   4 1.6342857143e-01  -2.08e-03  2.84e-04    2.025714e+00  -4.000000e-02\niter      chisq       delta/lim  lambda   a             b            \n\nAfter 4 iterations the fit converged.\nfinal sum of squares of residuals : 0.163429\nrel. change during last iteration : -2.07594e-08\n\ndegrees of freedom    (FIT_NDF)                        : 4\nrms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.202131\nvariance of residuals (reduced chisquare) = WSSR/ndf   : 0.0408571\n\nFinal set of parameters            Asymptotic Standard Error\n=======================            ==========================\na               = 2.02571          +/- 0.04832      (2.385%)\nb               = -0.04            +/- 0.1882       (470.4%)\n\ncorrelation matrix of the fit parameters:\n                a      b      \na               1.000 \nb              -0.899  1.000 \n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.quadratic_quiet",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset fit quiet\nf(x) = a*x**2 + b*x + c\nfit f(x) $d via a, b, c\nprint a, b, c\nprint FIT_NDF, FIT_WSSR, FIT_STDFIT, FIT_CONVERGED\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0.0214285714434895 1.87571428560069 0.160000000177812\n3 0.146285714285714 0.220820978989553 1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.exponential_with_errors",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n# x y err\n0 1.0 0.1\n1 2.7 0.2\n2 7.4 0.3\n3 20.1 0.5\n4 54.6 1.0\n\n\n0 3\n1 2\n2 4\n3 1\n4 5\nEOD\nset fit logfile 'my.log'\ng(x) = A*exp(k*x)\nA = 1; k = 1\nfit g(x) $d index 0 using 1:2:3 yerrors via A, k\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "iter      chisq       delta/lim  lambda   A             k            \n   0 1.0526542376e-02   0.00e+00  8.40e+01    1.000000e+00   1.000000e+00\n   1 1.0209057153e-02  -3.11e+03  8.40e+00    9.999743e-01   1.000068e+00\n   2 9.9612239857e-03  -2.49e+03  8.40e-01    9.993092e-01   1.000261e+00\n   3 9.9546082316e-03  -6.65e+01  8.40e-02    9.991822e-01   1.000298e+00\n   4 9.9546073962e-03  -8.39e-03  8.40e-03    9.991819e-01   1.000298e+00\niter      chisq       delta/lim  lambda   A             k            \n\nAfter 4 iterations the fit converged.\nfinal sum of squares of residuals : 0.00995461\nrel. change during last iteration : -8.39156e-08\n\ndegrees of freedom    (FIT_NDF)                        : 3\nrms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0576038\nvariance of residuals (reduced chisquare) = WSSR/ndf   : 0.0033182\np-value of the Chisq distribution (FIT_P)              : 0.999737\n\nFinal set of parameters            Asymptotic Standard Error\n=======================            ==========================\nA               = 0.999182         +/- 0.002886     (0.2888%)\nk               = 1.0003           +/- 0.0008385    (0.08383%)\n\ncorrelation matrix of the fit parameters:\n                A      k      \nA               1.000 \nk              -0.963  1.000 \n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.brief_errorvariables",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset fit brief errorvariables nolog\nfit m*x + q $d via m, q\nprint m, m_err, q, q_err\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "iter      chisq       delta/lim  lambda   m             q            \n   0 5.7590000000e+01   0.00e+00  2.84e+00    1.000000e+00   1.000000e+00\n   1 1.8186650331e+00  -3.07e+06  2.84e-01    1.718400e+00   1.015166e+00\n   2 1.6966182640e-01  -9.72e+05  2.84e-02    2.008503e+00   3.346371e-02\n   3 1.6342857482e-01  -3.81e+03  2.84e-03    2.025702e+00  -3.994579e-02\n   4 1.6342857143e-01  -2.08e-03  2.84e-04    2.025714e+00  -4.000000e-02\niter      chisq       delta/lim  lambda   m             q            \n\nAfter 4 iterations the fit converged.\nfinal sum of squares of residuals : 0.163429\nrel. change during last iteration : -2.07594e-08\n\ndegrees of freedom    (FIT_NDF)                        : 4\nrms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.202131\nvariance of residuals (reduced chisquare) = WSSR/ndf   : 0.0408571\n\nFinal set of parameters            Asymptotic Standard Error\n=======================            ==========================\nm               = 2.02571          +/- 0.04832      (2.385%)\nq               = -0.04            +/- 0.1882       (470.4%)\n\ncorrelation matrix of the fit parameters:\n                m      q      \nm               1.000 \nq              -0.899  1.000 \n2.02571428562115 0.0483186700718547 -0.0399999996012812 0.1881741847597\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.verbose",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset fit verbose nolog\nfit m*x $d via m\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\n Iteration 0\n WSSR        : 94.19             delta(WSSR)/WSSR   : 0\n delta(WSSR) : 0                 limit for stopping : 1e-05\n lambda\t     : 3.89444\n\ninitial set of free parameter values\n\nm               = 1\n/\n\n Iteration 1\n WSSR        : 2.08415           delta(WSSR)/WSSR   : -44.1936\n delta(WSSR) : -92.1059          limit for stopping : 1e-05\n lambda\t     : 0.389444\n\nresultant parameter values\n\nm               = 1.87127\n/\n\n Iteration 2\n WSSR        : 0.16528           delta(WSSR)/WSSR   : -11.6098\n delta(WSSR) : -1.91887          limit for stopping : 1e-05\n lambda\t     : 0.0389444\n\nresultant parameter values\n\nm               = 2.01624\n/\n\n Iteration 3\n WSSR        : 0.165275          delta(WSSR)/WSSR   : -3.21433e-05\n delta(WSSR) : -5.31248e-06      limit for stopping : 1e-05\n lambda\t     : 0.00389444\n\nresultant parameter values\n\nm               = 2.01648\n/\n\n Iteration 4\n WSSR        : 0.165275          delta(WSSR)/WSSR   : -8.73267e-15\n delta(WSSR) : -1.44329e-15      limit for stopping : 1e-05\n lambda\t     : 0.000389444\n\nresultant parameter values\n\nm               = 2.01648\n\nAfter 4 iterations the fit converged.\nfinal sum of squares of residuals : 0.165275\nrel. change during last iteration : -8.73267e-15\n\ndegrees of freedom    (FIT_NDF)                        : 5\nrms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.18181\nvariance of residuals (reduced chisquare) = WSSR/ndf   : 0.0330549\n\nFinal set of parameters            Asymptotic Standard Error\n=======================            ==========================\nm               = 2.01648          +/- 0.01906      (0.9452%)\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.limits_and_start",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset fit nolog quiet limit 1e-9 maxiter 50 start_lambda 0.1 lambda_factor 5\nfit p*x + r $n via p, r\nprint p, r, FIT_CONVERGED, FIT_NITER\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0.523359288097881 -0.505376344085942 1 3\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.maxiter_hit",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nset fit nolog maxiter 2\nh(x) = a*sin(b*x) + c\na=5; b=1; c=0\nfit h(x) $n via a, b, c\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "Warning: Initial value of parameter 'c' is zero.\n  Please provide non-zero initial values for the parameters, at least of\n  the right order of magnitude. If the expected value is zero, then use\n  the magnitude of the expected error. If all else fails, try 1.0\n\niter      chisq       delta/lim  lambda   a             b             c            \n   0 2.6574053478e+03   0.00e+00  3.51e+01    5.000000e+00   1.000000e+00   1.000000e-30\n   1 2.5224356053e+03  -5.35e+03  3.51e+00    4.058752e+00   9.846824e-01  -4.045298e-03\n   2 1.0387467016e+03  -1.43e+05  3.51e-01    6.652854e-01   9.796422e-01   4.978439e+00\n   3 9.0910055384e+02  -1.43e+04  3.51e-02    3.183431e-01   9.744149e-01   7.053304e+00\niter      chisq       delta/lim  lambda   a             b             c            \n\nMaximum iteration count (2) reached. Fit stopped.\nfinal sum of squares of residuals : 909.101\nrel. change during last iteration : -0.142609\n\ndegrees of freedom    (FIT_NDF)                        : 27\nrms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.80262\nvariance of residuals (reduced chisquare) = WSSR/ndf   : 33.6704\n\nFinal set of parameters            Asymptotic Standard Error\n=======================            ==========================\na               = 0.318343         +/- 1.53         (480.7%)\nb               = 0.974415         +/- 0.2722       (27.93%)\nc               = 7.0533           +/- 1.065        (15.1%)\n\ncorrelation matrix of the fit parameters:\n                a      b      c      \na               1.000 \nb               0.024  1.000 \nc              -0.090  0.043  1.000 \n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.fit_ranges",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset fit nolog\nfit [2:5] a*x + b $d via a, b\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "iter      chisq       delta/lim  lambda   a             b            \n   0 2.9500000000e+01   0.00e+00  2.69e+00    1.000000e+00   1.000000e+00\n   1 7.6177759383e-01  -3.77e+06  2.69e-01    1.621879e+00   1.114996e+00\n   2 9.1474558596e-02  -7.33e+05  2.69e-02    1.898179e+00   3.698788e-01\n   3 8.2000041208e-02  -1.16e+04  2.69e-03    1.939913e+00   2.103335e-01\n   4 8.2000000000e-02  -5.03e-02  2.69e-04    1.940000e+00   2.100000e-01\niter      chisq       delta/lim  lambda   a             b            \n\nAfter 4 iterations the fit converged.\nfinal sum of squares of residuals : 0.082\nrel. change during last iteration : -5.02536e-07\n\ndegrees of freedom    (FIT_NDF)                        : 2\nrms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.202485\nvariance of residuals (reduced chisquare) = WSSR/ndf   : 0.041\n\nFinal set of parameters            Asymptotic Standard Error\n=======================            ==========================\na               = 1.94             +/- 0.09055      (4.668%)\nb               = 0.21             +/- 0.3327       (158.4%)\n\ncorrelation matrix of the fit parameters:\n                a      b      \na               1.000 \nb              -0.953  1.000 \n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.fixed_parameter_file",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset fit nolog\nfit a*x + b $d via 'start.par'\nprint a, b\n"
+   },
+   "start.par": {
+    "text": "a = 2\nb = 0.5 # FIXED\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "iter      chisq       delta/lim  lambda   a            \n   0 1.3900000000e+00   0.00e+00  7.79e+00    2.000000e+00\n   1 5.1805561785e-01  -1.68e+05  7.79e-01    1.915228e+00\n   2 4.9989016018e-01  -3.63e+03  7.79e-02    1.901122e+00\n   3 4.9989010989e-01  -1.01e-02  7.79e-03    1.901099e+00\niter      chisq       delta/lim  lambda   a            \n\nAfter 3 iterations the fit converged.\nfinal sum of squares of residuals : 0.49989\nrel. change during last iteration : -1.00606e-07\n\ndegrees of freedom    (FIT_NDF)                        : 5\nrms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.316193\nvariance of residuals (reduced chisquare) = WSSR/ndf   : 0.099978\n\nFinal set of parameters            Asymptotic Standard Error\n=======================            ==========================\na               = 1.9011           +/- 0.03315      (1.744%)\n1.90109890149071 0.5\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.covariance_variables",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset fit quiet nolog covariancevariables\nfit a*x + b $d via a, b\nprint FIT_COV_a_b, FIT_COV_a_a\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "-0.00817142857139785 0.00233469387751275\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.two_dimensional",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$g << EOD\n0 0 1\n0 1 3\n1 0 2\n1 1 4.2\n2 1 5.1\n2 2 7\nEOD\nset fit nolog\nfit a*x + b*y + c $g using 1:2:3:(1) via a, b, c\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\"t.gp\" line 10: warning: \n\t> Implied independent variable t not found in fit function.\n\t> Assuming version 4 syntax with zerror in column 4 but no zerror keyword.\n\niter      chisq       delta/lim  lambda   a             b             c            \n   0 7.6500000000e+00   0.00e+00  1.13e+00    1.000000e+00   1.000000e+00   1.000000e+00\n   1 2.6890548291e-01  -2.74e+06  1.13e-01    1.185290e+00   1.645417e+00   1.132069e+00\n   2 3.2519748722e-02  -7.27e+05  1.13e-02    1.026792e+00   1.996753e+00   1.026140e+00\n   3 3.2500000000e-02  -6.08e+01  1.13e-03    1.025000e+00   2.000000e+00   1.025000e+00\n   4 3.2500000000e-02  -5.77e-07  1.13e-04    1.025000e+00   2.000000e+00   1.025000e+00\niter      chisq       delta/lim  lambda   a             b             c            \n\nAfter 4 iterations the fit converged.\nfinal sum of squares of residuals : 0.0325\nrel. change during last iteration : -5.76996e-12\n\ndegrees of freedom    (FIT_NDF)                        : 3\nrms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.104083\nvariance of residuals (reduced chisquare) = WSSR/ndf   : 0.0108333\np-value of the Chisq distribution (FIT_P)              : 0.998457\n\nFinal set of parameters            Asymptotic Standard Error\n=======================            ==========================\na               = 1.025            +/- 0.0647       (6.312%)\nb               = 2                +/- 0.07687      (3.844%)\nc               = 1.025            +/- 0.07191      (7.015%)\n\ncorrelation matrix of the fit parameters:\n                a      b      c      \na               1.000 \nb              -0.594  1.000 \nc              -0.370 -0.356  1.000 \n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.singular_fit",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$z << EOD\n1 1\n1 1\n1 1\nEOD\nset fit nolog\nfit a*x + b $z via a, b\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "iter      chisq       delta/lim  lambda   a             b            \n   0 3.0000000000e+00   0.00e+00  1.00e+00    1.000000e+00   1.000000e+00\n   1 6.1224489796e-02  -4.80e+06  1.00e-01    5.714286e-01   5.714286e-01\n   2 1.6950254785e-07  -3.61e+10  1.00e-02    5.001188e-01   5.001188e-01\n   3 4.7082473841e-17  -3.60e+14  1.00e-03    5.000000e-01   5.000000e-01\n   4 2.3665827157e-30  -1.99e+18  1.00e-04    5.000000e-01   5.000000e-01\n   5 3.6977854932e-32  -6.30e+06  1.00e-05    5.000000e-01   5.000000e-01\n   6 0.0000000000e+00  -inf       1.00e-06    5.000000e-01   5.000000e-01\niter      chisq       delta/lim  lambda   a             b            \n\nAfter 6 iterations the fit converged.\nfinal sum of squares of residuals : 0\nabs. change during last iteration : -3.69779e-32\n\n\nHmmmm.... Sum of squared residuals is zero. Can't compute errors.\n\nFinal set of parameters \n======================= \n\na               = 0.5            \nb               = 0.5            \n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "fit.update_file",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset fit nolog quiet\na = 1; b = 1\nfit a*x + b $d via a, b\nupdate 'p.par'\n"
+   }
+  },
+  "check_files": [
+   "p.par"
+  ],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\"t.gp\" line 12: DEPRECATED command 'update', please use 'save fit' instead\n\n"
+   },
+   "exit_code": 1,
+   "files": {
+    "p.par": null
+   }
+  }
+ }
+]

@@ -1,0 +1,14 @@
+diff --git a/term/post.trm b/term/post.trm
+index 186eb9d3c..ba274b579 100644
+--- a/term/post.trm
++++ b/term/post.trm
+@@ -4010,7 +4010,9 @@ PS_image (unsigned int M, unsigned int N, coordval *image, gpiPoint *corner, t_i
+ 					bits_per_component, max_colors, cscale,
+ 					(ps_params->level1 ? PS_ASCII_HEX : PS_ASCII85),
+ 					&num_encoded_bytes);
++#ifdef HAVE_DEFLATE_ENCODER
+     }
++#endif
+ 
+ 
+     fputs("%%%%BeginImage\n", gppsfile);

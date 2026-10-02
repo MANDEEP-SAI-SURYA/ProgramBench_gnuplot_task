@@ -1,0 +1,6 @@
+repository: gnuplot/gnuplot
+commit: a1bafa410d3c07d832f81884c5af61dee73fb1c5
+language: c
+difficulty: hard
+eval_clean_hashes:
+- c8870807dd158b5fffc795afae4f46133d701cb0fab5120357138d9a9d203252

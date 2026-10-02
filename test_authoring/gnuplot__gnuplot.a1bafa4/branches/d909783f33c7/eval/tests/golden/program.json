@@ -1,0 +1,573 @@
+[
+ {
+  "id": "program.do_for_loop",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "do for [i=1:5] {\n  print i, i**2\n}\ndo for [s in \"a bb ccc\"] { print s, strlen(s) }\ndo for [i=10:1:-3] { print i }\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1 1\n2 4\n3 9\n4 16\n5 25\na 1\nbb 2\nccc 3\n10\n7\n4\n1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.while_loop",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "n = 0\nwhile (n < 50) { n = n*2 + 1 }\nprint n\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "63\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.if_else_chain",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "x = 7\nif (x < 5) { print \"lt5\" } else if (x < 10) { print \"lt10\" } else { print \"big\" }\nif (x) print \"old style\"\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\nif (x < 5) { print \"lt5\" } else if (x < 10) { print \"lt10\" } else { print \"big\" }\n                                ^\n\"t.gp\" line 2: expected {else-clause}\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.break_continue",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "do for [i=1:10] {\n  if (i % 2) { continue }\n  if (i > 7) { break }\n  print i\n}\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "2\n4\n6\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.nested_loops",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "do for [i=1:3] { do for [j=i:3] { print sprintf(\"%d%d\", i, j) } }\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "11\n12\n13\n22\n23\n33\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.eval_and_macro",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set macros\ncmd = \"print 'evaluated'\"\neval cmd\nv = \"3 + 4\"\nprint @v\nx = @v * 2\nprint x\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "evaluated\n7\n11\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.load_and_call",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 'main'\nload 'inc.gp'\ncall 'args.gp' 'one' 2 \"three four\"\nprint inc_value\n"
+   },
+   "inc.gp": {
+    "text": "inc_value = 99\nprint 'inside inc'\n"
+   },
+   "args.gp": {
+    "text": "print 'ARGC=', ARGC\nprint ARG1, ARG2, ARG3\nprint ARG0\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "main\ninside inc\nARGC= 3\none 2 three four\nargs.gp\n99\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.datablock_print",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nprint $d\nprint |$d|\nprint $d[2]\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\n\n6\n2 4.1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.datablock_redefine_and_undefine",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$x << EOD\na\nEOD\n$x << EOD\nb\nc\nEOD\nprint $x\nundefine $x\nprint exists(\"$x\")\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "b\nc\n\n0\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.set_print_to_file",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set print 'out.txt'\nprint 'to file', 42\nset print\nprint 'to stderr'\nset print '-'\nprint 'to stdout'\n"
+   }
+  },
+  "check_files": [
+   "out.txt"
+  ],
+  "expected": {
+   "stdout": {
+    "text": "to stdout\n"
+   },
+   "stderr": {
+    "text": "to stderr\n"
+   },
+   "exit_code": 0,
+   "files": {
+    "out.txt": {
+     "text": "to file 42\n"
+    }
+   }
+  }
+ },
+ {
+  "id": "program.set_print_append",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set print 'out.txt'\nprint 'first'\nset print 'out.txt' append\nprint 'second'\nunset print\n"
+   }
+  },
+  "check_files": [
+   "out.txt"
+  ],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": ""
+   },
+   "exit_code": 0,
+   "files": {
+    "out.txt": {
+     "text": "first\nsecond\n"
+    }
+   }
+  }
+ },
+ {
+  "id": "program.set_print_datablock",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set print $buf\nprint 'line 1'\nprint 2, 3\nunset print\nprint $buf\nprint |$buf|\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "line 1\n2 3\n\n2\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.functions_listing",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "f(x) = x + 1\ng(a, b) = a * b\nshow functions\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tUser-Defined Functions:\n\tf(x) = x + 1\n\tg(a, b) = a * b\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.variables_listing",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "aa = 1\nbb = \"str\"\ncc = 2.5\nshow variables aa\nshow variables bb\nshow variables cc\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tVariables beginning with aa:\n\taa = 1\n\n\n\tVariables beginning with bb:\n\tbb = \"str\"\n\n\n\tVariables beginning with cc:\n\tcc = 2.5\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.comments_and_continuation",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "# comment\nprint 1 + \\\n  2 # trailing\nprint \"#not a comment\"\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "3\n#not a comment\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.multiple_statements_per_line",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "a=1; b=2; print a+b; print a-b\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "3\n-1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.string_interpolation_in_set",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "t = 'My Title'\nset title t\nshow title\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\ttitle is \"My Title\", offset at (character 0, 0, 0)center justified  textcolor lt -1\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.iteration_in_print",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print sum [i=1:3] i, 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "6 1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.error_inside_loop",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "do for [i=1:5] {\n  print i\n  if (i == 3) { print undefined_var }\n}\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1\n2\n3\n\"t.gp\" line 4: undefined variable: undefined_var\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.error_inside_load",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 'before'\nload 'bad.gp'\nprint 'after'\n"
+   },
+   "bad.gp": {
+    "text": "print 'in bad'\nset xrange [1:\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "before\nin bad\n\nset xrange [1:\n              ^\n\"bad.gp\" line 2: constant expression required\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.reread_and_pause",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "pause 0\npause 0 'message shown'\nprint 'ok'\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "message shown\nok\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "program.evaluate_with_reset",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set samples 7\nreset\nshow samples\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tsampling rate is 100, 100\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ }
+]

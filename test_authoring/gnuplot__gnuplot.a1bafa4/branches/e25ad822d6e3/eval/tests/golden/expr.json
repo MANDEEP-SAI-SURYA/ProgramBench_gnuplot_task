@@ -1,0 +1,902 @@
+[
+ {
+  "id": "expr.int_arith",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 7/2, -7/2, 7%3, -7%3, 7.0/2, 2**10, 2**-1, 2.0**-1, -2**2, (-2)**2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "3 -3 1 -1 3.5 1024 0.5 0.5 -4 4\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.int_overflow",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 2**62, 2**63, 2**64, 9223372036854775807 + 1, -9223372036854775807 - 2, 3037000500**2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "4611686018427387904 9.22337203685478e+18 1.84467440737096e+19 9.22337203685478e+18 -9.22337203685478e+18 9.22337203700025e+18\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.float_print_precision",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 1/3.0, 2/3.0, 1e20, 1e-20, 123456789.123456789, 0.1+0.2, 1e15+0.3, 100.0, 1e300*1e10, -1e300*1e10\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0.333333333333333 0.666666666666667 1e+20 1e-20 123456789.123457 0.3 1e+15 100.0 inf.0 -inf.0\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.nan_inf",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "x = 1e308*10\nprint x, -x, x-x, (x-x)==(x-x), x>1e308, sqrt(-1), log(0), log(-1)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "inf.0 -inf.0 NaN 0 1 {0.0, 1.0} \nprint x, -x, x-x, (x-x)==(x-x), x>1e308, sqrt(-1), log(0), log(-1)\n                                                   ^\n\"t.gp\" line 2: undefined value\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.division_by_zero",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 1/0\nprint 1.0/0\nprint 1%0\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\nprint 1/0\n      ^\n\"t.gp\" line 1: undefined value\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.bit_ops",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 12 & 10, 12 | 10, 12 ^ 10, ~5, 1 << 4, 256 >> 3, -16 >> 2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "8 14 6 -6 16 32 4611686018427387900\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.logic_and_compare",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 1 && 0, 1 || 0, !0, !5, 3 > 2, 3 < 2, 2 >= 2, 2 <= 1, 1 == 1.0, 1 != 2, \"a\" eq \"a\", \"a\" ne \"b\"\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0 1 1 0 1 0 1 0 1 1 1 1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.ternary_and_comma",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "x = 5\nprint x > 3 ? \"big\" : \"small\", (a=1, b=2, a+b), x < 3 ? 1 : x < 10 ? 2 : 3\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "big 3 2\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.complex_numbers",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "z = {3,4}\nprint z, abs(z), real(z), imag(z), arg(z), z*z, z/{0,1}, sqrt({-4,0}), exp({0,pi}), {1,1}**2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\nprint z, abs(z), real(z), imag(z), arg(z), z*z, z/{0,1}, sqrt({-4,0}), exp({0,pi}), {1,1}**2\n                                                                           ^\n\"t.gp\" line 2: invalid complex constant\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.string_ops",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "s = \"Hello, World\"\nprint s[1:5], s[8:], s[:3], strlen(s), strstrt(s, \"World\"), s . \"!\", substr(s, 3, 4), upper(s), lower(s)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "Hello World Hel 12 8 Hello, World! ll \"t.gp\" line 2: undefined function: upper\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.string_number_coercion",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print \"3\" + 4, \"2.5\" * 2, 5 . \"\", \"10\" == 10, \"abc\" + 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "7 5.0 \"t.gp\" line 1: internal error : STRING operator applied to undefined or non-STRING variable\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.words_and_trim",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "s = \"  alpha beta\tgamma  \"\nprint words(s), word(s, 2), word(s, 4), \"[\" . trim(s) . \"]\"\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "3 beta  [alpha beta\tgamma]\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.string_functions_more",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print strstrt(\"abc\", \"z\"), sprintf(\"%s-%s\", \"a\", \"b\"), gprintf(\"%.2f\", pi), strlen(\"\"), \"x\"[1:0]\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0 a-b 3.14 0 \n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.math_functions",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print sin(1), cos(1), tan(1), asin(0.5), acos(0.5), atan(1), atan2(1,-1), sinh(1), cosh(1), tanh(1)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0.841470984807897 0.54030230586814 1.5574077246549 0.523598775598299 1.0471975511966 0.785398163397448 2.35619449019234 1.1752011936438 1.54308063481524 0.761594155955765\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.math_functions_2",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print exp(1), log(10), log10(1000), sqrt(2), abs(-3), abs(-3.5), sgn(-2), sgn(0), sgn(4.2)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "2.71828182845905 2.30258509299405 3.0 1.4142135623731 3 3.5 -1 0 1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.rounding",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print int(3.7), int(-3.7), floor(-3.5), ceil(-3.5), floor(3), round(2.5), round(-2.5), round(3.49)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "3 -3 -4 -3 3 \"t.gp\" line 1: undefined function: round\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.special_functions",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print gamma(5), lgamma(10), erf(0.5), erfc(0.5), inverf(0.5), norm(1), invnorm(0.975), besj0(1), besj1(1), besy0(1), besy1(1)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "24.0 12.8018274800815 0.520499877813047 0.479500122186953 0.47693627620447 0.841344746068543 1.95996398454005 0.765197686557967 0.440050585744933 0.088256964215677 -0.781212821300289\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.special_functions_2",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print igamma(2, 1), ibeta(2, 3, 0.4), lambertw(1), airy(1), expint(1, 1), voigt(1, 1)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0.264241117657115 0.5248 0.567143290409784 0.135292416312881 0.21938393439552 0.304744205209269\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.degrees_mode",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "set angles degrees\nprint sin(30), cos(60), atan(1), asin(1), atan2(1, 1)\nset angles radians\nprint sin(30)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0.5 0.5 45.0 90.0 45.0\n-0.988031624092862\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.user_functions",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "f(x) = x**2 + 1\ng(x, y) = f(x) * y\nfact(n) = n <= 1 ? 1 : n * fact(n - 1)\nprint f(3), g(2, 3), fact(10), fact(20), fact(21)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "10 15 3628800 2432902008176640000 5.10909421717094e+19\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.function_recursion_depth",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "r(n) = n == 0 ? 0 : 1 + r(n-1)\nprint r(100)\nprint r(300000)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "100\n\"t.gp\" line 3: stack overflow\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.variables_and_exists",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "a = 1\nprint exists(\"a\"), exists(\"zz\")\nundefine a\nprint exists(\"a\")\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1 0\n0\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.sum_operator",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print sum [i=1:10] i, sum [i=1:4] i**2, sum [k=5:1] k, sum [i=1:3] 1.0/i\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "55 30 0 1.83333333333333\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.arrays",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "array A[4]\nA[1] = 10; A[2] = \"two\"; A[4] = {1,1}\nprint A\nprint |A|, A[2], A[1] + 1\narray B = [3, 1, 2]\nprint B, B[3]\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "[10,\"two\",,{1.0, 1.0}]\n\n4 two 11\n[3,1,2]\n 2\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.array_errors",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "array A[2]\nprint A[3]\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\"t.gp\" line 2: array index out of range\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.integer_valued_functions",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print int(1e18), int(1e19), int(-0.5), floor(1e10), 7.9 % 2, 2**0, 0**0\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1000000000000000000 NaN 0 10000000000 \"t.gp\" line 1: non-integer operand for %\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.rand_reproducible",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print rand(0)\nprint rand(0), rand(0)\nprint rand(42)\nprint rand(0)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0.222457440974512\n0.133348129368619 0.535989057953577\n0.999986739278866\n0.929822167319661\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.time_functions",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print strftime(\"%Y-%m-%d %H:%M:%S\", 0), strftime(\"%j %a %b\", 86400*45.5), strptime(\"%Y-%m-%d\", \"2021-03-04\"), time_tm = 1000000000\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1970-01-01 00:00:00 046 Sun Feb 1614816000.0 1000000000\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.time_functions_2",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "t = strptime(\"%d/%m/%Y %H:%M\", \"25/12/2020 18:30\")\nprint t, strftime(\"%A %B %d %y %I%p\", t), tm_year(t), tm_mon(t), tm_mday(t), tm_wday(t), tm_yday(t), tm_hour(t)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1608921000.0 Friday December 25 20 06pm 2020.0 11.0 25.0 5.0 359.0 18.0\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.column_outside_plot",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print column(1)\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\nprint column(1)\n              ^\n\"t.gp\" line 1: column() called from invalid context\n\n"
+   },
+   "exit_code": 1,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.valid_and_value",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "x = 3\nprint value(\"x\"), value(\"x\") * 2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "3 6\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.print_many_types",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 1, 1.0, \"s\", {1,0}, {0,-1.5}, 1e-5, 12345678901234\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "1 1.0 s 1.0 {0.0, -1.5} 1e-05 12345678901234\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.precedence",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 2 + 3 * 4 ** 2, -3 ** 2, 2 ** 3 ** 2, 10 - 2 - 3, 100 / 10 / 5, 1 < 2 == 1, !1 + 1\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "50 -9 512 5 2 1 1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.string_compare_numbers",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print \"10\" < \"9\", 10 < 9, \"abc\" eq \"ab\" . \"c\"\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0 0 1\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.factorial_operator",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 5!, 0!, 20!, 3!!\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "120 1 2432902008176640000 720\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "expr.hex_octal_literals",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "print 0x1F, 0X10, 017, 0b101, 1.5e3, .5, 5.\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "31 16 15 5 1500.0 0.5 5.0\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ }
+]

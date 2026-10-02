@@ -1,0 +1,5 @@
+
+print 1 +
+         ^
+"error.gp" line 1: invalid expression 
+

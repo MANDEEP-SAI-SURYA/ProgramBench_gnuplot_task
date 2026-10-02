@@ -1,0 +1,333 @@
+[
+ {
+  "id": "stats.two_columns",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nstats $d\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           6\n  Out of range:      0\n  Invalid:           0\n  Header records:    0\n  Blank:             0\n  Data Blocks:       1\n\n* COLUMNS:\n  Mean:               3.5000            7.0500\n  Std Dev:            1.7078            3.4635\n  Sample StdDev:      1.8708            3.7941\n  Skewness:           0.0000            0.0443\n  Kurtosis:           1.7314            1.7912\n  Avg Dev:            1.5000            3.0500\n  Sum:               21.0000           42.3000\n  Sum Sq.:           91.0000          370.1900\n\n  Mean Err.:          0.6972            1.4140\n  Std Dev Err.:       0.4930            0.9998\n  Skewness Err.:      1.0000            1.0000\n  Kurtosis Err.:      2.0000            2.0000\n\n  Minimum:            1.0000 [0]        2.0000 [0]\n  Maximum:            6.0000 [5]       12.3000 [5]\n  Quartile:           2.0000            4.1000\n  Median:             3.5000            7.0500\n  Quartile:           5.0000            9.8000\n\n  Linear Model:       y = 2.026 x - 0.04\n  Slope:              2.026 +- 0.04832\n  Intercept:          -0.04 +- 0.1882\n  Correlation:        r = 0.9989\n  Sum xy:             183.5\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.single_column",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$s << EOD\n2.1\n3.5\n3.5\n4.0\n4.2\n5.9\n6.1\n6.1\n6.1\n7.4\n8.8\n9.0\n12.5\n3.3\n4.8\nEOD\nstats $s\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           15\n  Out of range:       0\n  Invalid:            0\n  Header records:     0\n  Blank:              0\n  Data Blocks:        1\n\n* COLUMN: \n  Mean:               5.8200\n  Std Dev:            2.6367\n  Sample StdDev:      2.7293\n  Skewness:           0.9343\n  Kurtosis:           3.4306\n  Avg Dev:            2.0453\n  Sum:               87.3000\n  Sum Sq.:          612.3700\n\n  Mean Err.:          0.6808\n  Std Dev Err.:       0.4814\n  Skewness Err.:      0.6325\n  Kurtosis Err.:      1.2649\n\n  Minimum:            2.1000 [ 0]\n  Maximum:           12.5000 [12]\n  Quartile:           3.5000 \n  Median:             5.9000 \n  Quartile:           7.4000 \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.named_prefix_variables",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nstats $d using 2 name 'Y' nooutput\nprint Y_mean, Y_stddev, Y_min, Y_max, Y_median, Y_records, Y_sum, Y_lo_quartile, Y_up_quartile\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "7.05 3.46350015639286 2.0 12.3 7.05 6 42.3 4.1 9.8\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.default_variables",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nstats $d nooutput\nprint STATS_correlation, STATS_slope, STATS_intercept, STATS_mean_x, STATS_mean_y, STATS_sumxy, STATS_pos_max_y\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "0.998864039955927 2.02571428571429 -0.0400000000000036 3.5 7.05 183.5 6.0\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.multiple_blocks",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n# x y err\n0 1.0 0.1\n1 2.7 0.2\n2 7.4 0.3\n3 20.1 0.5\n4 54.6 1.0\n\n\n0 3\n1 2\n2 4\n3 1\n4 5\nEOD\nstats $d\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           10\n  Out of range:       0\n  Invalid:            0\n  Header records:     0\n  Blank:              2\n  Data Blocks:        2\n\n* COLUMNS:\n  Mean:               2.0000            10.0800\n  Std Dev:            1.4142            15.7707\n  Sample StdDev:      1.4907            16.6238\n  Skewness:           0.0000             2.1948\n  Kurtosis:           1.7000             6.4080\n  Avg Dev:            1.2000            10.9080\n  Sum:               20.0000           100.8000\n  Sum Sq.:           60.0000          3503.2200\n\n  Mean Err.:          0.4472             4.9871\n  Std Dev Err.:       0.3162             3.5264\n  Skewness Err.:      0.7746             0.7746\n  Kurtosis Err.:      1.5492             1.5492\n\n  Minimum:            0.0000 [ 0]        1.0000 [ 0]\n  Maximum:            4.0000 [ 9]       54.6000 [ 4]\n  Quartile:           1.0000             2.0000\n  Median:             2.0000             3.5000\n  Quartile:           3.0000             7.4000\n\n  Linear Model:       y = 6.38 x - 2.68\n  Slope:              6.38 +- 3.234\n  Intercept:          -2.68 +- 7.921\n  Correlation:        r = 0.5721\n  Sum xy:             329.2\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.index_and_every",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n# x y err\n0 1.0 0.1\n1 2.7 0.2\n2 7.4 0.3\n3 20.1 0.5\n4 54.6 1.0\n\n\n0 3\n1 2\n2 4\n3 1\n4 5\nEOD\nstats $d index 1 every 2 using 2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           3\n  Out of range:      0\n  Invalid:           0\n  Header records:    0\n  Blank:             0\n  Data Blocks:       1\n\n* COLUMN: \n  Mean:               4.0000\n  Std Dev:            0.8165\n  Sample StdDev:      1.0000\n  Skewness:           0.0000\n  Kurtosis:           1.5000\n  Avg Dev:            0.6667\n  Sum:               12.0000\n  Sum Sq.:           50.0000\n\n  Mean Err.:          0.4714\n  Std Dev Err.:       0.3333\n  Skewness Err.:      1.4142\n  Kurtosis Err.:      2.8284\n\n  Minimum:            3.0000 [0]\n  Maximum:            5.0000 [2]\n  Quartile:           3.0000 \n  Median:             4.0000 \n  Quartile:           5.0000 \n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.with_missing_and_invalid",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$m << EOD\n1 2\n2 ?\n3 x\n4 8\n\n5 10\nEOD\nset datafile missing '?'\nstats $m\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           3\n  Out of range:      0\n  Invalid:           1\n  Header records:    0\n  Blank:             1\n  Data Blocks:       1\n\n* COLUMNS:\n  Mean:               3.3333            6.6667\n  Std Dev:            1.6997            3.3993\n  Sample StdDev:      2.0817            4.1633\n  Skewness:          -0.5280           -0.5280\n  Kurtosis:           1.5000            1.5000\n  Avg Dev:            1.5556            3.1111\n  Sum:               10.0000           20.0000\n  Sum Sq.:           42.0000          168.0000\n\n  Mean Err.:          0.9813            1.9626\n  Std Dev Err.:       0.6939            1.3878\n  Skewness Err.:      1.4142            1.4142\n  Kurtosis Err.:      2.8284            2.8284\n\n  Minimum:            1.0000 [0]        2.0000 [0]\n  Maximum:            5.0000 [2]       10.0000 [2]\n  Quartile:           1.0000            2.0000\n  Median:             4.0000            8.0000\n  Quartile:           5.0000           10.0000\n\n  Linear Model:       y = 2 x + 0\n  Slope:              2 +- 0\n  Intercept:          0 +- 0\n  Correlation:        r = 1\n  Sum xy:             84\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.range_restricted",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nstats [2:5] $d using 1:2\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           4\n  Out of range:      2\n  Invalid:           0\n  Header records:    0\n  Blank:             0\n  Data Blocks:       1\n\n* COLUMNS:\n  Mean:               3.5000            7.0000\n  Std Dev:            1.1180            2.1737\n  Sample StdDev:      1.2910            2.5100\n  Skewness:           0.0000           -0.0497\n  Kurtosis:           1.6400            1.5199\n  Avg Dev:            1.0000            2.0000\n  Sum:               14.0000           28.0000\n  Sum Sq.:           54.0000          214.9000\n\n  Mean Err.:          0.5590            1.0869\n  Std Dev Err.:       0.3953            0.7685\n  Skewness Err.:      1.2247            1.2247\n  Kurtosis Err.:      2.4495            2.4495\n\n  Minimum:            2.0000 [0]        4.1000 [0]\n  Maximum:            5.0000 [3]        9.8000 [3]\n  Quartile:           2.5000            5.0000\n  Median:             3.5000            7.0500\n  Quartile:           4.5000            9.0000\n\n  Linear Model:       y = 1.94 x + 0.21\n  Slope:              1.94 +- 0.09055\n  Intercept:          0.21 +- 0.3327\n  Correlation:        r = 0.9978\n  Sum xy:             107.7\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.matrix",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$m << EOD\n1 2 3\n4 5 6\nEOD\nstats $m matrix\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           6\n  Out of range:      0\n  Invalid:           0\n  Header records:    0\n  Blank:             1\n  Data Blocks:       1\n\n* MATRIX: [3 X 2] \n  Mean:               3.5000\n  Std Dev:            1.7078\n  Sample StdDev:      1.8708\n  Skewness:           0.0000\n  Kurtosis:           1.7314\n  Avg Dev:            1.5000\n  Sum:               21.0000\n  Sum Sq.:           91.0000\n\n  Mean Err.:          0.6972\n  Std Dev Err.:       0.4930\n  Skewness Err.:      1.0000\n  Kurtosis Err.:      2.0000\n\n  Minimum:            1.0000 [0 0 ]\n  Maximum:            6.0000 [2 1 ]\n  COG:                1.1905      0.7143\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.expression_columns",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nstats $d using ($1*2):(log($2))\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           6\n  Out of range:      0\n  Invalid:           0\n  Header records:    0\n  Blank:             0\n  Data Blocks:       1\n\n* COLUMNS:\n  Mean:               7.0000            1.7959\n  Std Dev:            3.4157            0.6063\n  Sample StdDev:      3.7417            0.6642\n  Skewness:           0.0000           -0.6654\n  Kurtosis:           1.7314            2.2509\n  Avg Dev:            3.0000            0.5028\n  Sum:               42.0000           10.7752\n  Sum Sq.:          364.0000           21.5565\n\n  Mean Err.:          1.3944            0.2475\n  Std Dev Err.:       0.9860            0.1750\n  Skewness Err.:      1.0000            1.0000\n  Kurtosis Err.:      2.0000            2.0000\n\n  Minimum:            2.0000 [0]        0.6931 [0]\n  Maximum:           12.0000 [5]        2.5096 [5]\n  Quartile:           4.0000            1.4110\n  Median:             7.0000            1.9395\n  Quartile:          10.0000            2.2824\n\n  Linear Model:       y = 0.1718 x + 0.5933\n  Slope:              0.1718 +- 0.02234\n  Intercept:          0.5933 +- 0.174\n  Correlation:        r = 0.9678\n  Sum xy:             87.45\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.noisy_data",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$n << EOD\n0 -5.0\n1 -0.5\n2 4.0\n3 -2.5\n4 2.0\n5 6.5\n6 0.0\n7 4.5\n8 9.0\n9 2.5\n10 7.0\n11 0.5\n12 5.0\n13 9.5\n14 3.0\n15 7.5\n16 12.0\n17 5.5\n18 10.0\n19 14.5\n20 8.0\n21 12.5\n22 6.0\n23 10.5\n24 15.0\n25 8.5\n26 13.0\n27 17.5\n28 11.0\n29 15.5\nEOD\nstats $n\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n* FILE: \n  Records:           30\n  Out of range:       0\n  Invalid:            0\n  Header records:     0\n  Blank:              0\n  Data Blocks:        1\n\n* COLUMNS:\n  Mean:              14.5000             7.0833\n  Std Dev:            8.6554             5.5092\n  Sample StdDev:      8.8034             5.6034\n  Skewness:           0.0000            -0.1620\n  Kurtosis:           1.7973             2.3852\n  Avg Dev:            7.5000             4.5167\n  Sum:              435.0000           212.5000\n  Sum Sq.:         8555.0000          2415.7500\n\n  Mean Err.:          1.5803             1.0058\n  Std Dev Err.:       1.1174             0.7112\n  Skewness Err.:      0.4472             0.4472\n  Kurtosis Err.:      0.8944             0.8944\n\n  Minimum:            0.0000 [ 0]       -5.0000 [ 0]\n  Maximum:           29.0000 [29]       17.5000 [27]\n  Quartile:           7.0000             3.0000\n  Median:            14.5000             7.2500\n  Quartile:          22.0000            11.0000\n\n  Linear Model:       y = 0.5234 x - 0.5054\n  Slope:              0.5234 +- 0.06846\n  Intercept:          -0.5054 +- 1.156\n  Correlation:        r = 0.8222\n  Sum xy:             4258\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.show_variables_after",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nstats $d using 1 nooutput\nshow variables STATS_\n"
+   }
+  },
+  "check_files": [],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "\n\tVariables beginning with STATS_:\n\tSTATS_records = 6\n\tSTATS_invalid = 0\n\tSTATS_headers = 0\n\tSTATS_blank = 0\n\tSTATS_blocks = 1\n\tSTATS_outofrange = 0\n\tSTATS_columns = 2\n\tSTATS_mean = 3.5\n\tSTATS_stddev = 1.70782512765993\n\tSTATS_ssd = 1.87082869338697\n\tSTATS_skewness = 0.0\n\tSTATS_kurtosis = 1.73142857142857\n\tSTATS_adev = 1.5\n\tSTATS_mean_err = 0.697216688778396\n\tSTATS_stddev_err = 0.493006648591635\n\tSTATS_skewness_err = 1.0\n\tSTATS_kurtosis_err = 2.0\n\tSTATS_sum = 21.0\n\tSTATS_sumsq = 91.0\n\tSTATS_min = 1.0\n\tSTATS_max = 6.0\n\tSTATS_median = 3.5\n\tSTATS_lo_quartile = 2.0\n\tSTATS_up_quartile = 5.0\n\tSTATS_index_min = 0\n\tSTATS_index_max = 5\n\n"
+   },
+   "exit_code": 0,
+   "files": {}
+  }
+ },
+ {
+  "id": "stats.output_to_print_file",
+  "argv": [
+   "t.gp"
+  ],
+  "stdin": {
+   "text": ""
+  },
+  "files": {
+   "t.gp": {
+    "text": "$d << EOD\n1 2.0\n2 4.1\n3 5.9\n4 8.2\n5 9.8\n6 12.3\nEOD\nset print 'stats.txt'\nstats $d\nset print\nprint 'done'\n"
+   }
+  },
+  "check_files": [
+   "stats.txt"
+  ],
+  "expected": {
+   "stdout": {
+    "text": ""
+   },
+   "stderr": {
+    "text": "done\n"
+   },
+   "exit_code": 0,
+   "files": {
+    "stats.txt": {
+     "text": "records\t6\ninvalid\t0\nblanks\t0\nblocks\t1\nheaders\t0\noutofrange\t0\nmean_x\t3.500000\nstddev_x\t1.707825\nssd_x\t1.870829\nskewness_x\t0.000000\nkurtosis_x\t1.731429\nadev_x\t1.500000\nsum_x\t21.000000\nsum_sq_x\t91.000000\nmean_err_x\t0.697217\nstddev_err_x\t0.493007\nskewness_err_x\t1.000000\nkurtosis_err_x\t2.000000\nmin_x\t1.000000\nlo_quartile_x\t2.000000\nmedian_x\t3.500000\nup_quartile_x\t5.000000\nmax_x\t6.000000\nmin_index_x\t0\nmax_index_x\t5\nmean_y\t7.050000\nstddev_y\t3.463500\nssd_y\t3.794074\nskewness_y\t0.044287\nkurtosis_y\t1.791165\nadev_y\t3.050000\nsum_y\t42.300000\nsum_sq_y\t370.190000\nmean_err_y\t1.413968\nstddev_err_y\t0.999826\nskewness_err_y\t1.000000\nkurtosis_err_y\t2.000000\nmin_y\t2.000000\nlo_quartile_y\t4.100000\nmedian_y\t7.050000\nup_quartile_y\t9.800000\nmax_y\t12.300000\nmin_index_y\t0\nmax_index_y\t5\nslope\t2.025714\nslope_err\t0.048319\nintercept\t-0.040000\nintercept_err\t0.188174\ncorrelation\t0.998864\nsumxy\t183.500000\n"
+    }
+   }
+  }
+ }
+]
