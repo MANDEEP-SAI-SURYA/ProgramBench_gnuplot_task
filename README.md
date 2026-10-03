@@ -12,8 +12,8 @@ tests, organised in 7 test branches, compare it against the original.
 |---|---|
 | Instance | `gnuplot__gnuplot.a1bafa4` (gnuplot 5.4 patchlevel 9, tag `5.4.9`) |
 | Reference | C, ~165k LOC, static stripped x86-64 binary |
-| Tests | 510 in 7 branches, flat unweighted score; reference 100%, do-nothing stub 0% |
-| Calibration | blind Claude Opus 5.5 run, offline: **55.1%** (target: < 70% on average) |
+| Tests | 510 in 7 branches, flat unweighted score; reference 100%, do-nothing stub 0%; verifier pytest==9.1.1 (pinned) |
+| Calibration | 8 independent Claude Opus 5.5 runs on frozen revision `b62a6b5`: mean **49.53%** (39.2–54.9%), target < 70%; see `calibration/` |
 
 ## Quickstart
 

@@ -1,0 +1,28 @@
+{
+ "run": "run_03",
+ "agent_id": "a0c33cbd02a6c6e4a",
+ "frozen_revision": "b62a6b5b47e08edc2d67460a9498457d44a83f7b",
+ "agent": "Claude general-purpose sub-agent (Claude Code SDK), tools: Bash, Read, Write, Edit, Glob, Grep",
+ "prompt": "calibration/gnuplot__gnuplot.a1bafa4/PROMPT.md with {WS}=/tmp/cal/run_03/ws",
+ "budget": {
+  "wall_clock": "instructed ~90 min, single session",
+  "token_cap": null,
+  "turn_cap": null
+ },
+ "start": "2026-10-03T04:37:59.812Z",
+ "end": "2026-10-03T05:03:23.658Z",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "agent_versions": [
+  "2.1.288"
+ ],
+ "tool_calls": 68,
+ "usage": {
+  "input_tokens": 256,
+  "output_tokens": 52855,
+  "cache_read_input_tokens": 19308439,
+  "cache_creation_input_tokens": 405869
+ },
+ "audit_flags": {}
+}

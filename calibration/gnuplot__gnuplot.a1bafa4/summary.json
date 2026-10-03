@@ -1,0 +1,180 @@
+{
+ "instance_id": "gnuplot__gnuplot.a1bafa4",
+ "frozen_revision": "b62a6b5b47e08edc2d67460a9498457d44a83f7b",
+ "model": "claude-opus-5-5",
+ "runs": [
+  {
+   "run": "run_01",
+   "passed": 267,
+   "total": 510,
+   "score_pct": 52.35,
+   "wall_min": 33.8,
+   "tool_calls": 95,
+   "output_tokens": 79735,
+   "input_tokens_incl_cache": 36163077,
+   "solution_loc": 8873,
+   "language": "Go,Shell",
+   "executable_hash": "5e07029b0d0edf6cba28b2fc5a59fd216ce56556bcf09758bb5e68411596529f",
+   "verifier": {
+    "pytest": "9.1.1",
+    "python": "3.13.15"
+   },
+   "error_code": null
+  },
+  {
+   "run": "run_02",
+   "passed": 200,
+   "total": 510,
+   "score_pct": 39.22,
+   "wall_min": 25.1,
+   "tool_calls": 64,
+   "output_tokens": 44034,
+   "input_tokens_incl_cache": 18908396,
+   "solution_loc": 7474,
+   "language": "Go,Shell",
+   "executable_hash": "a08e7ac00de7fe1c597262b25922ff00e65a1d2b21ad77a4044da1323708fb1f",
+   "verifier": {
+    "pytest": "9.1.1",
+    "python": "3.13.15"
+   },
+   "error_code": null
+  },
+  {
+   "run": "run_03",
+   "passed": 235,
+   "total": 510,
+   "score_pct": 46.08,
+   "wall_min": 25.4,
+   "tool_calls": 68,
+   "output_tokens": 52855,
+   "input_tokens_incl_cache": 19714564,
+   "solution_loc": 8124,
+   "language": "Go,Shell",
+   "executable_hash": "9a13a20ee3bd61361fb2b6c16e69198ba40dec761f5be49e41f73b24b23af481",
+   "verifier": {
+    "pytest": "9.1.1",
+    "python": "3.13.15"
+   },
+   "error_code": null
+  },
+  {
+   "run": "run_04",
+   "passed": 218,
+   "total": 510,
+   "score_pct": 42.75,
+   "wall_min": 29.1,
+   "tool_calls": 83,
+   "output_tokens": 48264,
+   "input_tokens_incl_cache": 27016218,
+   "solution_loc": 8376,
+   "language": "Go,Shell",
+   "executable_hash": "a332c701c266dfab8d746bf7be385ceb5035575f5c9e566de407dafd9ce79b5c",
+   "verifier": {
+    "pytest": "9.1.1",
+    "python": "3.13.15"
+   },
+   "error_code": null
+  },
+  {
+   "run": "run_05",
+   "passed": 280,
+   "total": 510,
+   "score_pct": 54.9,
+   "wall_min": 29.0,
+   "tool_calls": 93,
+   "output_tokens": 95918,
+   "input_tokens_incl_cache": 35952177,
+   "solution_loc": 8684,
+   "language": "Go,Shell",
+   "executable_hash": "4ce362dedd03a94eacb7300be3fb95cc9718367f944bce28c73c7649cd3f452a",
+   "verifier": {
+    "pytest": "9.1.1",
+    "python": "3.13.15"
+   },
+   "error_code": null
+  },
+  {
+   "run": "run_06",
+   "passed": 277,
+   "total": 510,
+   "score_pct": 54.31,
+   "wall_min": 28.2,
+   "tool_calls": 77,
+   "output_tokens": 96630,
+   "input_tokens_incl_cache": 27098292,
+   "solution_loc": 9338,
+   "language": "Go,Shell",
+   "executable_hash": "0b39d36e311cb22eb377cdcd4576b5425157b187e2440ba4fe3253f137e9bfc1",
+   "verifier": {
+    "pytest": "9.1.1",
+    "python": "3.13.15"
+   },
+   "error_code": null
+  },
+  {
+   "run": "run_07",
+   "passed": 278,
+   "total": 510,
+   "score_pct": 54.51,
+   "wall_min": 39.2,
+   "tool_calls": 127,
+   "output_tokens": 112102,
+   "input_tokens_incl_cache": 56603544,
+   "solution_loc": 9555,
+   "language": "Go,Shell",
+   "executable_hash": "9aeafa0629bb0d7a67c7ce6b83273d49b8fc7629f946b2944c88fc19bf134d71",
+   "verifier": {
+    "pytest": "9.1.1",
+    "python": "3.13.15"
+   },
+   "error_code": null
+  },
+  {
+   "run": "run_08",
+   "passed": 266,
+   "total": 510,
+   "score_pct": 52.16,
+   "wall_min": 29.7,
+   "tool_calls": 71,
+   "output_tokens": 106314,
+   "input_tokens_incl_cache": 23629091,
+   "solution_loc": 8225,
+   "language": "Go,Shell",
+   "executable_hash": "06969503469e810605df08cc67f20fb2749125aa9c48184cc044f2547f0a74fe",
+   "verifier": {
+    "pytest": "9.1.1",
+    "python": "3.13.15"
+   },
+   "error_code": null
+  }
+ ],
+ "mean_score_pct": 49.53,
+ "stdev_pct": 6.04,
+ "min_pct": 39.22,
+ "max_pct": 54.9,
+ "target": "mean < 70%",
+ "per_module_mean_pct": {
+  "test_cli": 85.6,
+  "test_dumb": 20.3,
+  "test_dumb3d": 0.0,
+  "test_dumb_matrix": 50.9,
+  "test_errors": 59.6,
+  "test_expr": 72.6,
+  "test_expr_print": 100.0,
+  "test_fit": 15.4,
+  "test_fit_matrix": 29.2,
+  "test_format": 79.5,
+  "test_multiplot": 0.0,
+  "test_program": 78.4,
+  "test_show": 54.8,
+  "test_smooth": 33.9,
+  "test_smooth_matrix": 55.1,
+  "test_stats": 32.7,
+  "test_stats_matrix": 14.6,
+  "test_svg": 0.0,
+  "test_table": 51.4,
+  "test_table3d": 12.5,
+  "test_table_matrix": 81.2,
+  "test_terminals": 0.0
+ }
+}

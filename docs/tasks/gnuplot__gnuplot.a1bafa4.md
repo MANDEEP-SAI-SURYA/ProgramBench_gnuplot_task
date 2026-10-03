@@ -11,6 +11,8 @@
 | Tests | 510 behavioural tests in 7 branches |
 | Scoring | flat % of tests passed; stdout + stderr + exit status (+ checked files) byte-exact |
 | Quality checks | reference 100%; gold submission built from source 100%; do-nothing stub 0%; every case run twice at generation (deterministic) |
+| Verifier | pytest 9.1.1, pinned (`requirements-eval.txt`, Dockerfile, every `eval/run.sh`) |
+| Calibration | 8 × Claude Opus 5.5 on the frozen revision: mean 49.53% |
 
 ## What is tested
 
@@ -26,22 +28,24 @@
 
 ## Difficulty calibration
 
-Candidates were calibrated with blind, offline runs of a Claude Opus 5.5 agent that saw only
-the agent bundle:
+**Final batch (the evidence):** 8 independent Claude Opus 5.5 runs on frozen revision
+`b62a6b5b47e08edc2d67460a9498457d44a83f7b`. Mean **49.53%** (σ 6.04, min 39.22%, max 54.90%),
+target < 70%. Complete trajectories, submissions, eval.json files, model settings and budgets are in
+[`calibration/gnuplot__gnuplot.a1bafa4/`](../../calibration/gnuplot__gnuplot.a1bafa4/README.md).
+
+Strongest areas for the agents: CLI, expressions and formatting (72–100%). Weakest: 3D,
+multiplot, svg/canvas (0%), fit (15–29%), stats (15–33%), dumb-terminal plots (20–51%).
+
+**History (candidate selection, before the freeze):**
 
 | Candidate | Result | Decision |
 |---|---|---|
-| Author-written 4.5k-LOC scripting-language interpreter | 99.7% (37 min) | rejected: too easy |
-| shfmt v3.12.0 (mvdan/sh) | 80.7% with the run unfinished (61 min, rate-limited) | rejected: too easy |
-| gnuplot 5.4.9, first suite (441 tests) | 63.3% (33 min, 9.7k LOC Go) | suite deepened |
-| **gnuplot 5.4.9, final suite (510 tests)** | **55.1%** (same solution) | accepted |
+| Author-written 4.5k-LOC scripting-language interpreter | one run, 99.7% | rejected: too easy |
+| shfmt v3.12.0 (mvdan/sh) | one unfinished run, 80.7% | rejected: too easy |
+| gnuplot 5.4.9, first suite (441 tests) | one run, 63.3% | suite deepened to 510 tests |
 
-The calibration solution is kept as `src/programbench/data/test_runs/incorrect/<iid>/`
-(score 281/510). Per area it reached: CLI 80%, expressions 78–100%, errors 62%, show 68%,
-tables 51–96%, smoothing 32–38%, stats 0–31%, fit 23–33%, dumb plots 0–66%, svg/canvas 0%.
-
-The JD target is < 70% averaged over about 8 runs. A single 33-minute run is only an estimate:
-longer runs will close some gaps (3D, multiplot, svg). The suite was deepened to leave margin.
+`src/programbench/data/test_runs/incorrect/` keeps the solution from that pre-freeze run as an
+example of a partial submission (281/510 on the final suite). It is not part of the calibration.
 
 ## Fairness notes
 
