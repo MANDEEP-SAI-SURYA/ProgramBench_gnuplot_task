@@ -50,3 +50,16 @@ def test_test_runs_have_eval_json():
             res = json.loads((d / f"{d.name}.eval.json").read_text())
             passed = sum(t["status"] == "passed" for t in res["test_results"])
             assert (passed == len(res["test_results"])) == (kind == "correct")
+
+
+def test_verifier_pytest_is_pinned_everywhere():
+    from programbench.constants import REPO_ROOT
+
+    pinned = next(l.split("==")[1].strip() for l in (REPO_ROOT / "requirements-eval.txt").read_text().splitlines()
+                  if l.startswith("pytest=="))
+    for iid, inst in load_all_instances().items():
+        for branch in inst["branches"]:
+            with tarfile.open(BLOB_DIR / iid / "tests" / f"{branch}.tar.gz") as t:
+                run_sh = t.extractfile("eval/run.sh").read().decode()
+            assert f"PINNED={pinned}" in run_sh
+        assert "requirements-eval.txt" in (IMAGES_DIR / iid / "task_cleanroom" / "Dockerfile").read_text()

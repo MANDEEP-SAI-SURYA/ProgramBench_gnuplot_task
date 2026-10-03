@@ -56,6 +56,8 @@ def _print_result(iid: str, result: dict, inst: dict) -> None:
         print(f"   submission: {s['files']} files, {s['nonblank_loc']} non-blank source LOC ({langs})")
     for mod, (p, n) in sorted(by_mod.items()):
         print(f"   {mod:<22} {p:>4}/{n:<4} {100 * p / n:6.1f}%  {'#' * int(20 * p / n)}")
+    if result.get("verifier"):
+        print(f"   verifier: pytest {result['verifier']['pytest']}, python {result['verifier']['python']}")
     print(f"   SCORE {passed}/{total} = {100 * passed / max(total, 1):.2f}%   executable_hash={result.get('executable_hash')}")
 
 

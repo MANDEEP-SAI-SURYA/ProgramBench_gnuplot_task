@@ -95,7 +95,8 @@ class Evaluator:
         self.clean_hashes = set(instance.get("eval_clean_hashes") or [])
         self.result: dict = {"test_results": [], "error_code": None, "error_details": None, "log": [],
                              "solution_branch": "submission", "test_branches": get_active_branches(instance),
-                             "test_branch_errors": {}, "executable_hash": None, "warnings": [], "structure": None}
+                             "test_branch_errors": {}, "executable_hash": None, "warnings": [], "structure": None,
+                             "verifier": None}
 
     # ---------------------------------------------------------------- helpers
     def _step(self, name: str, cmd: list[str] | str, cwd: Path, *, timeout: int = 600, network: bool = True,
@@ -205,6 +206,10 @@ class Evaluator:
                 for b in self.result["test_branches"]:
                     self._inject_not_run(b, e.error_code)
                 return self.result
+            r = self._step("verifier_versions", "python3 -c 'import sys, pytest; print(pytest.__version__, sys.version.split()[0])'",
+                           ws, accept_failure=True)
+            parts = r.stdout.decode().split()
+            self.result["verifier"] = {"pytest": parts[0], "python": parts[1]} if len(parts) == 2 else None
             for b in self.result["test_branches"]:
                 try:
                     self._run_branch(ws, exe_bytes, b, work)

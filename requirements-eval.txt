@@ -1,0 +1,2 @@
+# Verifier environment (pinned). Used by the Docker images, CI and local evaluation.
+pytest==9.1.1

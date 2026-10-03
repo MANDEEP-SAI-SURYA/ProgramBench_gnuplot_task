@@ -55,8 +55,10 @@ it → for every test branch, in a fresh copy of the compiled workspace: extract
 `blobs/<iid>/tests/<branch>.tar.gz`, restore and verify `./executable`, run `eval/run.sh`, read
 `eval/results.xml`.
 
-Requirements, local backend: Linux x86-64, `bash`, `python3` ≥ 3.10 with `pytest`, plus the
-toolchain the submission's `compile.sh` needs. Network blocking uses `unshare -rn` when allowed.
+Requirements, local backend: Linux x86-64, `bash`, `python3` ≥ 3.10 and the **pinned verifier**
+(`pip install -r requirements-eval.txt`, i.e. `pytest==9.1.1`), plus the toolchain the
+submission's `compile.sh` needs. Every branch's `eval/run.sh` refuses to run with another pytest
+version, and the versions used are recorded in `eval.json` under `verifier`. Network blocking uses `unshare -rn` when allowed.
 
 ### Output
 

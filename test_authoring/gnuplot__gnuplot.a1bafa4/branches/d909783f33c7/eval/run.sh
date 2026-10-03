@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 # Run from /workspace (the directory that contains ./executable).
+# Verifier is pinned: pytest==9.1.1. Any other version is refused so results stay reproducible
+# (set PROGRAMBENCH_ALLOW_PYTEST_MISMATCH=1 only for debugging).
 set -u
 cd "$(dirname "$0")/.."
-TIMEOUT_ARGS=""
-if python3 -c "import pytest_timeout" 2>/dev/null; then TIMEOUT_ARGS="--timeout=60 --timeout-method=thread"; fi
-XDIST_ARGS=""
-if python3 -c "import xdist" 2>/dev/null; then XDIST_ARGS="-n auto"; fi
+PINNED=9.1.1
+FOUND=$(python3 -c "import pytest; print(pytest.__version__)" 2>/dev/null || echo none)
+if [ "$FOUND" != "$PINNED" ] && [ -z "${PROGRAMBENCH_ALLOW_PYTEST_MISMATCH:-}" ]; then
+  echo "verifier error: pytest==$PINNED required, found $FOUND (pip install pytest==$PINNED)" >&2
+  exit 3
+fi
 python3 -m pytest eval/tests -v -p no:cacheprovider --rootdir="$PWD" \
-  --junitxml=eval/results.xml -o junit_family=xunit1 $TIMEOUT_ARGS $XDIST_ARGS
+  --junitxml=eval/results.xml -o junit_family=xunit1
 exit 0

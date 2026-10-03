@@ -18,7 +18,7 @@ tests, organised in 7 test branches, compare it against the original.
 ## Quickstart
 
 ```bash
-# no install needed (Python >= 3.10 + pytest); or: pip install -e .
+pip install -r requirements-eval.txt                  # pinned verifier: pytest==9.1.1
 cd src
 python3 -m programbench gold --skip-source              # reference binary must score 100%
 
@@ -37,7 +37,9 @@ for the task card (design, difficulty calibration, fairness notes).
 ```
 .
 ├── README.md  CLAUDE.md  CONTRIBUTING.md  LICENSE  pyproject.toml  .python-version
+├── requirements-eval.txt               pinned verifier (pytest==9.1.1)
 ├── .github/workflows/test.yml          CI: harness self-tests + gold check
+├── calibration/<instance_id>/          difficulty evidence: prompt, settings, 8 runs (trajectories, submissions, scores)
 ├── docs/
 │   ├── README.md                       usage guide (inference + evaluation)
 │   └── tasks/<instance_id>.md          task card: design, calibration, fairness notes
